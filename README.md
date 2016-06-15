@@ -1,6 +1,6 @@
 # toucaan css
 
 
-The most responsive webpage in the world is this:
+The most responsive page in the whole world wide web is blank. Would scale even on an iWatch if they were to sport a browser on it someday!
 
-It'd scale on an iWatch if it were to sport a browser!
+Toucaan is very angry. 
