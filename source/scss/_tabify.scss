@@ -1,0 +1,28 @@
+/* Bookstore pages have tabs */
+
+#tabify {
+  max-width: 300px;
+  height: 40px;
+}
+
+.tab {
+  width: 40%;
+  height: 39px;
+  border-bottom: 1px solid #ccc;
+}
+
+.tab.selected {
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-bottom: none !important;
+  height: 38px;
+  border-radius: 5px 5px 0 0;
+}
+
+.tab_start,
+.tab_end {
+  width: 10%;
+  border-bottom: 1px solid #ccc;
+  height: 39px;
+}

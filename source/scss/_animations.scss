@@ -1,0 +1,30 @@
+/* App icons wiggle befor dying! */
+
+
+@keyframes wiggle {
+  from {
+    transform: rotateZ(1deg);
+  }
+  50% {
+    transform: rotateZ(-1deg);
+  }
+  to {
+    transform: rotateZ(1deg);
+  }
+}
+
+.wiggle {
+  cursor: pointer; /* Too bad */
+  &:hover {
+    animation-name: wiggle;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+  }
+  &:nth-child(odd) {
+    animation-duration: .3s;
+  }
+  &:nth-child(even) {
+    animation-duration: .2s;
+  }
+}
+

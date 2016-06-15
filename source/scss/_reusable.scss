@@ -1,0 +1,135 @@
+/* Element Positioning */
+
+.left {
+    float: left;
+    left: 0;
+}
+
+.right {
+    float: right;
+    right: 0;
+}
+
+.center {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.centerize {
+    margin: 0 auto;
+}
+
+.fixed {
+    position: fixed;
+    will-change: transform;
+    transform: translateZ(0);
+}
+
+.absolute {
+    position: absolute;
+}
+
+.top {
+    top: 0;
+}
+
+.bottom {
+    bottom: 0px;
+}
+
+.absolute-center {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.fold {
+    min-height: calc(100vh - 45px);
+    max-width: 100vw;
+}
+
+
+/* -- Push aside, out & away ---*/
+
+.side-gap {
+    margin-right: .5em;
+    margin-left: .5em;
+}
+
+.top-gap {
+    margin-top: .5em;
+}
+
+.double-top-gap {
+    margin-top: 1em;
+}
+
+.bottom-gap {
+    margin-bottom: 1em;
+}
+
+.double-bottom-gap {
+    margin-bottom: 2em;
+}
+
+.pad {
+    padding: 0.5em 1em;
+}
+
+.pad-vertically {
+    padding: 1em 0;
+}
+
+.pad-horizontally {
+    padding: 0 1em;
+}
+
+
+/* -- Text --*/
+
+.justify {
+    text-align: justify;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.lowercase {
+    text-transform: lowercase;
+}
+
+.italics {
+    font-style: italic;
+}
+
+.transience {
+    transition: all 1s ease 0s;
+}
+
+.rotate {
+    transform: rotate(180deg);
+}
+
+menu.horizontal-list li,
+ul.horizontal-list li {
+    float: left;
+}
+
+.sub-list ol li {
+    list-style-type: disc;
+}
+
+.will-change {
+    will-change: transform;
+}

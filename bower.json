@@ -1,0 +1,30 @@
+{
+  "name": "toucaan.css",
+  "version": "0.0.1",
+  "description": "Toucaan: An Angry Little Approach to Modern CSS. I'ts not a f'king framework",
+  "homepage": "http://toucaan.com",
+  "repository": "git@gitlab.com:marvindanig/toucaan.git",
+  "license": "MIT",
+  "author": "Marvin Danig <marvin@marvindanig.com>",
+  "main": "dist/toucaan.css",
+  "keywords": [
+    "css",
+    "framework",
+    "flexbox",
+    "responsive",
+    "mobile-friendly",
+    "front-end",
+    "modern",
+    "design",
+    "flat",
+    "optimized",
+    "gridless",
+    "toucaan"
+  ],
+  "ignore": [
+    ".gitignore",
+    "bower.json",
+    "package.json",
+    "node_modules"
+  ]
+}
