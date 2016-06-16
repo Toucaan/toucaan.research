@@ -7,10 +7,6 @@
     .one-third { width: 100%; }
     .two-third { width: 100%; }
     .shrink { width: 95%; }
-    .align { margin: 0 auto; text-align: center;}
-    .page iframe { background: transparent; }
-    .title {font-size: 300%;} /* Cover page */
-    .banner { height: 200px; }
   }
 }
 
@@ -23,14 +19,10 @@
     .one-third { width: 33.33333%; }
     .two-third { width: 66.66666%; }
     .shrink { width: 90%; }
-    .align { margin: 0 0;}
-    .page iframe { background: transparent; }
-    .title {font-size: 240%;} /* Cover page */
-    .banner{ height: 400px; }
   }
 }
 
-/* -- Print style below from HTML5 Boilerplate --*/
+/* -- Print style below from HTML5 Boilerplate @h5bp.com --*/
 
 @media print, (-o-min-device-pixel-ratio: 5 / 4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
