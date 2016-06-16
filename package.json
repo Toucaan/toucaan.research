@@ -35,6 +35,7 @@
     "gulp": "3.9.1"
   },
   "devDependencies": {
+    "gulp-clean-css": "2.0.10",
     "gulp-sass": "2.3.2"
   }
 }

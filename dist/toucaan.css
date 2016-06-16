@@ -26,8 +26,8 @@ html {
 
 body {
   margin: 0;
-  font-family: 'Fascinate', cursive;
   font-family: 'EB Garamond', serif;
+  /* See _font_faces.scss */
   font-smooth: always;
   -webkit-font-smoothing: subpixel-antialiased;
   text-rendering: optimizelegibility;
@@ -47,7 +47,8 @@ a {
 
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
-  margin: 0; }
+  margin: 0;
+  font-family: 'Fascinate', cursive; }
 
 h1 {
   font-size: 280%;
