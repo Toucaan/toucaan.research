@@ -1,17 +1,4 @@
-/* App icons wiggle befor dying! */
-
-
-@keyframes wiggle {
-  from {
-    transform: rotateZ(1deg);
-  }
-  50% {
-    transform: rotateZ(-1deg);
-  }
-  to {
-    transform: rotateZ(1deg);
-  }
-}
+/* Wiggle before I die! */
 
 .wiggle {
   cursor: pointer; /* Too bad */
@@ -28,3 +15,16 @@
   }
 }
 
+
+
+@keyframes wiggle {
+  from {
+    transform: rotateZ(1deg);
+  }
+  50% {
+    transform: rotateZ(-1deg);
+  }
+  to {
+    transform: rotateZ(1deg);
+  }
+}

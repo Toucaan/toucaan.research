@@ -25,8 +25,7 @@ html {
 }
 
 body {
-    color: rgba(0, 0, 0, 0.75);
-    margin: 0;
+    margin: 0; 
     font-family: 'Fascinate', cursive;
     font-family: 'EB Garamond', serif;
     font-smooth: always;
@@ -35,6 +34,7 @@ body {
     font-display: optional;
     -moz-osx-font-smoothing: grayscale;
     -webkit-osx-font-smoothing: antialiased;
+    color: rgba(0, 0, 0, 0.75);
 }
 
 
@@ -55,14 +55,8 @@ a {
 
 /* Typography */
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
     margin: 0;
-    font-family: 'proxima-nova', Arial, sans-serif;
 }
 
 h1 {
@@ -91,7 +85,6 @@ h6 {
     font-size: 100%;
 }
 
-b,
 strong {
     font-weight: bold;
 }
@@ -167,16 +160,14 @@ textarea {
     color: #222;
 }
 
-button,
-input {
+/* Picked up from Normalize.css */
+
+button, input {
     line-height: normal;
-    /* Picked up from Normalize.css */
     text-transform: none;
-    /* Picked up from Normalize.css */
 }
 
-button,
-html input[type="button"] {
+button, html input[type="button"] {
     -webkit-appearance: button;
     cursor: pointer;
     *overflow: visible;
@@ -290,22 +281,3 @@ input:-webkit-autofill {
     -webkit-box-shadow: 0 0 1000px #FBFBFB inset;
 }
 
-
-/* Tables
-   ========================================================================== */
-
-
-/**
- * Remove most spacing between table cells.
- */
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-td,
-th {
-    padding: 0.2vw 1vw;
-    vertical-align: top;
-}
