@@ -1,6 +1,6 @@
 # toucaan css
 
-*Toucans are aggressive little birds that symbolize beauty and strength.* 
+Toucans are aggressive little birds that symbolize beauty and strength. But Toucaan is just CSS.
 
 Similarly, Toucaan is theoretically a CSS framework that symbolizes beauty and strength; but more than that it relies on the most powerful tool we have as developers: Thinking.
 
