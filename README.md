@@ -1,15 +1,20 @@
-# toucaan css
+# Toucaan CSS - a gridless approach to style.
 
-The most responsive page in the whole world wide web is *blank*.
+*If Toucaan, then you can too!*
 
-Yes. Try this page if you don't believe the Toucaans.
+Did you know that the most responsive page in the whole world wide web is *blank*. 
 
+Yep - a blank page. Try it if you don't believe thy Toucaan.
 
-Why Toucaan?
+Good. So you're in a creative mood right now. And then there's an ideeeaaah in your head all energized and reeling to get out.
 
-You see Toucans are aggressive little birds that also symbolize beauty and strength. But we're going to emphasize on its anger with all the stupid CSS rules that your site will never need.
+### So why the Toucaan?
 
-Theoretically, Toucaan is a CSS framework that symbolizes beauty and strength; but it relies completely on the most powerful tool we humans have as developers: Thinking.
+You see Toucans are aggressive little birds that also symbolize beauty and strength. We're going to use those qualities of the beautiful bird, meaning its angry little beautiful persona to weed out all the stupid CSS rules that your site will never need.
+
+Theoretically, Toucaan is *not* a CSS framework but only a set of newer patterns or *none at all* that symbolize beauty and strength of modern web; it relies completely on the most powerful tool we humans have as developers: Thinking.
+
+### Here are some of the advantages:
 
 Stop making the browser recalculate style in several steps. Normalize it with the final look and feel.
 
