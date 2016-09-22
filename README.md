@@ -1,6 +1,9 @@
-# Toucaan CSS - a gridless approach to style.
+# Introducing Toucaan CSS…
 
-*If Toucaan, then you can too!*
+A gridless approach to style. 
+
+# Why?
+Well, *if Toucaan, then you can too!*
 
 Did you know that the most responsive page in the whole world wide web is *blank*. 
 
@@ -10,9 +13,12 @@ Good. So you're in a creative mood right now. And then there's an ideeeaaah in y
 
 ### So why the Toucaan?
 
-You see Toucans are aggressive little birds that also symbolize beauty and strength. We're going to use those qualities of the beautiful bird, meaning its angry little beautiful persona to weed out all the stupid CSS rules that your site will never need.
+You see Toucans are aggressive little birds that symbolize beauty and strength. We're going to use those qualities of the beautiful bird, meaning its angry little beautiful persona to weed out all the stupid CSS rules that your site will never need.
 
 Theoretically, Toucaan is *not* a CSS framework but only a set of newer patterns or *none at all* that symbolize beauty and strength of modern web; it relies completely on the most powerful tool we humans have as developers: Thinking.
+
+In fact [you might not need a CSS framework!](https://hacks.mozilla.org/2016/04/you-might-not-need-a-css-framework/);
+
 
 ### Here are some of the advantages:
 
@@ -25,8 +31,7 @@ Stop making the browser recalculate style in several steps. Normalize it with th
 
 #### Grid with Flexbox?
 
-
-Toucaan can also be very angry at times. Excuse the temper.
+Why you incarcerate? Please stop putting innocent elements behind thos ugly bars.Toucaan can be very angry at this. Excuse the temper.
 
 
 So just keep all that marketing peptalk aside and think up design without the buzzword. 
