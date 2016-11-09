@@ -1,4 +1,4 @@
-@media (max-width: 870px) {
+@media (orientation: portrait) {
   body {
     .hide-on-mobiles { display: none; }
     .display-on-mobiles { display: inline-block; }
@@ -10,7 +10,7 @@
   }
 }
 
-@media (min-width: 871px) {
+@media (orientation: landscape) {
   body {
     .hide-on-mobiles { display: marker; }
     .display-on-mobiles { display: none; }
