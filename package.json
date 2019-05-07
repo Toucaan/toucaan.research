@@ -2,13 +2,13 @@
   "name": "toucaan",
   "version": "0.0.2",
   "description": "",
-  "main": "gulpfile.js",
+  "main": "index.js",
   "author": "Marvin Danig <marvin@bubbl.in> (https://bubblin.io/marvin)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/bookiza/toucaan/issues"
   },
-  "homepage": "https://toucaan.com",  
+  "homepage": "https://toucaan.com",
   "keywords": [
     "css",
     "framework",
@@ -25,17 +25,17 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bookiza/toucaan.git" 
+    "url": "git+https://github.com/bookiza/toucaan.git"
   },
   "scripts": {
-      "start": "browser-sync start --server --files '**/*.css, **/*.html, **/*.js, !node_modules/**/*' --directory --port 7777 --blacklist 'renders/*' "
-  },  
-    "devDependencies": {
-        "browser-sync": "2.26.3",
-        "jsdom-quokka-plugin": "1.0.13"
-    },
-    "dependencies": {},
-    "plugins": [
-        "jsdom-quokka-plugin"
-    ]
+    "start": "browser-sync start --server --files '**/*.css, **/*.html, **/*.js, !node_modules/**/*' --directory --port 7777 --blacklist 'dist/*' "
+  },
+  "devDependencies": {
+    "browser-sync": "2.26.5",
+    "jsdom-quokka-plugin": "1.0.13"
+  },
+  "dependencies": {},
+  "plugins": [
+    "jsdom-quokka-plugin"
+  ]
 }

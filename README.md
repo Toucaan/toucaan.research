@@ -1,8 +1,9 @@
 # Introducing Toucaan CSS…
 
-A gridless approach to style. 
+A _spandex_ style CSS framework for scalable web applications. It's full of fun facts.
 
 # Why?
+
 Well, *if Toucaan, then you can too!*
 
 Did you know that the most responsive page in the whole world wide web is *blank*. 

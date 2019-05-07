@@ -1,32 +1,8 @@
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-nav,
-section,
-summary {
-    display: block;
-}
-
-html {
-    font-size: 100%;
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
-    font-size: 1em;
-    line-height: 1.4;
-    text-rendering: optimizelegibility;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    -webkit-backface-visibility: hidden;
-}
+/* Content */
 
 body {
     margin: 0; 
-    font-family: 'EB Garamond', serif; /* See _font_faces.scss */
+    font-family: 'Lato', sans-serif; /* See _font_faces.scss */
     font-smooth: always;
     -webkit-font-smoothing: subpixel-antialiased;
     text-rendering: optimizelegibility;
@@ -35,6 +11,12 @@ body {
     -webkit-osx-font-smoothing: antialiased;
     color: rgba(0, 0, 0, 0.75);
 }
+
+
+main {
+  margin-top: 45px;
+}
+
 
 
 /* Anchors */
@@ -280,4 +262,6 @@ textarea {
 input:-webkit-autofill {
     -webkit-box-shadow: 0 0 1000px #FBFBFB inset;
 }
+
+
 
