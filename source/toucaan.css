@@ -1,4 +1,4 @@
-@charset "UTF-8";
+@charset "UTF-8"; 						/* Recommended reading: https://www.w3.org/International/questions/qa-css-charset.en */
 
 @import url('./modules/_typefaces.css');
 

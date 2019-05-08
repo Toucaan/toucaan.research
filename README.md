@@ -1,22 +1,26 @@
 # Introducing Toucaan CSS…
 
-A _spandex_ style CSS framework for scalable web applications. It's full of fun facts.
+A tropical CSS framework for scalable web applications. It's full of *fun facts*, interesting patterns and new world CSS.
 
-# Why?
+# Why Toucaan?
 
-Well, *if Toucaan, then you can too!*
+Say loudly, *if Toucaan, then you can too!*
 
-Did you know that the most responsive page in the whole world wide web is *blank*. 
+# Humble beginnings and a plan
 
-Yep - a blank page. Try it if you don't believe thy Toucaan.
+Did you know that the most responsive page in the whole world wide web is *[blank](https://toucaan.com/example1.html)*. Try.
 
-Good. So you're in a creative mood right now. And then there's an ideeeaaah in your head all energized and reeling to get out.
+Good, so we're in a creative mood already. We'll write this high energy framework with just one rule on the top of our mind:
 
-### So why the Toucaan?
+> Never tell the browser to do something that it is already doing. 
 
-You see Toucans are aggressive little birds that symbolize beauty and strength. We're going to use those qualities of the beautiful bird, meaning its angry little beautiful persona to weed out all the stupid CSS rules that your site will never need.
+Yep. Minimal code, zero hardcoding, fewer style rules and a colorful spandex style stretchy responsive outcome that works just about everywhere. This is the plan.
 
-Theoretically, Toucaan is *not* a CSS framework but only a set of newer patterns or *none at all* that symbolize beauty and strength of modern web; it relies completely on the most powerful tool we humans have as developers: Thinking.
+### Why Toucaan, you may ask again?
+
+You see Toucans are aggressive little birds that symbolize beauty and strength. We are going to base our framework on this highly social bird, spar with other CSS frameworks using a huge mean bill and weed out all the unwanted CSS that your new website would never need.
+
+Technically speaking, Toucaan is *not* a CSS framework to begin with but a journey on towards finding a new set of patterns or *none at all* that work on modern web. It relies completely on the most powerful tool we humans have as developers: Thinking.
 
 In fact [you might not need a CSS framework!](https://hacks.mozilla.org/2016/04/you-might-not-need-a-css-framework/);
 
