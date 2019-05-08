@@ -4,7 +4,7 @@ A tropical CSS framework for scalable web applications. It's full of *fun facts*
 
 # Why Toucaan?
 
-Say loudly, *if Toucaan, then you can too!*
+Say loud: **_If Toucaan, then you can too!_**
 
 # Humble beginnings and a plan
 
@@ -18,7 +18,7 @@ Yep. Minimal code, zero hardcoding, fewer style rules and a colorful spandex sty
 
 ### Why Toucaan, you may ask again?
 
-You see Toucans are aggressive little birds that symbolize beauty and strength. We are going to base our framework on this highly social bird, spar with other CSS frameworks using a huge mean bill and weed out all the unwanted CSS that your new website would never need.
+You see Toucans are aggressive little birds that symbolize beauty and strength. We are going to base our framework on this highly social and smart bird, implement a structure that covers the wilderness on web and ocassionally, though rarely, spar with other CSS frameworks using a huge mean bill. The intent is to weed out all the unwanted CSS that your new website will never need.
 
 Technically speaking, Toucaan is *not* a CSS framework to begin with but a journey on towards finding a new set of patterns or *none at all* that work on modern web. It relies completely on the most powerful tool we humans have as developers: Thinking.
 
