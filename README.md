@@ -6,7 +6,7 @@ A tropical CSS framework for scalable web applications. It's full of *fun facts*
 
 Say loud: **_If Toucaan, then you can too!_**
 
-## Humble beginnings and a plan
+## Humble beginning and a plan…
 
 Did you know that the most responsive page in the whole world wide web is *[blank](https://toucaan.com/example1.html)*. Try.
 
@@ -14,20 +14,22 @@ Good, so we're in a creative mood already. We'll write this high energy framewor
 
 > Never tell the browser to do something that it is already doing. 
 
-Yep. Minimal code, zero hardcoding, fewer style rules and a colorful spandex style stretchy responsive outcome that works just about everywhere. This is the plan.
+Yep. Minimal code, no hardcoded values, fewer style rules and a colorful 'spandex type' stretchy responsive outcome that works just about everywhere. This is the plan.
 
 ### Why Toucaan, you may ask again?
 
-You see Toucans are aggressive little birds that symbolize beauty and strength. We are going to base our framework on this highly social and smart bird, implement a structure that covers the wilderness on web and ocassionally, though rarely, spar with other CSS frameworks using a huge mean bill. The intent is to weed out all the unwanted CSS that your new web app will never need.
+You see Toucans are aggressive little birds that symbolize beauty and strength. We are going to base our framework on this highly social and resilient bird to implement a structure that covers all the wilderness on web. Ocassionally, though rarely, we might even spar with other CSS frameworks using a mean oversized bill. 
 
-Technically speaking, Toucaan is *not* a CSS framework to begin with but a journey on towards finding a new set of patterns or *none at all* that work on modern web. It relies completely on the most powerful tool we humans have as developers: Thinking.
+Qualitatively speaking, the intent of Toucaan is to weed out all the unwanted CSS that your web app doesn't need anymore.
 
-In fact [you might not need a CSS framework!](https://hacks.mozilla.org/2016/04/you-might-not-need-a-css-framework/);
+In many ways Toucaan is *not* a CSS framework to begin with. It is a journey towards finding a newer pattern (or *none at all*) for styling our application in a way that scales. We are relying heavily on the most important lessons we discovered during design and development of other frameworks.
+
+Fun fact #1: [You might not need a CSS framework!](https://hacks.mozilla.org/2016/04/you-might-not-need-a-css-framework/);
 
 
 #### It's not about Grid vs. Flexbox
 
-Toucaan is sensitive about this, but excuse his temper. It's not about versus. It's about knowing when to use which.
+Toucaan is sensitive about this, but excuse his temper. It's not about this versus that. It's about knowing when to use what.
 
 
 So let's just keep all of that pep-talk aside and think up web design without falling for buzzwords. 

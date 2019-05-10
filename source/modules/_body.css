@@ -47,7 +47,6 @@ h1 {
 }
 
 h2 {
-    font-size: 200%;
     font-weight: normal;
 }
 
@@ -206,62 +205,4 @@ textarea {
 
 
 /*-- Coloring pseudos like Text Selections/Placeholder/Inactive State. Sooth! :D --*/
-
-* {
-    box-sizing: border-box;
-    &:after {
-        box-sizing: border-box;
-        /* content:''; */
-    }
-    &:before {
-        box-sizing: border-box;
-        /* content: ''; */
-    }
-}
-
-::-webkit-input-placeholder {
-    /* WebKit browsers */
-    color: #444;
-    font-size: 16px;
-}
-
-:-moz-placeholder {
-    /* Mozilla Firefox 4 to 18 */
-    color: #444;
-    font-size: 16px;
-}
-
-::-moz-placeholder {
-    /* Mozilla Firefox 19+ */
-    color: #444;
-    font-size: 16px;
-}
-
-:-ms-input-placeholder {
-    /* Internet Explorer 10+ */
-    color: #444;
-    font-size: 16px;
-}
-
-::-moz-selection {
-    background: #a7d7ff;
-    color: #000;
-    text-shadow: none;
-}
-
-::selection {
-    background: #a7d7ff;
-    color: #000;
-    text-shadow: none;
-    &:window-inactive {
-        background: #eaeaea;
-        color: #000;
-    }
-}
-
-input:-webkit-autofill {
-    -webkit-box-shadow: 0 0 1000px #FBFBFB inset;
-}
-
-
 
