@@ -1,6 +1,6 @@
 # Toucaan CSS
 
-A tropical CSS framework for scalable web applications. It's full of *fun facts*, interesting patterns and new world CSS.
+A tropical CSS framework for scalable web applications. It is full of *fun facts*, interesting patterns and great documentation for the styling apps of the new world.
 
 ## Why Toucaan?
 
