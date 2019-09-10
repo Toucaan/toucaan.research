@@ -27,7 +27,7 @@ In many ways Toucaan is *not* a CSS framework to begin with. It is a journey tow
 Fun fact #1: [You might not need a CSS framework!](https://hacks.mozilla.org/2016/04/you-might-not-need-a-css-framework/);
 
 
-Let's get on with the [introduction](posts/introduction).
+Let's get on with the [introduction](posts/introduction.md).
 
 
 #### It's not about Grid vs. Flexbox
