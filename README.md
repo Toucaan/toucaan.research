@@ -30,10 +30,10 @@ Fun fact #1: [You might not need a CSS framework!](https://hacks.mozilla.org/201
 Let's get on with the [introduction](posts/introduction.md).
 
 
-#### It's not about Grid vs. Flexbox
-
-Toucaan is sensitive about this, but excuse his temper. It's not about this versus that. It's about knowing when to use what.
+#### It's not about Grid vs. Flexbox vs. Floats.
 
 
-So let's just keep all of that pep-talk aside and think up web design without falling for buzzwords.
 
+Toucaan is sensitive about this topic. It is not about this versus that. Use everything in your power to get the job done. More importantly it's about knowing when to use what.
+
+Let's begin.
