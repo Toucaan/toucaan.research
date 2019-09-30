@@ -1,12 +1,26 @@
-# Toucaan CSS
+<h1 align="center">Toucaan—A Tropical CSS Framework</h1>
 
-A tropical CSS framework for scalable web applications. It is full of *fun facts*, interesting patterns and great documentation for the styling apps of the new world.
+<div align="center">
+  <a href="http://toucaan.com">
+    <img src="./toucaan.svg" alt="Tech Interview Handbook" width="400">
+  </a>
+  <br>
+  <h3>
+    <a href="https://bubblin.io/cover/toucaan-framework-by-marvin-danig">Read the Superbook on iPad.</a>
+  </h3>
+</div>
+
+# 
+
+A tropical CSS framework for scalable web applications. 
 
 ## Why Toucaan?
 
+Toucaan is full of *fun facts*, interesting patterns and great documentation to style apps of the new world.
+
 Repeat after me: **_If Toucaan, then you can too!_**
 
-## Humble beginning and a plan…
+### A humble beginning…
 
 Did you know that the most responsive page in the whole world wide web is *[blank](examples/example1.html)*. Try.
 
