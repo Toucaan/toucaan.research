@@ -229,11 +229,11 @@ Well, of course a blank page is going to be responsive you'd say but this is a h
 </div>
 <br>
 
-Now the desktop in portrait orientation is going to reveal a browser window that is longer in height and shorter in width—kind of like a mobile phone but on a much bigger piece of glass. In reality a very small group of people use desktops in portrait mode (mostly developers) but the usage is possible nevertheless. Use of portrait mode grows on tablets—with about 60% iPad users prefering landscape over portrait where as the story flips completely on a smartphone where about \~96% people prefer the portrait mode over landscape depending on content. With Apple Watch, the tiniest of screens on web, I suspect that nearly 100% of usage would be in portrait mode given that the device is physical tied to the wrist that way. 
+Now the desktop in portrait orientation is going to reveal a browser window that is longer in height and shorter in width—kind of like a mobile phone but on a much bigger piece of glass. In reality a very small group of people use desktops in portrait mode (mostly developers) but the usage is possible nevertheless. Use of portrait mode grows on tablets—with about 60% iPad users preferring landscape over portrait where as the story flips completely on a smartphone where about \~96% people prefer the portrait mode over landscape depending on content. With Apple Watch, the tiniest of screens on web, I suspect that nearly 100% of usage would be in portrait mode given that the device is physical tied to the wrist that way. 
 
 Here are some [graphs & stats](https://ux.stackexchange.com/questions/64749/are-ipads-used-horizontally-or-vertically) if you're interested.
 
-On Tesla Model S the browser open in portrait orientation just like a desktop in portrait mode while on Model 3 it does so in landscape mode. Well this discussion kind of uncovers that all of the web is viewed in only two modes of orientation—portrait or landscape—and square is the geometric point of inflexion where the media query needs to switch from portrait to landscape and vice-vera. Interesting.
+On Tesla Model S the browser open in portrait orientation just like a desktop in portrait mode while on Model 3 it does so in landscape mode. Well this discussion kind of uncovers that all of the web is viewed in only two modes of orientation—portrait or landscape—and square is the geometric point of inflexion where the media query needs to switch from portrait to landscape and vice-versa. Interesting.
 
 This also means that there are only **two states of design** on web no matter which device or orientation one may choose to consume web on. It is a hard cold fact that electronic screens are rectangular in shape—well, [almost](https://bubblin.io/blog/notch)—and therefore, the point of inflexion for all style rules to switch mode should be where the viewport itself becomes a square and starts flexing in the other direction. Since there are hardly any devices in shape of a perfect square, mathematically speaking we can take it for granted that a webpage will either render in `portrait` mode or `landscape`.
 
@@ -243,8 +243,8 @@ This also means that there are only **two states of design** on web no matter wh
 And oh, oh, ICYMI, there is a lot more `math` coming into CSS in the near future so we'll have trigonometry at our disposal eventually!
 
 <div class="two-third center">
-	<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">The CSS Working Group agreed this morning on adding many math functions. We now have:<br><br>• calc()<br>• min()<br>• max()<br>• clamp()<br>• sin()<br>• cos()<br>• tan()<br>• acos()<br>• asin()<br>• atan()<br>• atan2()<br>• hypot()<br>• sqrt()<br>• pow()<br><br>The face of CSS is rapidly changing.</p>&mdash; Benjamin De Cock (@bdc) <a href="https://twitter.com/bdc/status/1100921258839953408?ref_src=twsrc%5Etfw">February 28, 2019</a></blockquote>
-	<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">The CSS Working Group agreed this morning on adding many math functions. We now have:<br><br>• calc()<br>• min()<br>• max()<br>• clamp()<br>• sin()<br>• cos()<br>• tan()<br>• acos()<br>• asin()<br>• atan()<br>• atan2()<br>• hypot()<br>• sqrt()<br>• pow()<br><br>The face of CSS is rapidly changing.</p>&mdash; Benjamin De Cock (@bdc) <a href="https://twitter.com/bdc/status/1100921258839953408?ref_src=twsrc%5Etfw">February 28, 2019</a></blockquote>
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>
 
 ---
@@ -278,7 +278,6 @@ I have setup a tiny repository for [Toucaan](https://github.com/bookiza/toucaan)
 
 Written by: Marvin Danig, CEO & Cofounder of Bubblin Superbooks. Follow me on [Twitter](https://twitter.com/marvindanig) or [Github](https://github.com/marvindanig) perhaps?
 
-Reviewed by: Sonica Arora, CTO of Bubblin Superbooks. 
+Super thankful to [Sonica Arora](https://bubblin.io/sonica), Abigail Rennmeyer, Varun Singh and Nilesh Trivedi for helping me review this post for accuracies.
 
-
-**P.S.:** It's likely that some of you viewed this site on your desktop. If you did that I recommend you visiting us on your iPad!
+**P.S.:** It is likely that some of you viewed this article on your desktop or mobile. If you did that, I recommend you bookmarking us on the iPad! :-)
