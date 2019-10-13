@@ -6,7 +6,7 @@
   </a>
   <br>
   <h3>
-    <a href="https://bubblin.io/cover/toucaan-framework-by-marvin-danig">Read the Superbook on iPad.</a>
+    <a href="https://bubblin.io/cover/the-toucaan-framework-by-marvin-danig">Read the Superbook on iPad.</a>
   </h3>
 </div>
 
