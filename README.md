@@ -36,5 +36,4 @@ Ocassionally—though rarely—we may even spar with other CSS frameworks using 
 
 Say hello to Toucaan—a tropical CSS framework for the web.
 
-Let's get on with the [introduction](posts/introduction.md).
-
+Let's get on with the [introduction](posts/2019-09-30-toucaan-introduction.md).
