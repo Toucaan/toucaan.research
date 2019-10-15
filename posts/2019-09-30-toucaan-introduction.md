@@ -13,20 +13,20 @@ original:
 
 ---
 
-[Status: Draft] 
-
-[Last update: October, 5<sup>th</sup> 2019.]
+[Last update: October, 12<sup>th</sup> 2019.]
 
 
-_❥ **TLDR**; This is the first of the many chapters on a new CSS framework called [Toucaan](http://toucaan.com). In this introductory post we talk about the new landscape of the web, consider miniature viewports like that of the Apple Watch 5 and the new Chromium based surface (V9 web browser) on a Tesla Model 3 and Model S as part of the web. Form factors available today are so diverse and different from barely four years ago that design strategies of the past such as going "mobile first" are no longer viable. The slate of glass is resizable practically on a continuum, just like the web browser itself._
+_❥ **TLDR**; This is the first of the many chapters on a new CSS framework called [Toucaan](http://toucaan.com). In this introductory post we talk about the new landscape of the web, consider miniature viewports like that of the Apple Watch 5 and the new Chromium based surface (V9 web browser) on a Tesla Model 3 and Model S as part of the web. Form factors available today are so diverse and different from barely four years ago that design strategies of the past such as "mobile first" or barely responsive are no longer viable._
 
-_Modern web browsers too have evolved and gotten so much better that we no longer need a heavy-handed approach to force consistency across vendors. With Toucaan we will try to move away from traditional reset or reboot css. So, welcome to Toucaan—a tropical new CSS framework for the web, with fewer defaults, newer patterns and a much simpler cascade._
+_The slate of glass is resizable practically on a continuum, just like the web browser itself._
+
+_Modern web browsers too have evolved and gotten so much better that we no longer need a heavy-handed approach to force consistency across vendors. With Toucaan we will try to move away from traditional reset or reboot css and implement a simpler and lighter strategy instead. So, welcome to Toucaan—a tropical new CSS framework for the web, with fewer defaults, newer patterns and a much simpler cascade._
 
 # Introduction
 
 2020 is almost here.
 
-It is unlikely that you or I are going to blast off to Mars or the Moon on a <a rel="nofollow noreferrer noopener" href="https://www.spacex.com/starship">Spacex Starship</a> anytime soon so we better turn our gaze towards another frontier of technology: CSS. 
+It is unlikely that you or I are going to blast off to Mars or the Moon on a <a rel="nofollow noreferrer noopener" href="https://www.spacex.com/starship">Spacex Starship</a> anytime soon so we better turn our gaze towards another frontier of technology: CSS. 🙃
 
 Let's take a look at how we will be writing web applications in 2020 and beyond, here on Earth. 
 
@@ -86,7 +86,7 @@ Here are some of the devices that sport a modern web browser:
 There is the Apple Watch 5 with a web browser, iPhones in numerous sizes instead of just one model that Apple used to come up with earlier, multiple iPads, iPad Pros and Android tablets plus desktops, laptops and TV sets with a stock browser that work surprisingly well. Given that Samsung came out with a foldable phone recently and Microsoft is probably coming out with a foldable Surface tablet very soon, it is safe to assume that physical form is no longer a reliable viewport classifier that is so commonly used by every other framework.  
 
 
-It is rather safe to assume that screen-sizes are available on a **linear continuum** of form-factors and that a large phone could easily be considered a phablet or a tablet could easily become more than a desktop and so on depending on hardware and options. Whereas there is a large variation in the form factors available on the web, there is also substantial variation in the way each surface exposes the controls and input methods to the user—ala, accessibility over content. Do not forget that there are cars too on the web now—in that they sport a neat web browser for those who need to be online while on road. And there are low-powered devices on the budget end of the market, like the Nokia 2.2 on Android (A53 core) or similar that are very popular in their segments. 
+It is rather safe to assume that screen-sizes are available on a **linear continuum** of form-factors and that a large phone could easily be considered a phablet or a tablet could easily become more than a desktop and so on depending on hardware and options. Whereas there is a large variation in the form factors available on the web, there is also substantial variation in the way each surface exposes the controls and input methods to the user—ala, accessibility over content. Let's not forget that there are cars too on the web now—in that they sport a neat web browser for those who need to be online while being on road. And then there are low-powered devices on the budget end of the market, like the Nokia 2.2 on Android (A53 core) or similar that are very popular in their segment as well. 
 
 <br>
 <div class="center">
@@ -268,16 +268,17 @@ Now that we have covered some ground for Toucaan to work on let's start wiring u
 }
 ```
 
-The twin code blocks above may not seem like much at this stage but this dual state switch is exactly what we are going to use to go about scaling our layout across all the web devices on the planet. Notice that we are using a standard asynchronous @import call to request only so much CSS that a given "viewport state" will require. This state does not change unless `resize` event is fired or the user chooses to swing the device over.
+The twin code blocks above may not seem like much at this stage but this dual state switch is exactly what we are going to use to go about scaling our layout across all the web devices on the planet. Notice that we are using a standard asynchronous @import call to request only so much CSS that a given "viewport state" will require. On the desktop, this state of a given render will not change unless the browser window is resized or if the user decides to swivel the monitor over.
 
-So hang in there for a little bit and stand by for the next chapter on Toucaan in which we will take up baselining CSS across vendors and responsive typesetting next.
+Organizing your CSS this way ensures that both "states" of every element that will render on the DOM have been considered and then we can be sure that the webpage will scale desirably across the entire spectrum of devices that are on the web. It also helps avoiding a gigantic `reset.css`/`reboot.css` which can be a pain on low-powered devices. So hang in there for a little bit and stand by for the next chapter on Toucaan in which we will take up baselining CSS across vendors and introduce scalable responsive typography without use of javascript. 
 
-I have setup a tiny repository for [Toucaan](https://github.com/bookiza/toucaan) and checked-in all that was under experimentation until today into. Feel free to star, jump-in, offer sage advice or contribute to Toucan!
+I have setup a tiny repository for [Toucaan](https://github.com/bookiza/toucaan) and checked-in all that is under experimentation right now. Feel free to star, jump-in, offer sage advice or contribute to Toucan!
 
 ---
 
 Written by: Marvin Danig, CEO & Cofounder of Bubblin Superbooks. Follow me on [Twitter](https://twitter.com/marvindanig) or [Github](https://github.com/marvindanig) perhaps?
 
-Super thankful to [Sonica Arora](https://bubblin.io/sonica), Abigail Rennmeyer, Varun Singh and Nilesh Trivedi for helping me review this post for accuracies.
+Super thankful to [Sonica Arora](https://bubblin.io/sonica), Abigail Rennmeyer, Varun Singh and <a rel="nofollow noopener" href="https://nilesh.trivedi.pw/">Nilesh Trivedi</a> for helping me review this post for accuracies.
 
-**P.S.:** It is likely that some of you viewed this article on your desktop or mobile. If you did that, I recommend you bookmarking us on the iPad! :-)
+**P.S.:** It is likely that some of you viewed this article on your desktop or mobile. If you did that, I recommend you bookmarking us for the iPad next time! :-)
+
