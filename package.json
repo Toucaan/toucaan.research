@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "author": "Marvin Danig <marvin@bubbl.in> (https://bubblin.io/marvin)",
-  "license": "PPL",
+  "license": "Parity-6.0.0",
   "bugs": {
     "url": "https://github.com/bookiza/toucaan/issues"
   },
