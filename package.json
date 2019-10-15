@@ -1,10 +1,10 @@
 {
   "name": "toucaan",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "",
   "main": "index.js",
   "author": "Marvin Danig <marvin@bubbl.in> (https://bubblin.io/marvin)",
-  "license": "MIT",
+  "license": "PPL",
   "bugs": {
     "url": "https://github.com/bookiza/toucaan/issues"
   },
