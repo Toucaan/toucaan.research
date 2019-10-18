@@ -18,11 +18,22 @@ Toucaan is full of *fun facts*, interesting patterns and great documentation to 
 
 Repeat after me: **_If Toucaan, then you can too!_**
 
+
+## TODOs:
+
+1. Set up a documentation website via netlify (repo [here](https://github.com/bookiza/toucaan.gatsby.site). Immediate help required on this!) 
+2. Typesetting/layout still improper on the [Superbook](https://github.com/marvindanig/toucaan-story-of-style). 
+3. A place where people can opiniate/scream etc.
+4. Test suite?
+5. Sem-Ver? 
+
+
+
 ### A humble beginning… and a plan.
 
-Did you know that the most responsive page in the whole world wide web is *[blank](examples/example1.html)*. Yes, we'll start from here. And never tell the browser to do something that it is _already_ doing.
+Did you know that the most responsive page in the whole world wide web is *[blank](examples/example1.html)*. Yes, we'll start from here. And never tell the browser to do something that it is already doing!
 
-Yep. Minimal code, fewer (if any) hardcoded values and a tripically colored _Spandex style_ rubbery typography that works intrinsically just about anywhere. This is the plan.
+Yep. Minimal code, fewer (if any) hardcoded values and an intrinsic _spandex style_ rubbery typography that scales naturally on every device. This is the plan.
 
 Let's see how far we can get with it.
 
