@@ -35,7 +35,7 @@ Through this post we will revisit the basics of a web page, i.e. HTML & CSS, and
 
 <br>
 <div class="center">
-  <a href="http://toucaan.com"><img src="https://raw.githubusercontent.com/bookiza/toucaan/master/toucaan.svg?sanitize=true" alt="Toucaan-A Tropical CSS Framework" width="400" style="max-width:100%;"></a>
+  <a href="https://toucaan.com"><img src="https://raw.githubusercontent.com/bookiza/toucaan/master/toucaan.svg?sanitize=true" alt="Toucaan-A Tropical CSS Framework" width="400" style="max-width:100%;"></a>
   <h2>The Tropical CSS Framework.</h2>
 </div>
 <br>
