@@ -1,5 +1,7 @@
 <h1 align="center">Toucaan—A Tropical CSS Framework</h1>
 
+[![Build Status](https://github.com/bookiza/toucaan/workflows/CI/badge.svg)](https://github.com/bookiza/toucaan/actions?workflow=CI)
+
 <div align="center">
   <a href="http://toucaan.com">
     <img src="./toucaan.svg" alt="Toucaan-A Tropical CSS Framework" width="400">
