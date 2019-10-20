@@ -1,10 +1,10 @@
 {
   "name": "toucaan.css",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Toucaan—A tropical CSS Framework for The Web.",
   "homepage": "http://toucaan.com",
   "repository": "git+https://github.com/bookiza/toucaan.git",
-  "license": "MIT",
+  "license": "Parity-6.0.0",
   "author": "Marvin Danig <marvin@marvindanig.com>",
   "main": "dist/toucaan.css",
   "keywords": [
