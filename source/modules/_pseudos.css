@@ -1,12 +1,13 @@
-
 * {
     box-sizing: border-box;
-    &:after {
-        box-sizing: border-box;
-    }
-    &:before {
-        box-sizing: border-box;
-    }
+}
+
+*:after {
+    box-sizing: border-box;
+}
+
+*:before {
+    box-sizing: border-box;
 }
 
 ::-webkit-input-placeholder {
@@ -43,10 +44,11 @@
     background: #a7d7ff;
     color: #000;
     text-shadow: none;
-    &:window-inactive {
-        background: #eaeaea;
-        color: #000;
-    }
+}
+
+::selection:window-inactive {
+    background: #eaeaea;
+    color: #000;
 }
 
 input:-webkit-autofill {
