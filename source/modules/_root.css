@@ -1,6 +1,6 @@
 @media only screen and (orientation: portrait) {
 	:root {
-	  --fontSize: calc(4 * (100vw/100));
+	  --fs: calc(4 * (100vw/100));
 	}
 
 }
@@ -8,7 +8,7 @@
 
 @media only screen and (orientation: landscape) {
 	:root {
-	  --fontSize: calc(4 * (150vh *(1115/1443))/100);
+	  --fs: calc(4 * (150vh *(1115/1443))/100);
 	}
 }
 

@@ -29,8 +29,6 @@ Repeat after me: **_If Toucaan, then you can too!_**
 4. Test suite?
 5. Sem-Ver? 
 
-
-
 ### A humble beginning… and a plan.
 
 Did you know that the most responsive page in the whole world wide web is *[blank](examples/example1.html)*. Yes, we'll start from here. And never tell the browser to do something that it is already doing!
@@ -38,6 +36,7 @@ Did you know that the most responsive page in the whole world wide web is *[blan
 Yep. Minimal code, fewer (if any) hardcoded values and an intrinsic _spandex style_ rubbery typography that scales naturally on every device. This is the plan.
 
 Let's see how far we can get with it.
+
 
 ### Why Toucaan, you may ask again?
 

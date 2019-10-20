@@ -1,0 +1,44 @@
+/* Consistent body element */
+
+body {
+    font-size: calc(4 * var(--fs));
+    font-family: 'proxima-nova', Arial, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-synthesis: none;
+    font-stretch: ultra-condensed;
+    font-variant: no-common-ligatures proportional-nums slashed-zero;
+    font-kerning: normal;
+    text-rendering: geometricPrecision; /* Why not: text-rendering: optimizeSpeed;?… in light of PWA. */
+    font-display: swap;
+    font-display: optional;
+
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-osx-font-smoothing: antialiased;
+    font-smooth: always; /* TBD: Remove this non-standard "fix" for Safari? */
+
+
+    line-height: calc(1.5 * 4 * var(--fs));
+
+
+    /* Consitent coloring: */
+    color: rgba(0, 0, 0, 0.95);
+    background-color: white;
+
+
+    /* Behavior */
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+
+    margin: 0;
+    padding: 0;
+    border: none;
+
+    touch-action: none;
+    touch-action: manipulation;
+}
