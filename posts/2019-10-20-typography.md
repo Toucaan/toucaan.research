@@ -4,7 +4,7 @@ title:  "Handling Typography with Toucaan 📏"
 date:   2019-10-20 1:30:00 -0400
 categories: design, css, responsive, style
 author: Marvin Danig
-published: true
+published: false
 
 original:
   link: https://bubblin.io/blog/typography

@@ -1,12 +1,11 @@
+
 * {
     box-sizing: border-box;
     &:after {
         box-sizing: border-box;
-        /* content:''; */
     }
     &:before {
         box-sizing: border-box;
-        /* content: ''; */
     }
 }
 
