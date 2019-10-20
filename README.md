@@ -4,7 +4,7 @@
 
 <div align="center">
   <a href="http://toucaan.com">
-    <img src="./toucaan.svg" alt="Toucaan-A Tropical CSS Framework" width="400">
+    <img src="./assets/toucaan.png" alt="Toucaan-A Tropical CSS Framework" width="400">
   </a>
   <br>
   <h3>
