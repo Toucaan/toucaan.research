@@ -1,6 +1,8 @@
 # The Parity Public License 6.0.0
 
-Contributor: [Marvin Danig](https://bubblin.io/marvin) & [Sonica Arora](https://bubblin.io/sonica)
+Maintainers: [Marvin Danig](https://bubblin.io/marvin) and [Sonica Arora](https://bubblin.io/sonica).
+
+Contributors: [Marvin Danig](https://bubblin.io/marvin), [Sonica Arora](https://bubblin.io/sonica) and [others](https://github.com/bookiza/toucaan/blob/master/CONTRIBUTORS.md).
 
 Source Code: [https://github.com/bookiza/toucaan](https://github.com/bookiza/toucaan)
 
