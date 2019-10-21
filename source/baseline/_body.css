@@ -2,7 +2,7 @@
 
 body {
     font-size: calc(4 * var(--fs));
-    font-family: 'proxima-nova', Arial, sans-serif;
+    font-family: 'proxima-nova', Arial, sans-serif; /* temporary experiment */
     font-weight: 300;
     font-style: normal;
     font-synthesis: none;
@@ -35,10 +35,10 @@ body {
     -webkit-overflow-scrolling: touch;
     scroll-behavior: smooth;
 
+	/* Visual integrity */
     margin: 0;
     padding: 0;
     border: none;
 
     touch-action: none;
-    touch-action: manipulation;
 }

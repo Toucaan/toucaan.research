@@ -23,8 +23,8 @@ Repeat after me: **_If Toucaan, then you can too!_**
 
 ## TODOs:
 
-1. Set up a documentation website via netlify (repo [here](https://github.com/bookiza/toucaan.gatsby.site). Immediate help required on this!) 
-2. Typesetting/layout still improper on the [Superbook](https://github.com/marvindanig/toucaan-story-of-style). 
+1. Set up a documentation website via netlify (repo [here](https://github.com/bookiza/toucaan.gatsby.site). Immediate help required!) 
+2. ~~Typesetting/layout still improper on the [Superbook](https://github.com/marvindanig/toucaan-story-of-style).~~ 
 3. A place where people can opiniate/scream etc.
 4. Test suite?
 5. Sem-Ver? 
