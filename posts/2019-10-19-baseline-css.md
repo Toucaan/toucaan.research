@@ -75,7 +75,7 @@ Since there are only three `html` elements that are a minimum requirement for a 
     2. <body> tag, and the… 
     3. <head> tag. 
 
-Since the \<head\> element is always set to `display:none;` there are only two html tags <body> and <html> to dabble with. Here is what the new structure for a modern `reset.css` would look like with Toucaan:
+Since the \<head\> element is always set to `display:none;` there are only two html tags <body> and <html> for us to dabble with. Here is what the new structure for our `reset.css` would look like for Toucaan:
 
 
 ```html
@@ -108,24 +108,24 @@ Since the \<head\> element is always set to `display:none;` there are only two h
 
 ```
 
-What this also means is that everything else that goes into building your application, the html elements and the style properties that are specific to your app, will determine what other helpers or resettings are required to support the entire spectrum of browsers on the web. 
+What this also means is that everything else that goes into building your application, the other html elements and the style properties that are specific to your app, will determine what other helpers or resets will be required to support the entire spectrum of browsers on the web. I'm guessing it wouldn't be a lot, but let's see where this will go.
 
-Notice that I have inlined our portrait ⇋ landscape switch along with the html, body elements inside a `<style> … </style>` tag. We do this to ensure that [critical](https://css-tricks.com/annotating-critical-css/) [css](https://css-tricks.com/authoring-critical-fold-css/) is available for the first contentful paint (FCP) asap and to declare all global css variables from one place. This is good both for organization and long term maintainability.
+Notice that I have inlined our portrait ⇋ landscape switch along with the html, body elements inside the `<style> … </style>` tag. We do this to ensure that [critical](https://css-tricks.com/annotating-critical-css/) [css](https://css-tricks.com/authoring-critical-fold-css/) is available for the first contentful paint (FCP) asap and also to declare all global css variables at one place. This is good for organization andsss maintainability.
 
-> Some of you pointed me towards Steve Souder's article [don't use @import](http://www.stevesouders.com/blog/2009/04/09/dont-use-import/) from 2009 but I can confirm that their position is no longer a valid pattern. Besides, our CSS import switch will request only one file for a given viewport state, just like a \<link\> url does with an externally linked CSS file. Couple it with the fact that almost 50% of the web is on http/2 and that there is a possibility to hardcache all of the CSS locally using a serviceworker, I think we are good to go with CSS @imports in 2020 and beyond.  
+> Some of you pointed me towards Steve Souder's article [don't use @import](http://www.stevesouders.com/blog/2009/04/09/dont-use-import/) from 2009 but I can confirm that this position is no longer valid. The fact that almost 50% of the web is on http/2 and that there is a possibility of hardcaching all of the CSS locally using a serviceworker, I think we are good to go with imports in 2020 and beyond. Besides, our little CSS import switch will request only one external CSS file for a given viewport state, just like a \<link\> url does.
 >
-> Feel free to dissect the position I have taken on using CSS @imports on Toucaan. But for now, I am happy to report that **not using CSS imports** to separate critical CSS from non-critical parts is somewhat an anti-pattern and should be done away with. Toko, toko! 
+> Feel free to dissect the position I have taken on using CSS @imports on Toucaan. But for now, I am happy to report that **not using CSS imports** to separate critical CSS from non-critical parts is likely an anti-pattern that we should do away with. Toko, toko! 
 
 Now that we have a basic structure, let us add some meat to it. 
 
-## The final **reset.css**
+## The final result:
 
-This is what our final modern day `reset.css` would look like: 
+This is what our final `reset.css` would look like: 
 
 
 ```html
 
-[Incomplete]
+[Tentative]
 
 <style>
     @charset "UTF-8";   /* Recommended reading: https://www.w3.org/International/questions/qa-css-charset.en */
@@ -162,7 +162,7 @@ This is what our final modern day `reset.css` would look like:
         box-sizing: border-box;
         /* I have a feeling that using margin & padding on elements instead */
         /* of the flexbox is somewhat an anti-pattern now but I am not sure. */
-        /* We will come back to this after sometime. */
+        /* We will come back to this topic in sometime. */
         margin: 0;  
         padding: 0; 
     }
@@ -219,12 +219,6 @@ This is what our final modern day `reset.css` would look like:
 
 
 
-
-
-
-
-
-
     /* Accessibility specific media queries go below. */
 
     /* 1. Dark mode (or light) depending on requirement. */
@@ -249,24 +243,15 @@ This is what our final modern day `reset.css` would look like:
 
 ```
 
-An intrinisically scalable layout and responsive typography separated according to the nature of rectangle we are painting on:
-
-## Breaking it down
-
-1. The first line on the Toucaan's reset is the charset declaration just to guarantee correct encoding for the CSS parser to use. See the w3c recommendation [here](https://www.w3.org/International/questions/qa-css-charset.en) that says:
-
-> You should always use UTF-8 as the character encoding of your style sheets and your HTML pages, and declare that encoding in your HTML. If you do that, there is no need to declare the encoding of your style sheet.
-
-2. Step 2
+An intrinisically scalable layout with grids, responsive typography and behaviors separated along `portrait.css` & `landscape.css` according to the nature of rectangle we will be painting on. Quite a few rules on the reset above are experimental in nature. We'll dissect them going forward, step by step.
 
 
-I just flat out reset all margin & padding on elements and pseudo-elements and force them to use **box-sizing: border-box**.
+---
 
-### A note about some vocabulary that we use today:
+### A note about some of the vocabulary that we use today:
 
-For decades we have used a desktop with a monitor displaying content along a vertical plane. However, with the advent of smartphones and tablets, screens are no longer restricted to a vertical surface and many times look up at the screen while lying down on bed or look down on a screen lying on a table to draw with pencil stylus. 
+We generally refer to the dimensions of a client as to height and width, but really what we have above the fold is a simple rectangle with a length and breadth. Using height and width to label dimensions has been accurate during the desktop era where the monitor was usually mounted to display content along the vertical plane, but this terminology appears to be invalid with mobile and tablet. 
 
-Meaning, the monitor/screen is not always facing on a vertical with us sitting in front of it.
 
 <br>
 <div class="center">
@@ -276,10 +261,9 @@ Meaning, the monitor/screen is not always facing on a vertical with us sitting i
 </div>
 <br>
 
-So for a rectangle that any viewport is, it is about wrong to describe the dimensions of a screen with height and width that is lying flat on a table or bed, or in some orientation or plane that is not vertical. I'd prefer to use the mathematical labels _length_ and _breadth_ for the rectangle instead of height and width for literature on Toucaan instead. 
+In many situations we consume content while lying down on a sofa or looking down on a tablet lying flat on a table. Meaning, the screens are no longer restricted to displaying content along the vertical plane, and there height isn't a correct reference.
 
-Added bonus—we exactly know that the shorter side of the viewport is the breadth.
-
+\*For the literature on Toucaan I'll sometimes use the mathematical labels _length_ and _breadth_ to refer to the rectangle instead of height and width. Here's an added bonus of doing so—we exactly know that the shorter side is the breadth.
 
 <br>
 
@@ -291,7 +275,19 @@ Added bonus—we exactly know that the shorter side of the viewport is the bread
 
 <br>
 
+---
 
+## Breaking it down
+
+1. The first line on the Toucaan's reset is the charset declaration. See the w3c [recommendation](https://www.w3.org/International/questions/qa-css-charset.en) on this one, which I quote:
+
+> You should always use UTF-8 as the character encoding of your style sheets and your HTML pages, and declare that encoding in your HTML. If you do that, there is no need to declare the encoding of your style sheet.
+
+This is done simply to guarantee encoding for the CSS parser to use just in case the end user forgets to declare the encoding on their html. 
+
+2. The next block of code deals 
+
+I just flat out reset all margin & padding on elements and pseudo-elements and force them to use **box-sizing: border-box**.
 
 ### Charset, typography & typesetting
 
@@ -313,7 +309,7 @@ Or better still, contribute to Toucaan if you can!
 
 Written by: Marvin Danig, CEO & Cofounder of Bubblin Superbooks. Follow me on [Twitter](https://twitter.com/marvindanig) or [Github](https://github.com/marvindanig) perhaps?
 
-Super thankful to [Sonica Arora](https://bubblin.io/sonica), Abigail Rennmeyer, Varun Singh and <a rel="nofollow noopener" href="https://nilesh.trivedi.pw/">Nilesh Trivedi</a> for helping me review this post for accuracies.
+
 
 **P.S.:** It is likely that some of you viewed this article on your desktop or mobile. If you did that, I recommend you bookmarking us for the iPad next time! :-)
 
