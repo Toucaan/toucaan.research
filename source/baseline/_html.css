@@ -1,15 +1,12 @@
 /* Consistent html element */
 
 html {
-  background-color: white;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  -webkit-text-size-adjust: 100%;
-     -moz-text-size-adjust: 100%;
-      -ms-text-size-adjust: 100%;
-          text-size-adjust: 100%;
+	background-color: white;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	text-size-adjust: 100%;
 }
 
 /* Write your application styles below */
