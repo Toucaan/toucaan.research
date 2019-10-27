@@ -1,10 +1,8 @@
-body {
-	background-color: hotpink;
-}
-
 .box {
 	width: 50vh;
 	height: 50vh;
+	border: 2vh solid black;	
+	
 }
 
 

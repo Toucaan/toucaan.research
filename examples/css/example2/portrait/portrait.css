@@ -1,10 +1,9 @@
-body{
-	background-color: lightsalmon;
-}
 
 .box {
 	width: 50vw;
 	height: 50vw;
+	border: 2vw solid black;	
+	
 }
 
 
