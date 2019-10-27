@@ -1,0 +1,25 @@
+body {
+	background-color: hotpink;
+}
+
+.box {
+	width: 50vh;
+	height: 50vh;
+}
+
+
+p:nth-child(1) {
+	font-size: calc(50vh/4);
+	line-height: calc(1.25 * 50vh/4);	
+}
+
+p:nth-child(2) {
+	font-size: calc(50vh/4);
+	line-height: calc(1.25 * 50vh/4);
+
+}
+
+p:nth-child(3) {
+	font-size: calc(50vh/6);
+	line-height: calc(1.25 * 50vh/4);	
+}

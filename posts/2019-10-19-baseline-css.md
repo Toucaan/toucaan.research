@@ -110,7 +110,7 @@ Since the \<head\> element is always set to `display:none;` there are only two h
 
 What this also means is that everything else that goes into building your application, the other html elements and the style properties that are specific to your app, will determine what other helpers or resets will be required to support the entire spectrum of browsers on the web. I'm guessing it wouldn't be a lot, but let's see where this will go.
 
-Notice that I have inlined our portrait ⇋ landscape switch along with the html, body elements inside the `<style> … </style>` tag. We do this to ensure that [critical](https://css-tricks.com/annotating-critical-css/) [css](https://css-tricks.com/authoring-critical-fold-css/) is available for the first contentful paint (FCP) asap and also to declare all global css variables at one place. This is good for organization andsss maintainability.
+Notice that I have inlined our portrait ⇋ landscape switch along with the html, body elements inside the `<style> … </style>` tag. We do this to ensure that [critical](https://css-tricks.com/annotating-critical-css/) [css](https://css-tricks.com/authoring-critical-fold-css/) is available for the first contentful paint (FCP) asap and also to declare all global css variables at one place. This is good for organization and maintainability.
 
 > Some of you pointed me towards Steve Souder's article [don't use @import](http://www.stevesouders.com/blog/2009/04/09/dont-use-import/) from 2009 but I can confirm that this position is no longer valid. The fact that almost 50% of the web is on http/2 and that there is a possibility of hardcaching all of the CSS locally using a serviceworker, I think we are good to go with imports in 2020 and beyond. Besides, our little CSS import switch will request only one external CSS file for a given viewport state, just like a \<link\> url does.
 >
@@ -118,7 +118,7 @@ Notice that I have inlined our portrait ⇋ landscape switch along with the html
 
 Now that we have a basic structure, let us add some meat to it. 
 
-## The final result:
+## The end result:
 
 This is what our final `reset.css` would look like: 
 
@@ -243,14 +243,16 @@ This is what our final `reset.css` would look like:
 
 ```
 
-An intrinisically scalable layout with grids, responsive typography and behaviors separated along `portrait.css` & `landscape.css` according to the nature of rectangle we will be painting on. Quite a few rules on the reset above are experimental in nature. We'll dissect them going forward, step by step.
+An intrinisically scalable layout using CSS grids, responsive typography and orientation based behaviors separation along `portrait.css` & `landscape.css` according to the orientation of the rectangle to paint on. 
+
+Quite a few rules up here are experimental in nature but we'll surely dissect each going forward in the book step by step.
 
 
 ---
 
-### A note about some of the vocabulary that we use today:
+### A note about vocabulary in use today:
 
-We generally refer to the dimensions of a client as to height and width, but really what we have above the fold is a simple rectangle with a length and breadth. Using height and width to label dimensions has been accurate during the desktop era where the monitor was usually mounted to display content along the vertical plane, but this terminology appears to be invalid with mobile and tablet. 
+We generally refer to the dimensions of a viewport as height or width. But really what we are dealing with here is a simple rectangle with a length and breadth. While using height and width to specify dimensions of the screen is accurate in the desktop ecosystem where the monitor is usually mounted in a way that contents are displayed along the vertical plane, the same terminology appears to be invalid when it comes to mobile or tablets. 
 
 
 <br>
@@ -261,19 +263,12 @@ We generally refer to the dimensions of a client as to height and width, but rea
 </div>
 <br>
 
-In many situations we consume content while lying down on a sofa or looking down on a tablet lying flat on a table. Meaning, the screens are no longer restricted to displaying content along the vertical plane, and there height isn't a correct reference.
+We can consume content on a phone while lying down on a sofa or by looking down on a tablet lying flat on a table. Since the screen is no longer restricted to displaying content along the vertical plane the use height to specify a side isn't always a correct way to reference.
 
-\*For the literature on Toucaan I'll sometimes use the mathematical labels _length_ and _breadth_ to refer to the rectangle instead of height and width. Here's an added bonus of doing so—we exactly know that the shorter side is the breadth.
-
-<br>
-
-<div class="center">
-  <img src="https://raw.githubusercontent.com/marvindanig/assets/master/viewports.png" alt="Major web devices." width="66%" style="max-width:100%;">
-  <br>
-  <div class="small">Viewport rectangles of the browser in portrait or landscape.</div>
-</div>
+\*For the literature on Toucaan I'll occasionally use mathematical labels _length_ and _breadth_ instead to refer to the sides of the rectangle. Here's an advantaged of doing so—we exactly know that the shorter side is called the breadth.
 
 <br>
+
 
 ---
 
@@ -299,6 +294,13 @@ Choosing typography for your application with Toucaan is simple. Toucaan recomme
 
 
 
+<div class="center">
+  <img src="https://raw.githubusercontent.com/marvindanig/assets/master/viewports.png" alt="Major web devices." width="66%" style="max-width:100%;">
+  <br>
+  <div class="small">Viewport rectangles of the browser in portrait or landscape.</div>
+</div>
+
+<br>
 
 
 I have updated the repository with this article and code on [Toucaan](https://github.com/bookiza/toucaan). Everything that is checked-in is currently experimental so feel free to question, star, jump-in or offer sage advice. 

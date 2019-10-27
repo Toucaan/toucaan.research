@@ -1,0 +1,25 @@
+body{
+	background-color: lightsalmon;
+}
+
+.box {
+	width: 50vw;
+	height: 50vw;
+}
+
+
+p:nth-child(1) {
+	font-size: calc(50vw/4);
+	line-height: calc(1.25 * 50vw/4);	
+}
+
+p:nth-child(2) {
+	font-size: calc(50vw/4);
+	line-height: calc(1.25 * 50vw/4);
+
+}
+
+p:nth-child(3) {
+	font-size: calc(50vw/6);
+	line-height: calc(1.25 * 50vw/4);	
+}
