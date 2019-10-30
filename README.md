@@ -18,7 +18,7 @@
 
 Toucaan is a _starter kit CSS framework_ for modern web applications of 2020 and beyond. 
 
-Toucaan is full of *fun facts*, interesting patterns and great documentation to style the apps of the new world. It is easy and logical, and tries to get out of the way as soon as it can. 
+Toucaan is full of *fun facts*, interesting _functional_ patterns and great documentation to style the apps of the new world. It is easy to understand, logical and tries to get out of the way as soon as it can. 
 
 Repeat after me: **_If Toucaan, then you can too!_**
 
@@ -26,9 +26,9 @@ Repeat after me: **_If Toucaan, then you can too!_**
 ## Key features
 
 1. Layouts with CSS Grids
-2. Block scoped typography with use tips and tricks.
+2. Block scoped typography with useful tips and tricks.
 3. Coverage from Apple Watch 5 up to OLED TVs and rich media projectors on web.
-4. Opinionated according to real life usage and feedback!s
+4. Opinionated according to real life usage and feedback!
 
 
 ## TODOs:

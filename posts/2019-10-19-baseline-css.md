@@ -269,16 +269,78 @@ No javascript has been used in the experiment above to 'fit text' 😉. Let's so
 
 ```
 
-We know that the box is a square, so its two sides are equal. I am going to be using viewport widths to specify dimensions  
+**Step 2.** We know that the box is a square, so its two sides are equal. To start I am going to use viewport width (breadth of the rectangle) to specify dimensions of our `div.box` inside the portrait part of our orientation switch:
+
+```css
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@media only screen and (orientation: portrait) {
+  :root {
+    --fs: calc(100vw/100);
+  }
+}
+
+@media only screen and (orientation: landscape) {
+  :root {
+    --fs: calc(100vh/100);
+  }
+}
+
+.box {
+    text-transform: uppercase;
+    font-family: arial, sans-serif;
+    font-weight: 600;
+    text-align: center;  
+    width: calc(50 * var(--fs));
+    height: calc(50 * var(--fs));
+    border: calc(2 * var(--fs)) solid black;
+
+}
+
+/* Simple blockscoped typography based on breadth of the rectangle . */
+p:nth-child(1) {
+    font-size: calc(50/4 * var(--fs));
+    line-height: calc(1.25 * 50/4 * var(--fs));  /* 1.25 times font-size. */
+}
+
+p:nth-child(2) {
+    font-size: calc(50/4 * var(--fs));
+    line-height: calc(1.25 * 50/4 * var(--fs));
+}
+
+p:nth-child(3) {
+    font-size: calc(50/6 * var(--fs));
+    line-height: calc(1.25 * 50/4 * var(--fs));
+}
 
 
+/* Required on Codepen: */
+body {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
 
-Given that there is so much that can happen with typefaces, I'll keep our ideas on responsive block scoped typography in an evaluative state for now. We'll see if we can nail intrinsic typesetting using this technique in the future chapters.
+```
+
+That's it! 
+
+You can test the demo of the <a rel="nofollow" href="https://codepen.io/marvindanig/full/bGGRZdE">text in a box</a> experiment by resizing your browser to its extremes. The text should scale naturally and accurately without triggering a reflow—ala, responsive block scoped typography. Given that there is so much that can happen with typefaces, I'll keep my ideas on block scoped typography in an evaluative mode for now. 
+
+We'll see if we can nail intrinsic typesetting using this technique for complex layouts in the future chapters.
 
 
 ---
 
-### A note about vocabulary we use today:
+### A note about vocabulary that we use today:
 
 Height and width is how we usually label the dimensions of a screen or a browser window but really what we are usually referring to, mathematically speaking, is a simple rectangle with a length and a breadth. It appears that height and width were a more accurate description of the monitor in the 'desktop era' where the monitor used to be mounted in a way that the contents were always displayed along the vertical plane. This terminology however is invalidated as soon as we start consuming content on a mobile or tablet that is not held vertically. 
 
@@ -287,14 +349,12 @@ Height and width is how we usually label the dimensions of a screen or a browser
 <div class="center">
   <img src="https://raw.githubusercontent.com/marvindanig/assets/master/rectangles.jpg" alt="Portrait or landscape rectangles." width="100%" style="max-width:100%;">
   <br>
+  <br>
   <div class="small">Use length & breadth instead of height & width?</div>
 </div>
 <br>
 
-We could be lying down on a sofa looking up towards a phone that is parallel to ceiling. Or looking down on a tablet lying flat on a table, i.e parallel to the floor. Since the screen is no longer restricted to displaying content along a vertical plane, using height or width to specify the sides of the rectangle isn't always correct—length & breadth however, are and swill always be. 🤯 
-
-
-\*For the literature on Toucaan I'll often use mathematical labels _length_ and _breadth_ instead to refer to the sides of the rectangular screen. There is an added advantage of doing this—we know exactly that the shorter side of the rectangle is the breadth.
+We could be lying down on a sofa looking up towards a phone that is parallel to ceiling. Or looking down on a tablet lying flat on a table, i.e parallel to the floor. Since the screen is no longer restricted to displaying content along a vertical plane, using height or width to specify the sides of the rectangle isn't always correct—length & breadth however, are and swill always be. 🤯 \*For the literature on Toucaan I'll often use mathematical labels _length_ and _breadth_ instead to refer to the sides of the rectangular display. There is an added advantage of doing this—we know exactly that the shorter side of the rectangle is the breadth, and it may be viewport width or height independent of the orientation.
 
 <br>
 
@@ -310,8 +370,9 @@ This is what our final `reset.css` looks like:
 
 
 ```html
-
-[Tentative]
+/* Modern reset using CSS Grids for layouts,    */
+/* a typography pallete with block scopes and   */
+/* accessibility-first media queries.           */
 
 <style>
     @charset "UTF-8";   /* Recommended reading: https://www.w3.org/International/questions/qa-css-charset.en */
@@ -429,20 +490,20 @@ This is what our final `reset.css` looks like:
 
 ```
 
-An intrinisically scalable layout using CSS grids, block scoped responsive typography and orientation based behaviors separated along `portrait.css` & `landscape.css` to adapt according to the new landscape of the web. 
+An intrinisically scalable layout using CSS grids, responsive block scoped typography and an orientation based design behavior separated along `portrait` & `landscape` css to adapt according to the new landscape of the web. It's total friggin' awesome!
 
-We'll break it down in the next chapter.
+We will break down the Toucaan reset for more explanations in the next chapter.
 
 
-I have updated the repository with this article and code on [Toucaan](https://github.com/bookiza/toucaan). Everything that is checked-in is currently experimental so feel free to question, star, jump-in or offer sage advice. 
+I have updated the repository with this article and code on [Toucaan](https://github.com/bookiza/toucaan). Everything that is checked-in is also experimental so feel free to question, star, jump-in or offer sage advice. Or better still, contribute to Toucaan if you can!
 
-Or better still, contribute to Toucaan if you can!
+_Toko, toko!_
 
 ---
 
 Written by: Marvin Danig, CEO & Cofounder of Bubblin Superbooks. Follow me on [Twitter](https://twitter.com/marvindanig) or [Github](https://github.com/marvindanig) perhaps?
 
-
+Edited by [Sonica Arora](https://bubblin.io/sonica) for accuracies.
 
 **P.S.:** It is likely that some of you viewed this article on your desktop or mobile. If you did that, I recommend you bookmarking us for the iPad next time! :-)
 
