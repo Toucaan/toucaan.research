@@ -81,7 +81,7 @@ Given that there are only three html elements required for a webpage to be valid
     2. <body> tag, and the… 
     3. <head> tag. 
 
-Now the \<head\> element is always set to `display:none;` so there are only two html tags <body> and <html> really for us to dabble with for the initial reset. Here is how we will structure our baseline for Toucaan:
+Now the \<head\> element is always set to `display:none;` so there are only two html tags \<body> and \<html> really for us to dabble with for the initial reset. Here is how we will structure our baseline for Toucaan:
 
 
 ```html
@@ -119,9 +119,9 @@ Notice that I have inlined our portrait ⇋ landscape switch along with the base
 
 > Some of you pointed me towards Steve Souder's article [don't use @import](http://www.stevesouders.com/blog/2009/04/09/dont-use-import/) from 2009 but I can confirm that this position is no longer valid. The fact that almost 50% of the web is on http/2 and that there is a possibility of hardcaching all CSS locally using a serviceworker, I think we are good to go with imports in 2020 and beyond. Besides, our little CSS import switch will request only one external CSS file for a given 'viewport state', just like a \<link\> url does.
 >
-> Feel free to dissect the position I have taken on using CSS @imports on Toucaan. For now I am gonna happily report that **not using CSS imports** to separate critical from non-critical CSS is an anti-pattern that should do be done away with. Toko, toko! 
+> Feel free to dissect the position I have taken on using CSS @imports on Toucaan but for now I am gonna happily report that **not using CSS imports** to separate critical from non-critical CSS is an anti-pattern that should do be done away with. Toko, toko! 
 
-Great, so now we have a basic critical structure for Toucaan's new reset file. Let us add some meat to it next. 
+Great, so now we have the critical structure for Toucaan's new reset file in place. Let us add some meat to it next. 
 
 
 ## Layouts with CSS Grids.
@@ -177,28 +177,30 @@ Here's what our inline-reset would look with Toucaan:
     html { }
     
     body { 
-        display: grid;
+        display: grid; /* Semantic layouts! */
     }
 </style>
 
 ```
 
-Still very simple but grounded in the realities of the web today. 
+Still a very simple reset that is grounded in the reality of the web today. 
 
-CSS grids aren't anything new but they certainly are a new standardized tool available on web to be used for layouts. After having dabbled with CSS floats, flexbox and whatnot for years I am convinced that CSS grids are the only way forward. It is simple, semantic and much easier to reason about than anything else on web today. 
+CSS grids aren't anything new but they certainly are a new standards tool that is available on web to be used for layouts. After having dabbled with CSS floats, flexbox and whatnot for years I am convinced that CSS grids are the only way forward. It is simple, semantic and much easier to reason about than anything else on market. 
+
+We'll talk about breaking down a webpage into its header, footer and main content using grids in the next chapter.
+
+#### No CSS Floats and No Flexbox. CSS grids only!
+
+Thing is that if you want to do modern layouts in 2020 you shouldn't use flexbox or CSS floats anymore. It is just plain wrong. I feel very strongly about this, so let me explain this a little more: 
+
+The body element on an empty webpage is like a raw piece of land—a lot, if you will—waiting to be cut-up into smaller rectangles to form the foundation of a house: the layout. These little rectangles are a part of a larger blueprint of a building that is yet to be built. A set of rectangular blocks that sit next to each other in _harmony_ with shared edges. 
 
 
-#### No CSS floats, no Flexbox, only CSS grids!
+CSS grids are an ideal tool to do this because with grids you are essentially looking down this whole patch of land—the body— and then deciding on how you want to break it down into smaller meaningful parts. It is a top ↝ down view. 
 
-I feel very strongly about NOT using flexbox or CSS floats for modern day layouts anymore, so let me explain this a bit: The body element on an empty webpage is like a raw piece of land—a lot, if you will—waiting to be cut-up into smaller rectangles to form the foundation of a house: the layout. These little rectangles are part of a larger blueprint of a building that is yet to be built. 
+Whereas with flexbox it is more at the element level. 
 
-
-A set of rectangular pieces that sit next to each other in harmony with shared edges. 
-
-
-CSS grids are an ideal tool to do this because with grids you are essentially looking down this whole patch of land, the body, and then decide on how you want to break it down into smaller meaningful parts. It is a top ↝ down view. 
-
-Whereas with flexbox, it is more at the element level. You say that 'hey, I am a flexing DIV and I am going to be stretching leftwards to occupy that zone all the way'. In a way flexbox adds behavior to HTML elements like rooms in a house trying to expand themselves against each other. It is a sort of dynamic equilibrium for layout instead of harmony. Like little men flexing their muscles against each other to lock themselves in place. Not a very ideal situation if the viewport is suddenly too long on one side.
+You say that 'hey, I am a flexing DIV and I am going to be stretching all the way leftwards to occupy whatever space is available'. Flexbox adds that behavior on the HTML element and is almost like little men trying to flex their muscles against each other and in process locking themselves in. The layout is in a sort of dynamic equilibrium instead of harmony. This is not a very ideal situation because if the viewport were to suddenly go ultrawide the layout will fail.
 
 
 <br>
@@ -215,9 +217,9 @@ Whereas with flexbox, it is more at the element level. You say that 'hey, I am a
 
 
 
-Similarly, using CSS floats with a left or right momentum turns the webpage into a sort of traffic jam between elements that are always trying to outrun each other. Such a layout, like the flexbox, is locked in a dynamic equilibrium that can fail easily on widescreens that are longer on one side. 
+Similarly, using CSS floats with a left or right momentum turns the webpage into a sort of 'traffic jam' between elements in which at least one piece is always trying to outrun others. Such a layout too, like the flexbox, is locked in a dynamic equilibrium that can fail easily on ultrawidescreens that are execessively long on one side. 
 
-In my opinion since a layout is a static blueprint of proportions on which the foundation of a house will be laid out, it is better to use CSS grids to split the land into pieces that fit together naturally. Doing anything else like using the flexbox or CSS floats or even tables (does anyone?) is just plain wrong. 
+In my opinion since a layout is a boundary of control, a blueprint of proportions on which the foundations of a house will be laid out, it is better to use CSS grids to split the land into useful pieces that fit together naturally. Doing anything else like using the flexbox or CSS floats or tables (does anyone?) is just plain wrong. 
 
 
 
@@ -226,7 +228,7 @@ In my opinion since a layout is a static blueprint of proportions on which the f
 
 ## Block Scoped Typography.
 
-One of the common memes that shows how difficult it is to handle text inside a box is the following example:
+One of the common memes about CSS is about how difficult it is to handle text inside a box:
 
 
 
@@ -241,10 +243,9 @@ One of the common memes that shows how difficult it is to handle text inside a b
 
 <br>
 
+There is quite a bit of developer merchandise available out there that sells this meme printed on a coffee mug or t-shirts but I'm afraid those are gonna have to go away of late. For Toucaan we will first try and solve 'CSS is Awesome in a box' problem using our portrait ⇋ landscape switch, and then use that solution to introduce block scoped typography on our framework for anyone to use. 
 
-For Toucaan we will first try and solve 'CSS is Awesome in a box' problem using our portrait ⇋ landscape switch, and then use that solution to introduce block scoped typography on our framework for anyone to reuse. This is hard problem so I'm pinning more on maths instead of design sense here. We'll try and reconcile the two later on.
-
-Below I made a Codepen using for the first experiment on typography:
+This is hard problem so I'm going to be pinning more on maths instead of design sense here. We'll try to reconcile engineering with design later on. Below is the code I penned using our orientation switch for the first piece on typography:
 
 <p class="codepen" data-height="300" data-theme-id="20737" data-default-tab="css,result" data-user="marvindanig" data-slug-hash="bGGRZdE" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="CSS is Awesome">
   <span>See the Pen <a href="https://codepen.io/marvindanig/pen/bGGRZdE">
@@ -254,29 +255,46 @@ Below I made a Codepen using for the first experiment on typography:
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
 
-No javascript has been used in the experiment above to 'fit text' 😉, which is exciting, but there's so much that can happen with typefaces that I'll keep our ideas on responsive typography in evaluative state for now. Here's how to implement typography that is scoped to a block of element:
+No javascript has been used in the experiment above to 'fit text' 😉. Let's solve this step by step:
+
+**Step 1.** Let's start with the following HTML:
+
+```html
+
+    <div class="box">
+        <p>CSS</p>
+        <p>is</p>
+        <p>awesome.</p>
+    </div>
+
+```
+
+We know that the box is a square, so its two sides are equal. I am going to be using viewport widths to specify dimensions  
+
+
+
+Given that there is so much that can happen with typefaces, I'll keep our ideas on responsive block scoped typography in an evaluative state for now. We'll see if we can nail intrinsic typesetting using this technique in the future chapters.
 
 
 ---
 
-#### A note about vocabulary in use today:
+### A note about vocabulary we use today:
 
-Height and width is how we label the dimensions of a browser window today but really what we are usually referring to is a simple rectangle with a length and a breadth. I believe that height and width were a more accurate description in the 'desktop era' where the monitor was usually mounted in a way that the contents were displayed along the vertical plane. 
-
-The same terminology appears to be invalid now when it comes to consumption of content on mobile or tablets. Not all, but in some scenarios. 
+Height and width is how we usually label the dimensions of a screen or a browser window but really what we are usually referring to, mathematically speaking, is a simple rectangle with a length and a breadth. It appears that height and width were a more accurate description of the monitor in the 'desktop era' where the monitor used to be mounted in a way that the contents were always displayed along the vertical plane. This terminology however is invalidated as soon as we start consuming content on a mobile or tablet that is not held vertically. 
 
 
 <br>
 <div class="center">
   <img src="https://raw.githubusercontent.com/marvindanig/assets/master/rectangles.jpg" alt="Portrait or landscape rectangles." width="100%" style="max-width:100%;">
   <br>
-  <div class="small">Using length & breadth instead of height & width?</div>
+  <div class="small">Use length & breadth instead of height & width?</div>
 </div>
 <br>
 
-For example, we may be lying down on a sofa and looking upwards towards a phone that is parallel to ceiling or looking down on a tablet lying flat on a table, i.e parallel to the floor. Since the screen is no longer restricted to displaying content along a vertical plane, using height or width to specify the sides of the rectangle isn't always correct—length & breadth however, will always be. 🤯
+We could be lying down on a sofa looking up towards a phone that is parallel to ceiling. Or looking down on a tablet lying flat on a table, i.e parallel to the floor. Since the screen is no longer restricted to displaying content along a vertical plane, using height or width to specify the sides of the rectangle isn't always correct—length & breadth however, are and swill always be. 🤯 
 
-\*For the literature on Toucaan I'll often use mathematical labels _length_ and _breadth_ instead to refer to the sides of a rectangular screen. There is an added advantage of doing so—we know exactly that the shorter side is the breadth.
+
+\*For the literature on Toucaan I'll often use mathematical labels _length_ and _breadth_ instead to refer to the sides of the rectangular screen. There is an added advantage of doing this—we know exactly that the shorter side of the rectangle is the breadth.
 
 <br>
 
@@ -413,29 +431,7 @@ This is what our final `reset.css` looks like:
 
 An intrinisically scalable layout using CSS grids, block scoped responsive typography and orientation based behaviors separated along `portrait.css` & `landscape.css` to adapt according to the new landscape of the web. 
 
-
-
-## Breaking it down
-
-The first line on the Toucaan's reset is the charset declaration. See the w3c [recommendation](https://www.w3.org/International/questions/qa-css-charset.en) on this one, which I quote:
-
-> You should always use UTF-8 as the character encoding of your style sheets and your HTML pages, and declare that encoding in your HTML. If you do that, there is no need to declare the encoding of your style sheet.
-
-This is done simply to guarantee encoding for the CSS parser to use just in case the end user forgets to declare the encoding on their html. 
-
-The next block of code deals with choosing typefaces for your site. Toucaan recommends to host the typefaces you want to use (see Github [issue](https://github.com/bookiza/toucaan/issues/6)) for your webapp locally.  
-
-I just flat out reset all margin & padding on elements and pseudo-elements and force them to use **box-sizing: border-box**.
-
-<br>
-
-<div class="center">
-  <img src="https://raw.githubusercontent.com/marvindanig/assets/master/viewports.png" alt="Major web devices." width="66%" style="max-width:100%;">
-  <br>
-  <div class="small">Viewport rectangles of the browser in portrait or landscape.</div>
-</div>
-
-<br>
+We'll break it down in the next chapter.
 
 
 I have updated the repository with this article and code on [Toucaan](https://github.com/bookiza/toucaan). Everything that is checked-in is currently experimental so feel free to question, star, jump-in or offer sage advice. 
@@ -446,7 +442,7 @@ Or better still, contribute to Toucaan if you can!
 
 Written by: Marvin Danig, CEO & Cofounder of Bubblin Superbooks. Follow me on [Twitter](https://twitter.com/marvindanig) or [Github](https://github.com/marvindanig) perhaps?
 
-Under editing with Sonica.
+
 
 **P.S.:** It is likely that some of you viewed this article on your desktop or mobile. If you did that, I recommend you bookmarking us for the iPad next time! :-)
 
