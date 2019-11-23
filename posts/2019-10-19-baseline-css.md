@@ -13,20 +13,17 @@ original:
 
 ---
 
-[Status: draft]
-
-[Last update: October, 29<sup>th</sup> 2019.]
+[Last update: November, 7<sup>th</sup> 2019.]
 
 
-_❥ **TLDR**; Modern web browsers have evolved to a point where a heavy-handed reset or the reboot css is no longer needed. In this chapter, we implement a fundamentally different and a much lighter strategy by uncovering only the bare minimum set of rules required for consistency. As per the new [landscape](https://bubblin.io/blog/toucaan-introduction) of the web._
-
-_We will tackle to two beasts on this article, responsive layouts and block scoped typography, both of which in my opinion will form the basis of intrinisically responsive interfaces of the future._
+_❥ **TLDR**; Modern web browsers have evolved to a point where a heavy-handed reset or the reboot css is no longer required. In this chapter, we will implement a fundamentally different and a much lighter reset strategy by uncovering only the bare minimum set of rules that are needed for consistency according to the new [landscape](https://bubblin.io/blog/toucaan-introduction) of the web. We will tackle two beasts—an intrinsically responsive layout using CSS grids and blockscoped typography, both of which in my opinion will form the basis of user interfaces (UX/UI) on the web in future._
 
 
 ## Baselining CSS
 
-In the last chapter, we created a [blank file](https://raw.githubusercontent.com/bookiza/toucaan/master/examples/example0.html) to test responsiveness of an empty page. It worked perfectly and was easy enough to implement. We simply touched a new file and [opened](https://raw.githubusercontent.com/bookiza/toucaan/master/examples/example0.html) it on a browser like Chrome:
+In the last chapter we created a [blank file](https://raw.githubusercontent.com/bookiza/toucaan/master/examples/example0.html) to test the responsiveness of an empty page. That worked perfectly and was easy enough to implement. We simply touched a new file and [opened](https://raw.githubusercontent.com/bookiza/toucaan/master/examples/example0.html) it on a browser like Chrome, like so:
 
+<br>
 
 ```bash
 $ touch example0.html     // Create a new file but do not write anything on it. 
@@ -34,9 +31,9 @@ $ touch example0.html     // Create a new file but do not write anything on it.
 $ chrome example0.html    // Open this 0 byte files on your favorite browser. 
 ```
 
-Let us take it forward from here. **Inspect** this 0 byte blank page on the console of your browser next. 
+<br>
 
-Press `⌘+⌥+I` keys if you are on Chrome & Mac.
+Now let us take our work on the [Toucaan CSS framework](https://toucaan.com) forward from this point. Let's _inspect_ this 0 byte blank page on the console of the browser. Press `⌘+⌥+I` keys if you are on the Mac with Google Chrome:
 
 
 <br>
@@ -48,19 +45,24 @@ Press `⌘+⌥+I` keys if you are on Chrome & Mac.
 
 <br>
 
-Even though the web-page loaded on the browser is a blank file, you will soon notice that there still are some `html` elements that rendered on the DOM just to display the blank page correctly. Every web browser does this and will insert the tags automatically to "fix" the `html` on the blank page. It is in the nature of HTML to be forgiving, and the browsers are smart enough to handle issues like missing or unmatched tags like a champion.
+
+You will see that even though we loaded a blank file on to the browser, there still are a few `html` elements that are rendered on the DOM. Every web browser will render these elements, just to display the blank page correctly. 
+
+Browsers will "fix" the `html` on page because it is in the nature of HTML to be forgiving, and modern browsers are smart enough to handle issues like missing or unmatched tags quietly.
 
 ```html
-<!-- Blank page as rendered on Chrome, Firefox, Brave & Safari (Desktop) -->
+<!-- Blank page as rendered on desktop Chrome, Firefox, Brave & Safari. -->
 <html>
   <head></head>
   <body></body>
 </html>
 ```
 
-The browser also applies a default user-agent<sup>\*</sup> stylesheet called the `html.css`, under the hood, that you can see above under the **Styles** block of the browser's console. This html.css file is a default set of rules that every browser comes with upon installation. Until a few years ago, html.css used to contain several inconsistencies across vendors, but this is no longer the case now. We can practically assume that the html.css itself _is_ the consistent reset.css of our unset cascade.  
+Notice that the browser also applies a default user-agent<sup>\*</sup> stylesheet called `html.css` under the page. See the 'Styles' block (screenshot above) of your browser's console. This html.css file is a default set of rules that each browser is shipped with upon install. Up until a few years ago it was this html.css file that used to contain several inconsistencies across vendors but that is no longer the case today. 
 
-A very interesting <a rel="nofollow" href="https://hankchizljaw.com/wrote/a-modern-css-reset/">reset</a> was shared by Andy Bell last week for a blog application. Even though his reset is limited in scope, it kind of repeats the same tell that there is very little arm-twisting required over a browser's defaults to establish consistency. This is ultimately great news!, and also one of the primary reasons why we are going to keep Toucaan a loosely coupled framework.
+We can assume that html.css—the unset cascade—itself is practically the consistent reset.css for our daily use.  
+
+A very interesting example of <a rel="nofollow" href="https://hankchizljaw.com/wrote/a-modern-css-reset/">reset</a> was shared by developer Andy Bell last week for a blog type of application. While their reset may be limited in scope it does help us establish the fact that there is very little arm-twisting required over a browser's own set of rules to establish consistency. This is great news and one of the main reasons why we will try and keep Toucaan a loosely coupled CSS framework for 2020.
 
 
 ---
@@ -75,14 +77,19 @@ A very interesting <a rel="nofollow" href="https://hankchizljaw.com/wrote/a-mode
 
 ---
 
-Given that there are only three html elements required for a webpage to be valid, we will start baselining Toucaan by considering reset for only three elements to begin with, if required at all:
+Getting back to the DOM, given that there are only three html elements required for a webpage to be valid, we will start with baselining Toucaan for only three baseline elements of html, namely:
 
-    1. <html> tag or **:root** element,
+<br>
+
+    1. <html> tag or the **:root** element,
     2. <body> tag, and the… 
     3. <head> tag. 
 
-Now the \<head\> element is always set to `display:none;` so there are only two html tags \<body> and \<html> really for us to dabble with for the initial reset. Here is how we will structure our baseline for Toucaan:
+<br>
 
+The \<head\> element is always set to `display:none;`, so effectively there are only two html tags \<body> and \<html> for us to play with. Given below is how we will structure our baseline reset for Toucaan:
+
+<br>
 
 ```html
 
@@ -111,24 +118,28 @@ Now the \<head\> element is always set to `display:none;` so there are only two 
 </style>
 
 ```
-That's it. This is the structure of our new reset.css on Toucaan, if you will.
 
-What this also means is that everything else that will go into building an application, the other html elements and their style, will determine what other helpers will be required to support the entire spectrum of browsers and devices. My guess is that there wouldn't be a lot of style for even the most sophisticated web applications out there but let us see where it goes before committing to anything. 
+<br>
 
-Notice that I have inlined our portrait ⇋ landscape switch along with the baseline style for body and html tags inside a `<style> … </style>` tag. We are doing this to ensure that the <a rel="nofollow" href="https://css-tricks.com/annotating-critical-css/">critical</a> above-the-fold <a rel="nofollow" href="https://css-tricks.com/authoring-critical-fold-css/">css</a> is available for the first contentful paint (FCP) asap. Also, it helps us to declare all global css variables from one place.
+That's it. This is what a modern reset.css would look like on Toucaan.
+
+What it also means is that everything else that goes into designing an application, the other html elements and their corresponding styles, can be covered using optional CSS helpers to support the entire spectrum of devices and browsers. My guess is that there wouldn't be much rules to import even for the most sophisticated web applications out there, but who knows? Let us see where we can go with Toucaan before committing. 
+
+Note that on the reset above I have inlined the portrait ⇋ landscape switch along with baseline tag selectors for html and body elements each and put everything inside a `<style> … </style>` tag. We do this to ensure that all the <a rel="nofollow" href="https://css-tricks.com/annotating-critical-css/">critical</a> above-the-fold <a rel="nofollow" href="https://css-tricks.com/authoring-critical-fold-css/">css</a> is available for the first contentful paint (FCP) as soon as possible and it helps to declare all global css variables from one place.
 
 > Some of you pointed me towards Steve Souder's article [don't use @import](http://www.stevesouders.com/blog/2009/04/09/dont-use-import/) from 2009 but I can confirm that this position is no longer valid. The fact that almost 50% of the web is on http/2 and that there is a possibility of hardcaching all CSS locally using a serviceworker, I think we are good to go with imports in 2020 and beyond. Besides, our little CSS import switch will request only one external CSS file for a given 'viewport state', just like a \<link\> url does.
 >
 > Feel free to dissect the position I have taken on using CSS @imports on Toucaan but for now I am gonna happily report that **not using CSS imports** to separate critical from non-critical CSS is an anti-pattern that should do be done away with. Toko, toko! 
 
-Great, so now we have the critical structure for Toucaan's new reset file in place. Let us add some meat to it next. 
+Great, so we now have a foundation for a new reset file on Toucaan. Let us add some meat to it next. 
 
 
 ## Layouts with CSS Grids.
 
-One of the things that I'm super (super!) excited about using for layouts on Toucaan is the CSS grids. 
+One of the things that I'm (super!) chuffed about using for layouts on Toucaan is the CSS grids. Layouts on Toucaan are exclusively going to be based on CSS grids. Period.
 
-Layouts with Toucaan are based on CSS grids exculsively. To enable grids we simply apply the following rule on the `body` element of our inline-reset:
+
+To enable grids we simply apply the following rule on the `body` element of our inline-reset:
 
 ```css
     body {
@@ -136,11 +147,12 @@ Layouts with Toucaan are based on CSS grids exculsively. To enable grids we simp
     }
 ```
 
-That's it. We are all set for any kind of responsive layout with CSS grids now.
+That's it. We are all set for _any_ kind of responsive layout with Toucaan now.
 
-Enabling grid on the body ensures that every child element on the page can now behave as part of a larger blueprint specified under a **grid system**. Not only that, we can also specify different layouts for portrait and landscape modes each and switch the layout according to the state of the viewport. 
+Enabling grid on the body ensures that every direct child on page can now behave as part of a larger blueprint specified under a **grid system**. Not only that, we can also specify different layouts for portrait and landscape switch and swap out the layout according to the new state of the viewport. 
 
-I don't think there is another way that I would do layouts in 2020. It has to be CSS grids! Support for CSS grids <a rel="nofollow" href="https://caniuse.com/#feat=css-grid">grown</a> lately and you can see that almost every major browser has implemented the new specification.
+I don't think there is any other way that I would do layouts in 2020.
+
 
 <br>
 
@@ -151,7 +163,7 @@ I don't think there is another way that I would do layouts in 2020. It has to be
 
 <br>
 
-Here's what our inline-reset would look with Toucaan:
+As you can see the support for CSS grids has <a rel="nofollow" href="https://caniuse.com/#feat=css-grid">grown </a> sufficiently with nearly every major browser having implemented the newest specification. Here is what our inline-reset with CSS grids would look:
 
 ```html
 
@@ -183,24 +195,26 @@ Here's what our inline-reset would look with Toucaan:
 
 ```
 
-Still a very simple reset that is grounded in the reality of the web today. 
+We have a very simple reset.css that is grounded in the realities of the web today. In the next chapter we will move the `display: grid` rule into its own separate class named `.layout-palette`, which will describe how the header, the footer and the main body on a webpage will be laid out in a given context. 
 
-CSS grids aren't anything new but they certainly are a new standards tool that is available on web to be used for layouts. After having dabbled with CSS floats, flexbox and whatnot for years I am convinced that CSS grids are the only way forward. It is simple, semantic and much easier to reason about than anything else on market. 
-
-We'll talk about breaking down a webpage into its header, footer and main content using grids in the next chapter.
-
-#### No CSS Floats and No Flexbox. CSS grids only!
-
-Thing is that if you want to do modern layouts in 2020 you shouldn't use flexbox or CSS floats anymore. It is just plain wrong. I feel very strongly about this, so let me explain this a little more: 
-
-The body element on an empty webpage is like a raw piece of land—a lot, if you will—waiting to be cut-up into smaller rectangles to form the foundation of a house: the layout. These little rectangles are a part of a larger blueprint of a building that is yet to be built. A set of rectangular blocks that sit next to each other in _harmony_ with shared edges. 
+CSS grids aren't anything new but they certainly are a new 'standards' tool that is available at our disposal. After having dabbled with CSS floats, flexbox and whatnot for years, I am convinced that CSS grids are the only logical way to do layouts. It is simple, semantic and much easier to reason about than anything else on market. 
 
 
-CSS grids are an ideal tool to do this because with grids you are essentially looking down this whole patch of land—the body— and then deciding on how you want to break it down into smaller meaningful parts. It is a top ↝ down view. 
+#### Why no CSS float or no flexbox? = Why CSS grids only!
 
-Whereas with flexbox it is more at the element level. 
+Thing is that if you want to do modern layouts in 2020 (and beyond) you shouldn't be using flexbox or floats anymore. It is just plain wrong. This of course doesn't mean that you shouldn't use flexbox or floats on your CSS at all, but using those element level properties for sitewide layouts is an anti-pattern—it is almost like a hack that we have had to live with in absence of grids. I feel very strongly about this, so let me explain this a little more: 
 
-You say that 'hey, I am a flexing DIV and I am going to be stretching all the way leftwards to occupy whatever space is available'. Flexbox adds that behavior on the HTML element and is almost like little men trying to flex their muscles against each other and in process locking themselves in. The layout is in a sort of dynamic equilibrium instead of harmony. This is not a very ideal situation because if the viewport were to suddenly go ultrawide the layout will fail.
+The body element on an empty webpage is like a raw piece of land waiting to be cut-up into smaller rectangles to form the foundation of a house. Each of these tiny rectangles have a different meaning or a purpose, like a kitchen or a bedroom or a living space, but are also a part of a larger blueprint of a building that is yet to be built. 
+
+A set of rectangular jigsaw pieces on a website that sit next to each other in _harmony_ with shared edges. 
+
+
+CSS grids are an ideal tool to break down this whole patch of land—the body—into smaller rectangles because it is a very top ↝ down view of the land. Whereas with flexbox you are more at the element level. Flexing is like the kitchen saying 'hey, I am a DIV and I am going to be stretching all the way leftwards to occupy whatever space is available'. Flexbox adds a certain behavior to the HTML element that needs to be counter balanced by another element (often sibling) with a behavior in the opposite direction.  
+
+
+
+
+It is like two little men trying to flex their muscles against each other and in process locking themselves in to form a layout. As sort of dynamic equilibrium instead of harmony. Not a very ideal situation because if the viewport were to go ultrawidescreen suddenly, the layout will fail.
 
 
 <br>
@@ -217,19 +231,16 @@ You say that 'hey, I am a flexing DIV and I am going to be stretching all the wa
 
 
 
-Similarly, using CSS floats with a left or right momentum turns the webpage into a sort of 'traffic jam' between elements in which at least one piece is always trying to outrun others. Such a layout too, like the flexbox, is locked in a dynamic equilibrium that can fail easily on ultrawidescreens that are execessively long on one side. 
+Similarly, using CSS floats with a left or right momentum on the element turns a webpage into a 'traffic jam.' Almost always there is at least one element that is trying to get ahead of others. Such a layout too, like with the flexbox, is locked in a dynamic equilibrium that can easily fail on ultra-widescreens or some weird orientation towards one side. CSS floats for layouts are an absolute no-no!
 
-In my opinion since a layout is a boundary of control, a blueprint of proportions on which the foundations of a house will be laid out, it is better to use CSS grids to split the land into useful pieces that fit together naturally. Doing anything else like using the flexbox or CSS floats or tables (does anyone?) is just plain wrong. 
+Not to mention the amount code required to deliver the results with floats or flexbox is almost always higher than with CSS grids. In my opinion since layout is the boundary of control, the blueprint of proportions and meaning, the basis foundation on which a house with a function will be built, it is better to use CSS grids to split the view into meaningful part that fit together naturally. 
 
-
-
-
+Doing anything else like using the flexbox or CSS floats or tables (does anyone?) is just plain wrong. 
 
 
-## Block Scoped Typography.
+## Blockscoped Typography.
 
-One of the common memes about CSS is about how difficult it is to handle text inside a box:
-
+The second beast that we are going to go after with Toucaan is blockscoping typography. It is possible, but before we deep dive into it, let us look at one of the common memes that gets thrown around about CSS. About how difficult it is to fit text inside a box:
 
 
 
@@ -243,9 +254,13 @@ One of the common memes about CSS is about how difficult it is to handle text in
 
 <br>
 
-There is quite a bit of developer merchandise available out there that sells this meme printed on a coffee mug or t-shirts but I'm afraid those are gonna have to go away of late. For Toucaan we will first try and solve 'CSS is Awesome in a box' problem using our portrait ⇋ landscape switch, and then use that solution to introduce block scoped typography on our framework for anyone to use. 
+Unsurprisingly, there is quite a lot of developer merchandise available out there that sells this meme printed on coffee mugs or t-shirts. I'm afraid those are gonna have to go away with the new powers of CSS. 
 
-This is hard problem so I'm going to be pinning more on maths instead of design sense here. We'll try to reconcile engineering with design later on. Below is the code I penned using our orientation switch for the first piece on typography:
+Let us first try and solve "'CSS is Awesome' in a box" problem using our portrait ⇋ landscape switch and then we'll use that solution to introduce blockscoped typography on our framework for everyone else to use. Scaling text is obviously a hard problem so I'm going to pin more on maths instead of design sense here. We will try and reconcile engineering with design principles later on. 
+
+Shown below is the code I penned using our orientation switch along with some responsive typography:
+
+<br>
 
 <p class="codepen" data-height="300" data-theme-id="20737" data-default-tab="css,result" data-user="marvindanig" data-slug-hash="bGGRZdE" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="CSS is Awesome">
   <span>See the Pen <a href="https://codepen.io/marvindanig/pen/bGGRZdE">
@@ -254,22 +269,62 @@ This is hard problem so I'm going to be pinning more on maths instead of design 
 </p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
+<br>
 
-No javascript has been used in the experiment above to 'fit text' 😉. Let's solve this step by step:
+Try and scale the viewport on your desktop, mobile or tablet to test it. The contents inside the box will (should) scale naturally, down to subpixel accuracy, without use of any JavaScript or special font or hardcoded CSS locks or newer properties like `clamp()`, `minmax()` etc. A simple orientation switch is enough to fit the text reliably. 
 
-**Step 1.** Let's start with the following HTML:
+Does it 🤯 your mind? Well, it did for me! 
+
+Let us look at the step-by-step solution next:
+
+#### Step 1.
+
+I started with the following HTML and CSS:
 
 ```html
-
-    <div class="box">
-        <p>CSS</p>
-        <p>is</p>
-        <p>awesome.</p>
-    </div>
-
+<div class="box">
+  <p>CSS</p>
+  <p>is</p>
+  <p>awesome.</p>
+</div>
 ```
 
-**Step 2.** We know that the box is a square, so its two sides are equal. To start I am going to use viewport width (breadth of the rectangle) to specify dimensions of our `div.box` inside the portrait part of our orientation switch:
+We didn't have to separate the words into three separate lines (p tags) but it offers better control, so I did it. 
+
+```css
+/* CSS */ 
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@media only screen and (orientation: portrait) {
+  :root {
+    --bu: calc(100vw/100);
+  }
+}
+
+@media only screen and (orientation: landscape) {
+  :root {
+    --bu: calc(100vh/100);    /* Axiom: 100vh of landscape === 100vw of portrait. */
+  }
+}
+```
+
+Note that we have used CSS variables to define font size according to the orientation of the viewport _and_ we are banking on the shorter side of the screen, breadth, for reliable scaling. We are thus relying on following two axioms:  
+
+- **Axiom 1**: "100vh of landscape === 100vw of portrait." 
+- **Axiom 2**: The shorter side of the rectangle i.e. breadth has less potential of variation upon resizing.
+
+I must reiterate here that no special formulae or CSS locks or `clamp()` with `minmax()` has been used or is required to scale text accurately. Hardcoding safe values on code feels like an anti-pattern anyway, an aberration that we can avoid to align ourselves better to the idea of writing scalable software. 
+
+#### Step 2.
+
+We know that the box around the text is a square, so its sides are equal. ~~To start I am going to use viewport width to specify dimensions of our `div.box` inside the portrait part of our orientation switch:~~ I set the sides of the square to 50% of breadth by using 50 bu's (_breadth units_), where each `--bu` css variable defined on the `:root` element stands for the viewport width or height depending on device orientation:
+
 
 ```css
 *,
@@ -282,13 +337,13 @@ No javascript has been used in the experiment above to 'fit text' 😉. Let's so
 
 @media only screen and (orientation: portrait) {
   :root {
-    --fs: calc(100vw/100);
+    --bu: calc(100vw/100);
   }
 }
 
 @media only screen and (orientation: landscape) {
   :root {
-    --fs: calc(100vh/100);
+    --bu: calc(100vh/100);    /* 100vh of landscape === 100vw of portrait. */
   }
 }
 
@@ -297,26 +352,26 @@ No javascript has been used in the experiment above to 'fit text' 😉. Let's so
     font-family: arial, sans-serif;
     font-weight: 600;
     text-align: center;  
-    width: calc(50 * var(--fs));
-    height: calc(50 * var(--fs));
-    border: calc(2 * var(--fs)) solid black;
+    width: calc(50 * var(--bu));    /* 50% of breadth */
+    height: calc(50 * var(--bu));
+    border: calc(2 * var(--bu)) solid black;
 
 }
 
 /* Simple blockscoped typography based on breadth of the rectangle . */
 p:nth-child(1) {
-    font-size: calc(50/4 * var(--fs));
-    line-height: calc(1.25 * 50/4 * var(--fs));  /* 1.25 times font-size. */
+    font-size: calc(1/4 * 50 * var(--bu));              /* 25% of the width of the box. */
+    line-height: calc(1.25 * 1/4 * 50 * var(--bu));     /* Line height = 1.25 */
 }
 
 p:nth-child(2) {
-    font-size: calc(50/4 * var(--fs));
-    line-height: calc(1.25 * 50/4 * var(--fs));
+    font-size: calc(50/4 * var(--bu));
+    line-height: calc(1.25 * 50/4 * var(--bu));
 }
 
 p:nth-child(3) {
-    font-size: calc(50/6 * var(--fs));
-    line-height: calc(1.25 * 50/4 * var(--fs));
+    font-size: calc(50/6 * var(--bu));
+    line-height: calc(1.25 * 50/4 * var(--bu));
 }
 
 
@@ -331,18 +386,34 @@ body {
 
 ```
 
-That's it! 
+#### Step 3.
 
-You can test the demo of the <a rel="nofollow" href="https://codepen.io/marvindanig/full/bGGRZdE">text in a box</a> experiment by resizing your browser to its extremes. The text should scale naturally and accurately without triggering a reflow—ala, responsive block scoped typography. Given that there is so much that can happen with typefaces, I'll keep my ideas on block scoped typography in an evaluative mode for now. 
+Great, so now we have square with width and height of `calc(50 * var(--bu))`. This is the 100% width or height of the box. To blockscope typography inside the box, we will use the dimensions of the box to arrive at text sizing elements like font-size and line-height, like so: 
 
-We'll see if we can nail intrinsic typesetting using this technique for complex layouts in the future chapters.
+```css
+/* 25% of the width of the box. */
+font-size: calc(1/4 * (50 * var(--bu)));
+
+/* Line height = 1.25 times font size */
+line-height: calc(1.25 * 1/4 * 50 * var(--bu));       
+```
+
+That's it. 
+
+The text in the box will now scale responsively with subpixel accuracy as the browser is resized or the orientation is changed. Scaling is so accurate that even reflow isn't be triggered in 99% of the time!
+
+Ala, welcome to **blockscoped responsive typography** with Toucaan. 😎
+
+Feel free to test the <a rel="nofollow" href="https://codepen.io/marvindanig/full/bGGRZdE">demo</a> by resizing your browser to its extremes and by going on any device between an Apple Watch 5 to OLED TVs. Report <a rel="nofollow" href="https://github.com/bookiza/toucaan/issues">issues</a> on Github if you bump into one. 
+
+Given that there is so much that can happen with typefaces I'll keep my ideas about blockscoped typography in an evaluative mode for now. It is yet to be seen if Toucaan can nail intrinsic layouts with blockscoped typography, especially for some more complex layouts. So look out for another chapter on this topic soon!
 
 
 ---
 
-### A note about vocabulary that we use today:
+### A note about vocabulary in use today:
 
-Height and width is how we usually label the dimensions of a screen or a browser window but really what we are usually referring to, mathematically speaking, is a simple rectangle with a length and a breadth. It appears that height and width were a more accurate description of the monitor in the 'desktop era' where the monitor used to be mounted in a way that the contents were always displayed along the vertical plane. This terminology however is invalidated as soon as we start consuming content on a mobile or tablet that is not held vertically. 
+Height and width is how we usually refer to the dimensions of a screen or the browser window. But what we are doing here, in mathematical speak, is referring to a simple rectangle with a length and a breadth. The labels height and width are all but an accurate description in the context of the desktop. Where the monitor is mounted in a way that the contents are displayed along the vertical plane. But height and with become somewhat invalid as soon as we start surfing content on a mobile or a tablet that is not held up vertically.
 
 
 <br>
@@ -354,7 +425,9 @@ Height and width is how we usually label the dimensions of a screen or a browser
 </div>
 <br>
 
-We could be lying down on a sofa looking up towards a phone that is parallel to ceiling. Or looking down on a tablet lying flat on a table, i.e parallel to the floor. Since the screen is no longer restricted to displaying content along a vertical plane, using height or width to specify the sides of the rectangle isn't always correct—length & breadth however, are and swill always be. 🤯 \*For the literature on Toucaan I'll often use mathematical labels _length_ and _breadth_ instead to refer to the sides of the rectangular display. There is an added advantage of doing this—we know exactly that the shorter side of the rectangle is the breadth, and it may be viewport width or height independent of the orientation.
+One could be lying down on a sofa looking up towards the ceiling into the phone. Or looking down on a tablet lying flat on a desk, meaning parallel to the floor. Since the screen is no longer restricted to displaying content along the vertical plane, using height and width to specify its dimensions isn't always a 100% accurate. Labeling it with length and breadth however will be, no matter what the orientation of the screen is. 🤯 
+
+\*For sake of clarity on Toucaan I'll often use mathematical labels _length_ and _breadth_ instead of height and width to refer to the dimensions of the rectangular display. There is an added advantage of doing this—we exactly know that the shorter side of the rectangle _is_ the breadth, which could be viewport width or viewport height depending on orientation.
 
 <br>
 
@@ -366,18 +439,20 @@ We could be lying down on a sofa looking up towards a phone that is parallel to 
 
 ## The final reset:
 
-This is what our final `reset.css` looks like: 
+This is what our final `reset.css` on Toucaan looks like: 
 
 
 ```html
 /* Modern reset using CSS Grids for layouts,    */
 /* a typography pallete with block scopes and   */
-/* accessibility-first media queries.           */
+/* a few accessibility-first media queries.     */
 
 <style>
     @charset "UTF-8";   /* Recommended reading: https://www.w3.org/International/questions/qa-css-charset.en */
 
-    /* Option 1. Use 'privacy safe' self-hosted typefaces, or use…  */
+    /* Option 1. Use system fonts */
+
+    /* Option 2. Use 'privacy safe' self-hosted typefaces with subsetting, or use…  */
     @font-face {
         font-family: "Font Family";
         src: url(data:font/opentype;base64, _font_subsetted_string_); 
@@ -385,7 +460,7 @@ This is what our final `reset.css` looks like:
         font-weight: 300;
     }
 
-    /* Option 2. Hosted typefaces such as from Google Fonts. */
+    /* Option 3. Hosted typefaces such as from Google Fonts. */
     @import url(https://fonts.googleapis.com/css?family=Font+Family:300,300i&display=swap); 
 
     @import url('toucaan/portrait/portrait.css') only screen and (orientation: portrait);
@@ -394,13 +469,13 @@ This is what our final `reset.css` looks like:
 
     @media only screen and (orientation: portrait) {
         :root { 
-            --fs: calc(100vw/100); /* Tentative */
+            --bu: calc(100vw/100); /* Tentative */
         } 
     }
 
     @media only screen and (orientation: landscape) {    
         :root { 
-            --fs: calc(100vh/100);  /* Tentative */
+            --bu: calc(100vh/100);  /* Tentative */
         }
     }
 
@@ -424,8 +499,11 @@ This is what our final `reset.css` looks like:
     }
 
     body {
-        font-size: calc(4 * var(--fs)); /* Theoretical a.t.m */
-        font-family: 'Font Family', sans-serif; 
+
+        /* Move this into font-family. */
+        font-size: calc(4 * var(--bu)); /* Theoretical a.t.m */
+        font-family: 'Font Family', system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Droid Sans, Helvetica Neue, Fira Sans, sans-serif!important;
+        
         font-smooth: always;
         font-weight: 300;   
         font-style: normal;
@@ -445,9 +523,9 @@ This is what our final `reset.css` looks like:
         -webkit-osx-font-smoothing: antialiased;
 
 
-        line-height: calc(1.5 * 4 * var(--fs));  /* Or 1.5 */
+        line-height: calc(1.5 * 4 * var(--bu));  /* Or 1.5 */
 
-        /* Colors + contrast */
+        /* Colors + contrast (This will go into the color palette.) */
         color: rgba(0, 0, 0, 0.95);
         background-color: white;
 
@@ -490,20 +568,18 @@ This is what our final `reset.css` looks like:
 
 ```
 
-An intrinisically scalable layout using CSS grids, responsive block scoped typography and an orientation based design behavior separated along `portrait` & `landscape` css to adapt according to the new landscape of the web. It's total friggin' awesome!
+Welcome to intrinisically scalable layouts using CSS grids, responsive blockscoped typography and an orientation based design behavior separated along `portrait` & `landscape` css to gracefully adapt according to the new landscape of the web. 
 
-We will break down the Toucaan reset for more explanations in the next chapter.
+We will refactor the above shown reset with more explanatory notes in the future chapters. Onwards to typesetting and more CSS grids in the next chapter!
 
 
-I have updated the repository with this article and code on [Toucaan](https://github.com/bookiza/toucaan). Everything that is checked-in is also experimental so feel free to question, star, jump-in or offer sage advice. Or better still, contribute to Toucaan if you can!
-
-_Toko, toko!_
+I have updated the [Toucaan](https://github.com/bookiza/toucaan) repository with this article and the latest code. Please note that everything on this repo is currently experimental in nature, so feel free to question, star, jump-in or offer sage advice. Contributions to Toucaan are also super welcome. _Toko, toko!_
 
 ---
 
 Written by: Marvin Danig, CEO & Cofounder of Bubblin Superbooks. Follow me on [Twitter](https://twitter.com/marvindanig) or [Github](https://github.com/marvindanig) perhaps?
 
-Edited by [Sonica Arora](https://bubblin.io/sonica) for accuracies.
+Super thankful to Sonica Arora, Satyendra Sharma and Abigail Rennemeyer for the edits and helping me check the code for accuracies.
 
 **P.S.:** It is likely that some of you viewed this article on your desktop or mobile. If you did that, I recommend you bookmarking us for the iPad next time! :-)
 

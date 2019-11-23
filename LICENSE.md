@@ -4,7 +4,9 @@ Maintainers: [Marvin Danig](https://bubblin.io/marvin) and [Sonica Arora](https:
 
 Contributors: [Marvin Danig](https://bubblin.io/marvin), [Sonica Arora](https://bubblin.io/sonica) and [others](https://github.com/bookiza/toucaan/blob/master/CONTRIBUTORS.md).
 
-Source Code: [https://github.com/bookiza/toucaan](https://github.com/bookiza/toucaan)
+Source code: [https://github.com/bookiza/toucaan](https://github.com/bookiza/toucaan)
+
+---
 
 This license lets you use and share this software for free, as
 long as you contribute software you make with it. Specifically:
