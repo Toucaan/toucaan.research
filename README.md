@@ -33,14 +33,14 @@ Repeat after me: **_Because if Toucaan, then you can too!_** 😉
 
 ## TODOs:
 
-1. ~~Set up a documentation website via netlify (repo [here](https://github.com/bookiza/toucaan.gatsby.site). Immediate help required!)~~
-2. ~~Typesetting/layout still improper on the [Superbook](https://github.com/marvindanig/toucaan-story-of-style).~~
+1. ~~Set up a documentation website via netlify~~ (Go [here](https://github.com/bookiza/toucaan.docs)! Contribution invited!)
+2. ~~Improper~~ Typeset/layout on the [Toucaan Superbook](https://github.com/marvindanig/toucaan-story-of-style).
 3. ~~A place where people can opiniate/scream etc.~~ [Stackoverflow](https://stackoverflow.com/).
 4. Test suite?
 5. Sem-Ver?
 
 
-#### Why Toucaan, asketh the sunbaked developer!
+## Why Toucaan, asketh thou?
 
 Quite simply because I owned the pretty domain name.
 
@@ -50,5 +50,9 @@ Ocassionally—but only rarely—we may even spar with other CSS frameworks usin
 
 Say hello to Toucaan—a tropical CSS framework for the web.
 
-Start with the [Introduction Piece](posts/2019-09-30-toucaan-introduction.md) first.
+## Table of Contents
+
+1. [Rethinking CSS Frameworks-An Introduction](posts/2019-09-30-toucaan-introduction.md)
+2. [Understand Baseline Typography](https://bubblin.io/blog/baseline-css)
+3. [Refactoring Reset]()
 
