@@ -17,7 +17,7 @@
 ## Introduction
 
 Toucaan is a free and open source _mutative_ design system based on CSS grids.
-It is easy-to-use, semantic and mathematically grounded for geometrical precision.
+It is easy-to-use, semantic and also mathematically grounded to yield UIs with geometrical precision.
 
 Repeat after me: **_Because if Toucaan, then you can too!_** 😉
 
