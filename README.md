@@ -16,7 +16,8 @@
 
 ## Introduction
 
-Toucaan is a free and open source _mutative_ design framework based on CSS grids. It is easy-to-use, logical and mathematically grounded.
+Toucaan is a free and open source _mutative_ design system based on CSS grids.
+It is easy-to-use, semantic and mathematically grounded for geometrical precision.
 
 Repeat after me: **_Because if Toucaan, then you can too!_** 😉
 
@@ -40,15 +41,17 @@ Repeat after me: **_Because if Toucaan, then you can too!_** 😉
 5. Sem-Ver?
 
 
-## Why Toucaan, asketh thou?
+## Why call it Toucaan?
 
 Quite simply because I owned the pretty domain name.
 
-Besides that, Toucan is a beautiful bird.
-The aggressive little arboreal ramphastidus symbolizes both beauty and strength and we are going to found our CSS framework on the metaphor of this highly social and resilient bird to implement a design language that will cover support for all the devices on the web and not just smartphones or desktops.
-Ocassionally—but only rarely—we may even spar with other CSS frameworks using our “mean” oversized and colorful bill. 😉
+Besides, Toucan is a beautiful bird.
+This aggressive little arboreal ramphastidus symbolizes both beauty and strength.
+We are not only going to found our CSS framework on the metaphor of this highly social and resilient bird but also implement a design language that covers support for all devices on the web including but not limited to just mobile phone or desktops.
 
-Say hello to Toucaan—a tropical CSS framework for the web.
+Ocassionally—but only rarely—we may spar with other CSS frameworks using our “mean” oversized and colorful bill. 😉
+
+So… say hello to Toucaan—The Tropical CSS framework for the web.
 
 ## Table of Contents
 
