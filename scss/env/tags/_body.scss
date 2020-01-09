@@ -1,9 +1,12 @@
-/* Consistent body element */
-
 body {
-    font-size: calc(4 * var(--fs));
-    font-family: 'proxima-nova', Arial, sans-serif; /* temporary experiment */
-    font-weight: 300;
+    font-size: calc(4 * var(--bu)); 
+
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Droid Sans, Helvetica Neue, Fira Sans, sans-serif!important;
+
+
+    font-smooth: always;
+    font-weight: 300;   
     font-style: normal;
     font-synthesis: none;
     font-stretch: ultra-condensed;
@@ -14,31 +17,28 @@ body {
     font-display: optional;
 
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
 
     -webkit-font-smoothing: subpixel-antialiased;
     -moz-osx-font-smoothing: grayscale;
     -webkit-osx-font-smoothing: antialiased;
-    font-smooth: always; /* TBD: Remove this non-standard "fix" for Safari? */
 
 
-    line-height: calc(1.5 * 4 * var(--fs));
+    line-height: calc(1.5 * 4 * var(--bu));  /* Or 1.5 */
 
-
-    /* Consitent coloring: */
-    color: rgba(0, 0, 0, 0.95);
+    /* Colors + contrast */
+    color: rgba(104, 119, 141, 1);
     background-color: white;
+
+    /* Dimensions */
+    border: none;
+    min-height: 100vh;
 
 
     /* Behavior */
     overflow: auto;
     -webkit-overflow-scrolling: touch;
     scroll-behavior: smooth;
+    touch-action: auto;
 
-	/* Visual integrity */
-    margin: 0;
-    padding: 0;
-    border: none;
-
-    touch-action: none;
 }

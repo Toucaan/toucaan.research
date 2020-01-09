@@ -1,0 +1,13 @@
+@media only screen and (max-width: 2in) { 
+	body {
+		/* Smartwatches with viewport upto 2 inches in breadth (rare but not impossible). Usually, the widths are closer to an inch only. */
+	}
+}
+
+@media only screen and (min-width: 2.000000000001in) and (max-width: 4in) { 
+	body {
+		/* Smartphones with screens that are between 2 to 4 inches in breadth (width). */
+	}
+}
+
+/* And so on… */

@@ -1,0 +1,222 @@
+button,
+input,
+select,
+textarea {
+  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: calc(4 * var(--bu)); 
+  color: var(--bc);
+  background: transparent;
+
+}
+
+
+
+
+/* Old rules */
+
+.primer {
+    border: 1px solid #bbb;
+    color: #333;
+    text-shadow: 0 1px 0 #fff;
+    background: #eee;
+}
+
+.field {
+    border-top-width: 0px;
+    box-sizing: border-box;
+    color: rgb(0, 0, 0);
+    display: block;
+    font-family: proxima-nova, Arial, sans-serif;
+    font-size: 16px;
+    height: 40px;
+    line-height: 1.4;
+    margin: 20px 0;
+    padding: 0px;
+    text-align: center;
+    width: 100%;
+}
+
+.field label{
+    color: rgba(0, 0, 0, 0.7);
+    display: block;
+    font-family: proxima-nova, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    height: auto;
+    width:auto;
+    line-height: 1.4;
+    margin: 0 0 -8px;
+    padding: 0;
+    text-align: left;
+    width: 100%;
+}
+
+.input-field {
+    background-color: rgba(240, 240, 240, 0.9);
+    border: 0;
+    box-sizing: border-box;
+    display: inline-block;
+    font-family: sans-serif;
+    font-size: 16px;
+    height: 40px;
+    letter-spacing: normal;
+    line-height: 23px;
+    margin: 8px 0;
+    outline-color: rgb(51, 51, 51);
+    outline-style: none;
+    outline-width: 0px;
+    padding: 8px;
+    text-align: start;
+    text-indent: 0px;
+    text-shadow: rgb(255, 255, 255) 0px 1px 0px;
+    text-transform: none;
+    vertical-align: baseline;
+    width: 100%;
+    word-spacing: 0px;
+}
+
+.text-field {
+    background-color: rgba(240, 240, 240, 0.9);
+    border: 0;
+    box-sizing: border-box;
+    display: block;
+    font-family: sans-serif;
+    font-size: 16px;
+    letter-spacing: normal;
+    line-height: 22.3999996185303px;
+    margin: 8px 0;
+    outline-color: rgb(51, 51, 51);
+    outline-style: none;
+    outline-width: 0px;
+    padding: 8px;
+    text-align: start;
+    text-indent: 0px;
+    text-shadow: rgb(255, 255, 255) 0px 1px 0px;
+    text-transform: none;
+    vertical-align: baseline;
+    width: 100%;
+    word-spacing: 0px;
+    writing-mode: lr-tb;
+}
+
+input.ui-input-text {
+    border: none;
+    width: 98%;
+    padding: 12px 10px;
+    margin: 0;
+    display: block;
+    background: transparent none;
+    outline: 0 !important;
+}
+
+.subscriber {
+    max-width: 600px;
+}
+
+.subscriber #emailErrors {
+    position: relative;
+    margin: 0 -100px;
+    height: 40px;
+    width: 100px;
+}
+
+.subscriber input {
+    width: 67%;
+    height: 40px;
+    padding: 10px 5px;
+    float: left;
+    font: bold 15px 'lucida sans', 'trebuchet MS', 'Tahoma';
+    border: 0;
+    background: #eee;
+    -moz-border-radius: 3px 0 0 3px;
+    -webkit-border-radius: 3px 0 0 3px;
+    border-radius: 3px 0 0 3px;
+}
+
+.subscriber input:focus {
+    outline: 0;
+    background: #eee;
+}
+
+.subscriber input::-webkit-input-placeholder {
+    color: #999;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.subscriber input:-moz-placeholder {
+    color: #999;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.subscriber input:-ms-input-placeholder {
+    color: #999;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.subscriber button {
+    overflow: visible;
+    position: relative;
+    float: right;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    height: 40px;
+    width: 33%;
+    font: bold 15px/40px 'lucida sans', 'trebuchet MS', 'Tahoma';
+    color: #fff;
+    text-transform: uppercase;
+    background: #d83c3c;
+    -moz-border-radius: 0 3px 3px 0;
+    -webkit-border-radius: 0 3px 3px 0;
+    border-radius: 0 3px 3px 0;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, .3);
+}
+
+.subscriber button:hover {
+    background: #e54040;
+}
+
+.subscriber button:active,
+.subscriber button:focus {
+    background: #c42f2f;
+    outline: none;
+}
+
+.subscriber button:before {
+    content: '';
+    position: absolute;
+    border-width: 8px 8px 8px 0;
+    border-style: solid solid solid none;
+    border-color: transparent #d83c3c transparent;
+    top: 12px;
+    left: -6px;
+}
+
+.subscriber button:hover:before {
+    border-right-color: #e54040;
+}
+
+.subscriber button:focus:before {
+    border-right-color: #c42f2f;
+}
+
+.subscriber button::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/* TODO: Font size below overrides parsley css. Gives unequal size of fonts on the payment form. */
+
+.errors {
+    margin: -35px 15px;
+    color: #f00;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+input.parsley-error, select.parsley-error, textarea.parsley-error, input.parsley-success, select.parsley-success, textarea.parsley-success {
+    border: 0 !important;
+}

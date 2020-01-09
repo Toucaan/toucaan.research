@@ -1,0 +1,28 @@
+::-moz-selection {
+    background: #a7d7ff;
+    color: #000;
+    text-shadow: none;
+}
+
+::selection {
+    background: #a7d7ff;
+    color: #000;
+    text-shadow: none;
+    &:window-inactive {
+        background: #eaeaea;
+        color: #000;
+    }
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 1000px #FBFBFB inset;
+}
+
+::-webkit-input-placeholder, :-moz-placeholder, ::-moz-placeholder, :-ms-input-placeholder, ::placeholder {
+    font: inherit;
+    font-size: calc(4 * var(--bu));
+    color: var(--bc);
+    line-height: calc(1 * 4 * var(--bu)); 
+    height: calc(1 * 4 * var(--bu)); 
+    opacity: 1;
+}

@@ -1,0 +1,12 @@
+.shadow {
+    box-shadow: 1px 3px 6px rgba(120, 120, 120, 0.5);
+}
+
+.inset-shadow {
+    box-shadow: 1px -3px 6px rgba(120, 120, 120, 0.5) inset;
+}
+
+.text-shadow {
+    text-shadow: hsla(40, 100%, 55%, 0.8) 1px 2px 1px;
+}
+
