@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "author": "Marvin Danig <marvin@bubbl.in> (https://bubblin.io/marvin)",
-  "license": "Parity-6.0.0",
+  "license": "Parity-7.0.0",
   "bugs": {
     "url": "https://github.com/bookiza/toucaan/issues"
   },
@@ -28,11 +28,25 @@
     "url": "git+https://github.com/bookiza/toucaan.git"
   },
   "scripts": {
-    "start": "browser-sync start --server --files '**/*.css, **/*.html, **/*.js, !node_modules/**/*' --directory --port 7777 --blacklist 'dist/*' "
+    "start": "browser-sync start --server --files '**/*.css, **/*.html, **/*.js, !node_modules/**/*' --directory --port 7777 --blacklist 'dist/*' ",
+    "build": "webpack -w --display-max-modules 0"
   },
   "devDependencies": {
     "browser-sync": "2.26.7",
-    "jsdom-quokka-plugin": "1.0.14"
+    "css-loader": "3.4.2",
+    "cssnano": "4.1.10",
+    "jsdom-quokka-plugin": "1.0.14",
+    "mini-css-extract-plugin": "0.9.0",
+    "node-sass": "4.13.1",
+    "postcss": "7.0.27",
+    "postcss-import": "12.0.1",
+    "postcss-loader": "3.0.0",
+    "postcss-preset-env": "6.7.0",
+    "sass": "1.26.3",
+    "sass-loader": "8.0.2",
+    "webpack": "4.42.0",
+    "webpack-cli": "3.3.11",
+    "webpack-fix-style-only-entries": "0.4.0"
   },
   "dependencies": {},
   "plugins": [
