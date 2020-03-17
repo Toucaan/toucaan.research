@@ -1,0 +1,72 @@
+.header {
+  width: 100%;
+  z-index: 19999;
+  margin: 0 auto;
+  position: fixed;
+  border-bottom: 1px solid hsla(0, 0%, 100%, 0.1);
+}
+
+/* Firefox doesn't support blur() property w/o flag as of February, 2020 */
+@supports (-moz-appearance: none) {
+  header {
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.accent {
+  background: var(--rg);
+  height: calc(0.5 * var(--bu));
+  border-bottom: 1px solid rgba(128, 102, 255, 0.5);
+}
+
+.bar {
+  margin: 0 auto;
+  width: 100%; /* calc(100 * var(--bu)); */ /* 100 vmin or 100% */
+  display: grid;
+  grid-template-columns: calc(25 * var(--bu)) auto calc(75 * var(--bu));
+}
+
+.logo {
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  display: inline-block;
+  width: calc(25 * var(--bu));
+  height: calc(var(--scalar) * 16 * var(--bu));
+}
+
+menu.menu {
+  width: calc(75 * var(--bu));
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+menu.menu li a {
+  width: auto;
+  height: 100%;
+  color: var(--hc);
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  text-transform: uppercase;
+  transition: transform 0.2s;
+	border-bottom: 5px solid transparent;
+	font-weight: 700;
+  &:hover,
+  &.active {
+    border-bottom-color: rgba(0, 0, 0, 0.2);
+    border-right-color: rgba(0, 0, 0, 0.05);
+    color: white;
+    svg {
+      transform: scale(1.2);
+    }
+    /*background: linear-gradient(90deg, var(--rg) 0%, #a026bf 20%, var(--rg) 60%, #a026bf 85%, var(--rg) 95%) fixed; */
+    background: var(--rg);
+  }
+}
+
+menu.menu li a svg {
+  height: calc(4 * var(--bu));
+  width: calc(3.5 * var(--bu)); /* Eight unit blocks */
+  margin: calc(var(--bu));
+  transition: all 0.2s;
+  fill: currentColor;
+}

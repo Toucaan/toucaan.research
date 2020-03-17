@@ -1,0 +1,9 @@
+.step {
+	width: calc(33 * var(--bu));
+	height: calc(33 * var(--bu));
+}
+
+.step svg {
+	height: calc(20 * var(--bu));
+	width: calc(20 * var(--bu));
+}

@@ -1,0 +1,6 @@
+/* Target every element on the page and every pseudo-elements. */
+*, *:after, *:before   {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}

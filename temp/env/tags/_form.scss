@@ -1,0 +1,220 @@
+/* Domain form */
+form.domain button {
+  font-size: 1.2em;
+  box-shadow: 2px 2px 5px #c8c8c8, -2px -2px 5px white;
+  transition: box-shadow 0.2s;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
+form.domain button:hover {
+  box-shadow: 8px 8px 10px #c8c8c8, -8px -8px 10px white;
+}
+
+form.domain button:active {
+  box-shadow: 2px 2px 2px #c8c8c8, -2px -2px 2px white;
+}
+
+form.domain {
+  margin: calc(3 * var(--bu)) auto;
+}
+
+form.domain > input {
+  border: 0;
+  padding: calc(5 * var(--bu)) calc(1 * var(--bu)) calc(5 * var(--bu)) calc(7 * var(--bu));
+  border-radius: calc(10 * var(--bu)) 0 0 calc(10 * var(--bu));
+  background-color: transparent;
+  color: #111111;
+  outline: 0;
+  font-size: 1.2em;
+  transition: box-shadow 0.2s;
+  width: calc(60 * var(--bu));
+  border: 1pt solid var(--rg);
+}
+
+form.domain input::placeholder {
+  color: var(--fc);
+}
+
+form.domain input:focus {
+  border: 1pt solid var(--rg);
+}
+
+form.domain > button {
+  width: calc(30 * var(--bu));
+  border-radius: 0 calc(10 * var(--bu)) calc(10 * var(--bu)) 0;
+  padding: calc(5 * var(--bu)) calc(3 * var(--bu));
+  border: 1pt solid var(--rg);
+  color: var(--white);
+}
+
+form.domain > button:hover {
+  color: white;
+}
+
+form.domain label.url {
+  width: 100%;
+  text-align: left;
+  margin-left: calc(7 * var(--bu));
+}
+
+
+
+/* Convert form */
+
+form.convert button {
+  font-size: 1em;
+  box-shadow: 2px 2px 5px #c8c8c8, -2px -2px 5px white;
+  transition: box-shadow 0.2s;
+  border: 0;
+  outline: 0;
+  cursor: point;
+}
+
+form.convert button:hover {
+  box-shadow: 8px 8px 10px #c8c8c8, -8px -8px 10px white;
+}
+
+form.convert button:active {
+  box-shadow: 2px 2px 2px #c8c8c8, -2px -2px 2px white;
+}
+
+form.convert {
+  margin: calc(3 * var(--bu)) auto;
+}
+
+form.convert > input {
+  border: 0;
+  padding: calc(2.5 * var(--bu)) calc(5 * var(--bu));
+  border-radius: calc(10 * var(--bu));
+  background-color: transparent;
+  color: #111111;
+  outline: 0;
+  font-size: 1em;
+  transition: box-shadow 0.2s;
+  width: calc(60 * var(--bu));
+  border: 1px solid var(--rg);
+}
+
+form.convert input::placeholder {
+  color: var(--fc);
+}
+
+form.convert input:focus {
+  border: 1pt solid var(--rg);
+}
+
+form.convert > button {
+  width: calc(60 * var(--bu));
+  border-radius: calc(10 * var(--bu));
+  padding: calc(3 * var(--bu)) calc(1 * var(--bu));
+  border: 1pt solid var(--rg);
+  color: var(--white);
+}
+form.convert > button:hover {
+  color: var(--white);
+}
+
+form.convert label.url,
+form.convert label.email,
+form.convert label.app {
+  width: 100%;
+  margin-left: calc(20 * var(--bu));
+}
+
+
+
+/* Order card checkout form */
+
+form.order button {
+  font-size: 1em;
+  box-shadow: 2px 2px 5px #c8c8c8, -2px -2px 5px white;
+  transition: box-shadow 0.2s;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
+form.order button:hover {
+  box-shadow: 8px 8px 10px #c8c8c8, -8px -8px 10px white;
+}
+
+form.order button:active {
+  box-shadow: 2px 2px 2px #c8c8c8, -2px -2px 2px white;
+}
+
+form.order {
+  margin: calc(3 * var(--bu)) auto;
+}
+
+form.order > input.card {
+  border: 0;
+  padding: calc(2.5 * var(--bu)) calc(5 * var(--bu));
+  border-radius: calc(10 * var(--bu)) 0 0 calc(10 * var(--bu));
+  background-color: transparent;
+  color: #111111;
+  outline: 0;
+  font-size: 1em;
+  transition: box-shadow 0.2s;
+  width: calc(55 * var(--bu));
+  border: 1px solid var(--rg);
+}
+
+form.order > input.expiration {
+  border: 0;
+  padding: calc(2.5 * var(--bu)) calc(1 * var(--bu));
+  border-radius: 0;
+  background-color: transparent;
+  color: #111111;
+  outline: 0;
+  font-size: 1em;
+  transition: box-shadow 0.2s;
+  width: calc(20 * var(--bu));
+  border: 1px solid var(--rg);
+}
+
+form.order > input.cvv {
+  border: 0;
+  padding: calc(2.5 * var(--bu)) calc(1 * var(--bu));
+  border-radius: 0 calc(10 * var(--bu)) calc(10 * var(--bu)) 0;
+  background-color: transparent;
+  color: #111111;
+  outline: 0;
+  font-size: 1em;
+  transition: box-shadow 0.2s;
+  width: calc(15 * var(--bu));
+  border: 1px solid var(--rg);
+}
+
+
+form.order input::placeholder {
+  color: var(--fc);
+}
+
+form.order input:focus {
+  border: 1pt solid var(--rg);
+}
+
+form.order > button {
+  width: calc(60 * var(--bu));
+  border-radius: calc(10 * var(--bu));
+  padding: calc(3 * var(--bu)) calc(1 * var(--bu));
+  border: 1pt solid var(--rg);
+  color: var(--white);
+}
+form.order > button:hover {
+  color: var(--white);
+}
+
+form.order label.card {
+  width: calc(55 * var(--bu));
+}
+
+form.order label.expiration {
+  width: calc(20 * var(--bu));
+}
+
+form.order label.cvv {
+  width: calc(15 * var(--bu));
+}

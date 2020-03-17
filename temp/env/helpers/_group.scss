@@ -1,0 +1,13 @@
+/* Modern clearfix for float reset situations. */
+
+.group {
+  &:before {
+    content: "";
+    display: table;
+  }
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

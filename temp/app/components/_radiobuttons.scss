@@ -1,0 +1,93 @@
+.radio-tile-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  .input-container {
+    position: relative;
+    height: calc(25 * var(--bu));
+    width: calc(25 * var(--bu));
+    margin: calc(2 * var(--bu));
+    color: var(--bc);
+
+    // Make actual radio input invisible
+    // + stretch to fill container
+    .radio-button {
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      margin: 0;
+    }
+
+    //default tile styles
+    .radio-tile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      border: 2px solid var(--bc);
+      border-radius: calc(2 * var(--bu));
+      padding: calc(6 * var(--bu));
+      transition: transform 300ms ease;
+    }
+    .icon svg {
+      fill: var(--bc);
+      width: calc(6 * var(--bu));
+      height: calc(6 * var(--bu));
+    }
+    .radio-tile-label {
+      text-align: center;
+      font-size: calc(2 * var(--bu));
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--bc);
+    }
+
+    //active tile 
+    .radio-button:checked + .radio-tile {
+      background-color: var(--bc);
+      border: 2px solid var(--bc);
+      color: white;
+      transform: scale(1.1, 1.1);
+      cursor: auto;
+      &:before{
+        height: inherit;
+        width: inherit;
+        position: absolute;
+        content: '✔';
+        top: var(--bu);
+        left: var(--bu);
+        display: inline-block;
+        font-size: calc(6 * var(--bu));
+        color: #80ff90;
+        pointer-events: none;
+      }
+      &:after{
+        height: inherit;
+        width: inherit;
+        position: absolute;
+        content: attr(data-btn-alt);
+        top: calc(19 * var(--bu));
+        left: calc(18 * var(--bu));
+        display: inline-block;
+        font-size: calc(2 * var(--bu));
+        color: var(--white);
+        pointer-events: none;
+      }
+
+      .icon svg {
+        fill: white;
+        background-color: var(--bc);
+      }
+      .radio-tile-label {
+        color: white;
+        background-color: var(--bc);
+      }
+    }
+  }
+}

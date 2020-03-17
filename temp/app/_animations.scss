@@ -1,0 +1,24 @@
+.transience {
+    transition: all 300ms ease 0s;
+}
+
+.transparent {
+    opacity: 0;
+}
+
+.reveal {
+    animation-name: reveal;
+    animation-iteration-count: once;
+    animation-timing-function: ease;
+    animation-duration: 300ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes reveal {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

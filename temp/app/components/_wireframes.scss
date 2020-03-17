@@ -1,0 +1,44 @@
+.iphone, .ipad, .android {
+	display: block;
+	background-color: var(--white);
+	background-size: cover;
+	background-repeat: no-repeat, no-repeat;
+	border: solid white;
+	margin: calc(1 * var(--bu));
+	position: relative;
+	box-shadow: 0 0.5em 2em 0.2em rgba(0, 0, 0, 0.33), 0 0 0 0.5px #000 inset;
+	&:hover {
+		color: transparent;
+	}
+}
+
+.iphone {
+	$unit: 60vmin/2.525;
+	width: $unit;
+	height: 1.95*$unit;
+	border-width: $unit/15.625;
+	border-radius: $unit/5.86;
+	background-image: url(https://www.apple.com/v/iphone-xs/d/images/overview/screen_display_wallpaper_iphonexs_large.jpg);
+	z-index: 200;
+}
+
+.android {
+	$unit: 60vmin/2.525;
+	width: $unit;
+	height: 1.95*$unit;
+	border-width: $unit/15.625;
+	border-radius: $unit/5.86;
+	background-image: url(https://www.apple.com/v/iphone-xs/d/images/overview/screen_display_wallpaper_iphonexs_large.jpg);
+	z-index: 200;
+}
+
+
+.ipad {
+	$unit: 60vmin;
+	height:  $unit;
+	width: 1.43*$unit;
+	border-width: $unit/20;
+	border-radius: $unit/14;
+	background-image: url(https://www.apple.com/v/ipad-pro/s/images/overview/retina_screen_1__csuokryyjb42_large.jpg);
+	z-index: 100;
+}

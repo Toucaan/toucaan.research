@@ -1,0 +1,121 @@
+/* Margin & padding are anti-patterns */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	padding: 0;
+	color: var(--hc);
+	width: 100%;
+	line-height: calc(2 * 4 * var(--bu));
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Droid Sans, Helvetica Neue, Fira Sans, sans-serif!important;
+  font-weight: 800;
+}
+
+h1 {
+	font-size: calc( 2 * 4 * var(--bu)); 	/* 200% of fs */
+}
+
+h2 {
+ 	font-size: calc( 1.8 * 4 * var(--bu)); 	/* 180% of fs */
+}
+
+h3 {
+	font-size: calc( 1.6 * 4 * var(--bu)); 	/* 160% of fs */
+}
+
+h4 {
+	font-size: calc( 1.4 * 4 * var(--bu)); 	/* 140% of fs */
+}
+
+h5 {
+	font-size: calc( 1.2 * 4 * var(--bu)); /* 120% of fs */
+}
+
+h6 {
+	font-size: calc( 1 * 4 * var(--bu)); /* 100% of fs */
+}
+
+b, strong {
+	font-weight: bold;
+}
+
+p {
+	text-indent: 0;
+}
+
+.underline {
+	text-decoration: underline;
+}
+
+.italics {
+	font-style: italic;
+}
+
+.strike {
+	color:#777;
+	text-decoration:line-through;
+}
+
+.justify {
+	text-align: justify;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.lowercase {
+	text-transform: lowercase;
+}
+
+.capitalize {
+	text-transform: capitalize;
+}
+
+.left-align {
+	text-align: left;
+}
+
+.right-align {
+	text-align: right;
+}
+
+.center-align {
+	text-align: center;
+}
+
+.xxxl {
+  font-size: 200%;
+}
+
+.xxl {
+  font-size: 150%;
+}
+
+.xl {
+  font-size: 125%;
+}
+
+.l {
+  font-size: 100%;
+}
+
+.m {
+  font-size: 90%;
+}
+
+.s {
+  font-size: 80%;
+}
+
+.xs {
+  font-size: 70%;
+}
+
+.xxs {
+  font-size: 60%;
+}

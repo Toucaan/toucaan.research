@@ -1,0 +1,143 @@
+.toggle {
+  display: block;
+  text-align: center;
+  user-select: none;
+}
+.toggle--checkbox {
+  display: none;
+}
+.toggle--btn {
+  display: block;
+  margin: 0 auto;
+
+  font-size: 80%;
+
+  transition: all 350ms ease-in;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.toggle--btn,
+.toggle--checkbox,
+.toggle--feature {
+  &,
+  &:before,
+  &:after {
+    transition: all 250ms ease-in;
+  }
+  &:before,
+  &:after {
+    content: "";
+    display: block;
+  }
+}
+
+/* =====================================================
+   Toggle - switch stylee
+   ===================================================== */
+
+$toggleHeight: 44px;
+$toggleWidth: 120px;
+
+$toggleBtnWidth: 52px;
+$toggleBtnColor: #2b2e3a;
+
+$toggle-bgColor--inactive: #ca5046;
+$toggle-bgColor--active: #a4bf4d;
+
+$toggle-textColor: #fff;
+
+.toggle--switch {
+  & .toggle--btn {
+    position: relative;
+    width: $toggleWidth;
+    height: $toggleHeight;
+    text-transform: uppercase;
+    color: $toggle-textColor;
+
+    //background: $toggle-bgColor--inactive;
+
+    background: linear-gradient(
+      90deg,
+      $toggle-bgColor--active 0%,
+      $toggle-bgColor--active 50%,
+      $toggle-bgColor--inactive 50%,
+      $toggle-bgColor--inactive 200%
+    );
+    background-position: -80px 0;
+    background-size: 200% 100%;
+    box-shadow: inset 0 0px 22px -8px #111;
+
+    &,
+    &:before {
+      border-radius: 8px;
+    }
+
+    //contains the actual knob part of the button and the 'on' text
+    &:before {
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+
+      width: $toggleBtnWidth;
+      height: $toggleHeight;
+      border: 2px solid #202027;
+      background-image: linear-gradient(90deg, transparent 50%, rgba(255, 255, 255, 0.15) 100%);
+      background-color: $toggleBtnColor;
+
+      background-size: 5px 5px;
+
+      text-indent: -100%;
+    }
+  }
+
+  & .toggle--feature {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    height: $toggleHeight;
+    text-shadow: 0 1px 2px #666;
+
+    &:before,
+    &:after {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    &:before {
+      content: attr(data-label-on);
+      left: -60%;
+    }
+    &:after {
+      content: attr(data-label-off);
+      right: 16%;
+    }
+  }
+
+  & .toggle--checkbox {
+    &:checked {
+      & + .toggle--btn {
+        // background: $toggle-bgColor--active;
+
+        background-position: 0 0;
+
+        &:before {
+          left: calc(100% - #{$toggleBtnWidth});
+        }
+
+        & .toggle--feature {
+          &:before {
+            left: 20%;
+          }
+          &:after {
+            right: -60%;
+          }
+        }
+      }
+    }
+  }
+}
