@@ -1,22 +1,21 @@
 .layout {
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: cal(--var(bu)); 
-	grid-template-areas: 
+	grid-template-rows: cal(--var(bu));
+	grid-template-areas:
 		"header"
 		"main"
 		"footer"
 }
 
-
 header {
-    grid-area: header;
+  grid-area: header;
 }
 
 main {
-    grid-area: main;
+  grid-area: main;
 }
 
 footer {
-    grid-area: footer;
+  grid-area: footer;
 }

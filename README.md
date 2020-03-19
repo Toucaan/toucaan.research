@@ -1,4 +1,4 @@
-<h1 align="center">Toucaan—A Tropical CSS Framework</h1>
+<h1 align="center">Toucaan—A ~~Tropical~~ Design Framework</h1>
 
 [![Build Status](https://github.com/bookiza/toucaan/workflows/CI/badge.svg)](https://github.com/bookiza/toucaan/actions?workflow=CI)
 

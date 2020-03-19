@@ -1,8 +1,12 @@
+/* html element must always carry a background color. Sometimes installation
+  of a browser, like for example on LG OLED C8 TV, will default to black background
+  which may not be suitable for your content.  */
+
 html {
-    background-color: white; 
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    text-size-adjust: 100%;
+	background-color: white;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	text-size-adjust: 100%;
 }
