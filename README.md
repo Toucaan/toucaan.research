@@ -1,4 +1,4 @@
-<h1 align="center">Toucaan—A ~~Tropical~~ Design Framework</h1>
+<h1 align="center">Toucaan—A Mutative Design Framework</h1>
 
 [![Build Status](https://github.com/bookiza/toucaan/workflows/CI/badge.svg)](https://github.com/bookiza/toucaan/actions?workflow=CI)
 
@@ -16,7 +16,16 @@
 
 ## Introduction
 
-Toucaan is a _mutative_ design system based on CSS grids, flexbox and blockscoped typography. It is easy-to-use, meaningful and mathematically grounded. Create complex UIs with geometrical precision!
+Toucaan is a _mutative_ design framework for the
+[new landscape](https://bubblin.io/blog/the-new-landscape-of-the-web) of the web.
+
+By mutative, it means you can add app styles directly on
+the [baseline normalize](https://bubblin.io/blog/baseline-css) CSS of the framework.
+
+Toucaan is based on CSS grids, flexbox, and block-scoped typography.
+
+Create deterministic and performant UIs using geometrical precision,
+semantic, accessible and mathematically grounded.
 
 ## Key features
 
@@ -45,5 +54,7 @@ And repeat after me: **_Because if Toucaan, then you can too!_** 😉
 
 1. [Rethinking CSS Frameworks-An Introduction](https://bubblin.io/blog/toucaan-introduction)
 2. [Understand Baseline Typography](https://bubblin.io/blog/baseline-css)
-3. [Switch Media Query Explained](_url_)
+3. [Web Design for Apple WatchOS 5](https://bubblin.io/blog/web-design-recommendations-for-the-apple-watch)
+4. [The New Landscape of The Web](https://bubblin.io/blog/the-new-landscape-of-the-web)
+5. _Switch Media Query Explained_
 
