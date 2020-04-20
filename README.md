@@ -1,7 +1,5 @@
 <h1 align="center">Toucaan—A Mutative Design Framework</h1>
 
-[![Build Status](https://github.com/bookiza/toucaan/workflows/CI/badge.svg)](https://github.com/bookiza/toucaan/actions?workflow=CI)
-
 <div align="center">
   <a href="http://toucaan.com">
     <img src="./assets/toucaan.png" alt="Toucaan-A Tropical CSS Framework" width="400">
@@ -17,24 +15,27 @@
 ## Introduction
 
 Toucaan is a _mutative_ design framework for the
-[new landscape](https://bubblin.io/blog/the-new-landscape-of-the-web) of the web.
+[new landscape](https://bubblin.io/blog/the-new-landscape-of-the-web)
+of the web.
 
-By mutative, it means you can add app styles directly on
-the [baseline normalize](https://bubblin.io/blog/baseline-css) CSS of the framework.
+Mutative means you can add/edit 'app styles' directly on
+the [baseline normalize](https://bubblin.io/blog/baseline-css)
+provided by the framework.
 
-Toucaan is based on CSS grids, flexbox, and block-scoped typography.
+Toucaan is based on modern CSS definitions and it uses grids, flexbox
+and block-scoped typography under the hood.
 
-Create deterministic and performant UIs using geometrical precision,
-semantic, accessible and mathematically grounded.
+Create performant UIs with deterministic layouts with geometric precision.
+Keep your frontend semantic, searchable and mathematically grounded.
 
 ## Key features
 
 1. Semantic layouts with CSS Grids.
-2. Blockscoped typography with intelligent responsiveness.
-3. Supports Apple Watch 5 upwards up-to OLED TVs, V9 browsers on Tesla and everything in-between.
-4. Super reusable with utilities in natural English.
-5. Easy to customize. Themable to make your app or website stand out.
-6. Opinionated with real life usage and feedback.
+2. Block-scoped typography for Intrinsic Design.
+3. Support for Apple Watch 5 and upwards
+4. Powerful reusable class utilities. It's like writing style in natural English.
+5. Easy to customize and theme friendly.
+6. Opinionated with real-life usage and feedback.
 
 
 ## Why call it Toucaan?
