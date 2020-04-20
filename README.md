@@ -17,16 +17,21 @@
 Toucaan is a _mutative_ design framework for the
 [new landscape](https://bubblin.io/blog/the-new-landscape-of-the-web)
 of the web.
-
-Mutative means you can add/edit 'app styles' directly on
+Mutative here means that you can add/edit 'app styles' directly into
 the [baseline normalize](https://bubblin.io/blog/baseline-css)
 provided by the framework.
 
-Toucaan is based on modern CSS definitions and it uses grids, flexbox
+Toucaan is powered with modern-day css patterns (circa 2020, if you
+missed the reference of time). It uses css grids, flexbox
 and block-scoped typography under the hood.
 
-Create performant UIs with deterministic layouts with geometric precision.
-Keep your frontend semantic, searchable and mathematically grounded.
+Create kickass performant UIs with deterministic layouts and
+geometric scaled typography. Keep your styles semantic, searchable
+and mathematically grounded.
+
+## Getting Started
+
+Head over [here](https://www.toucaan.com/docs/getting-started).
 
 ## Key features
 
@@ -42,9 +47,9 @@ Keep your frontend semantic, searchable and mathematically grounded.
 
 Quite simply because I owned the pretty domain name.
 
-Besides, Toucan is a beautiful bird. This aggressive little arboreal ramphastidus symbolizes both beauty and strength. We are not only going to found our CSS framework on the metaphor of this highly social and resilient bird but also implement a design language that covers support for all devices on the web including but not limited to just mobile phone or desktops.
+Besides, Toucan is a beautiful bird. This aggressive little arboreal _ramphastidus_ symbolizes both beauty and strength. We are not only going to found our CSS framework on the metaphor of this highly social and resilient bird but also implement a design language that covers support for all devices on the web including but not limited to just mobile phone or desktops.
 
-Ocassionally—but only rarely—we may spar with other CSS frameworks using our “mean” oversized and colorful bill. 😉
+Occasionally, though only rarely, we may spar with other CSS frameworks using our “mean” oversized and colorful bill. 😉
 
 So… say hello to Toucaan—The Tropical CSS framework for the web.
 
