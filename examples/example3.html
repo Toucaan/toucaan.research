@@ -4,7 +4,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Example3: Number of viewports per inch. </title>
+	<title>Example3: Mapping pixels to inch. </title>
 	<meta name="description" content="Toucaan HTML5 Chassis">
 	<meta name="author" content="Marvin Danig">
 
@@ -12,68 +12,22 @@
 		/* Only critical CSS below: */
 		@charset "UTF-8";
 
-		@import url('./css/example3/portrait.css') only screen and (orientation: portrait);
+		@import url('./css/example3/pinch.css') only screen;
+		/* @import url('./css/example3/finch.css') only screen; */
 
-		@import url('./css/example3/landscape.css') only screen and (orientation: landscape);
+		@import url('./css/example3/inch.css') only screen;
 
-		@media only screen and (orientation: portrait) {
-			:root {
-				--bu: calc(100vw/100);
-			}
-		}
-
-		@media only screen and (orientation: landscape) {
-			:root {
-				--bu: calc(100vh/100);
-			}
-		}
-
-		/*
-			Number of --bu units per inch. :-)
-		*/
-		:root {
-			--bu: 1vmin;
-			--psi: calc(100vw / 1in);
-		}
-
-		*,
-		*:after,
-		*:before {
-			box-sizing: border-box;
-			margin: 0;
-			padding: 0;
-		}
-
-		html, body {
-			min-height: 100vh;
-		}
-
-		.flex {
-			display: -webkit-box;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-		}
-
-		.box {
-			height: 130px; /* 1 physical inch on retina MBP. */
-			width: 130px;
-			background-color: white;
-		}
-
-		.joker {
-			height: 90px;
-			width: 90px;
-			background-color: blanchedalmond;
-		}
 	</style>
 </head>
 
 <body class="flex">
 
-	<div class="box">
-		<div class="joker"></div>
-	</div>
+
+	<div class="square flex">physical measure.</div>
+
+	<div class="standards flex">web standards</div>
+
+
 
 </body>
 

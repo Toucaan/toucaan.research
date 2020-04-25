@@ -11,7 +11,6 @@
 </div>
 
 
-
 ## Introduction
 
 Toucaan is a _mutative_ design framework for the
@@ -58,9 +57,10 @@ And repeat after me: **_Because if Toucaan, then you can too!_** 😉
 
 ## Table of Contents
 
-1. [Rethinking CSS Frameworks-An Introduction](https://bubblin.io/blog/toucaan-introduction)
-2. [Understand Baseline Typography](https://bubblin.io/blog/baseline-css)
-3. [Web Design for Apple WatchOS 5](https://bubblin.io/blog/web-design-recommendations-for-the-apple-watch)
+1. [Rethinking CSS Frameworks](https://bubblin.io/blog/toucaan-introduction)
+2. [A New Baseline.CSS with Responsive Typography](https://bubblin.io/blog/baseline-css)
+3. [Web Designing for the Apple Watch](https://bubblin.io/blog/web-design-recommendations-for-the-apple-watch)
 4. [The New Landscape of The Web](https://bubblin.io/blog/the-new-landscape-of-the-web)
+5. [Mapping pixels to inches correctly]()
 5. _Switch Media Query Explained_
 

@@ -1,0 +1,30 @@
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+}
+
+.flex {
+	display: -webkit-box;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.standards {
+	width: 1in;
+	height: 1in;
+	background: orange;
+	margin:auto 1vw;
+}

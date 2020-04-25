@@ -1,0 +1,102 @@
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+@media (resolution: 48dpi) { /* 25% */
+	:root {
+		--inch: 520px;
+	}
+}
+
+@media (min-resolution: 57.6dpi) { /* 30% */
+	:root {
+		--inch: 433.333333333px;
+	}
+}
+
+@media (resolution: 64dpi) {
+	:root {
+		--inch: 390px;
+	}
+}
+
+@media (resolution: 96dpi) {
+	:root {
+		--inch: 260px;
+	}
+}
+
+@media (resolution: 128dpi) {
+	:root {
+		--inch: 194.029850746px;
+	}
+}
+
+@media (resolution: 144dpi) {
+	:root {
+		--inch: 173.33333333px;
+	}
+}
+
+@media (min-resolution: 153.6dpi) { /* firefox@ 151.2dpi */
+	:root {
+		--inch: 162.5px;
+	}
+}
+
+@media (resolution: 172.8dpi) { /* firefox@ 194.5dpi */
+	:root {
+		--inch: 144.44444444px;
+	}
+}
+
+@media (resolution: 192dpi) {
+	:root {
+		--inch: 130px;
+	}
+}
+
+:root { /* @Safari divide by 0.844155844155844 */
+	--inch: 130px;
+}
+
+
+@media (resolution: 211.2dpi) {
+	:root {
+		--inch: 118.181818182px;
+	}
+}
+
+@media (resolution: 240dpi) {
+	:root {
+		--inch: 104px;
+	}
+}
+
+@media (resolution: 288dpi) {
+	:root {
+		--inch: 86.666666667px;
+	}
+}
+
+@media (resolution: 336dpi) {
+	:root {
+		--inch: 74.2857142857px;
+	}
+}
+
+@media (resolution: 384dpi) {
+	:root {
+		--inch: 65px;
+	}
+}
+
+.square {
+	width: var(--inch);
+	height: var(--inch);
+	background: orangered;
+}
