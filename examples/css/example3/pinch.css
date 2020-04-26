@@ -42,7 +42,7 @@
 	}
 }
 
-@media (min-resolution: 153.6dpi) { /* firefox@ 151.2dpi */
+@media (resolution: 153.6dpi) { /* firefox@ 151.2dpi */
 	:root {
 		--inch: 162.5px;
 	}
@@ -51,18 +51,23 @@
 @media (resolution: 172.8dpi) { /* firefox@ 194.5dpi */
 	:root {
 		--inch: 144.44444444px;
+		
 	}
 }
 
-@media (resolution: 192dpi) {
+@media (resolution: 192dpi) and (-webkit-device-pixel-ratio: 2) {
 	:root {
-		--inch: 130px;
+		--inch: 112px;
+	}
+	.square {
+		background-color: rebeccapurple;
 	}
 }
 
-:root { /* @Safari divide by 0.844155844155844 */
+/* @Safari divide by 0.844155844155844 */
+/* :root { 
 	--inch: 130px;
-}
+} */
 
 
 @media (resolution: 211.2dpi) {
@@ -93,10 +98,4 @@
 	:root {
 		--inch: 65px;
 	}
-}
-
-.square {
-	width: var(--inch);
-	height: var(--inch);
-	background: orangered;
 }

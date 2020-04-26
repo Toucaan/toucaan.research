@@ -28,3 +28,9 @@ html, body {
 	background: orange;
 	margin:auto 1vw;
 }
+
+.square {
+	width: var(--inch);
+	height: var(--inch);
+	/* background: orangered; */
+}
