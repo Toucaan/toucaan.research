@@ -51,13 +51,13 @@
 @media (resolution: 172.8dpi) { /* firefox@ 194.5dpi */
 	:root {
 		--inch: 144.44444444px;
-		
+
 	}
 }
 
-@media (resolution: 192dpi) and (-webkit-device-pixel-ratio: 2) {
+@media (resolution: 192dpi), (-webkit-device-pixel-ratio: 2) {
 	:root {
-		--inch: 112px;
+		--inch: 130px;
 	}
 	.square {
 		background-color: rebeccapurple;
@@ -65,7 +65,7 @@
 }
 
 /* @Safari divide by 0.844155844155844 */
-/* :root { 
+/* :root {
 	--inch: 130px;
 } */
 
