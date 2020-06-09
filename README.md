@@ -16,16 +16,18 @@
 Toucaan is a _mutative_ & _intrinsic_ css framework for modern web
 applications according to the [new landscape](https://bubblin.io/blog/the-new-landscape-of-the-web) of the web.
 
-By mutative, we mean that you can add/edit your own style rules directly into
+1. By mutative, we mean that you can add/edit your own style rules directly into
 the framework. There is no secondary reset file or additional css to import than
 what you'll be writing for your app. 
 
-By intrinsic, we mean that even the [baseline style](https://bubblin.io/blog/baseline-css)
-is modernized and "belongs to the device it is on." Unlike any other CSS framework, Toucaan doesn't use a heavy reset or `normalize` because [this](https://bubblin.io/blog/baseline-css).
+2. By intrinsic, we mean that even the [baseline style](https://bubblin.io/blog/baseline-css)
+is modernized and "belongs to the device" it is on. Unlike any other CSS framework, Toucaan doesn't use a heavy reset or `normalize` because [this](https://bubblin.io/blog/baseline-css).
 
-Toucaan uses modern-day css patterns and doesn't make a choice between css grids or flexbox. It also introduces block-scoped typography and deterministic layouts if you need those.
+Toucaan uses modern-day css patterns and logical defaults that are easier to reason about. For example, it doesn't make a choice between css grids or the flexbox. Use whatever you like! It also introduces block-scoped typography and deterministic layouts if you need any of those. 
 
-Go 'app like' with Toucaan and keep your style semantic, searchable and mathematically grounded. At all times.
+Go 'app like' with Toucaan! 
+
+Keep your style semantic, searchable and mathematically grounded. All the time.
 
 ## Getting Started
 
@@ -45,7 +47,7 @@ Head over [here](https://www.toucaan.com/docs/getting-started).
 
 Quite simply because I owned the pretty domain name.
 
-Besides, Toucan is a beautiful bird. This aggressive little arboreal _ramphastidus_ symbolizes both beauty and strength. We are not only going to found our CSS framework on the metaphor of this highly social and resilient bird but also implement a design language that covers support for all devices on the web including but not limited to just mobile phone or desktops.
+Besides that Toucan is a beautiful bird. This aggressive little arboreal _ramphastidus_ symbolizes both beauty and strength. We are not only going to found our CSS framework on the metaphor of this highly social and resilient bird but also implement a design language that covers support for all devices on the web including but not limited to just mobile phone or desktops.
 
 Occasionally, though only rarely, we may spar with other CSS frameworks using our “mean” oversized and colorful bill. 😉
 
