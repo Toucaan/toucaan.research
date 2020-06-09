@@ -1,4 +1,4 @@
-<h1 align="center">Toucaan—An Mutative Intrinsic CSS Framework</h1>
+<h1 align="center">Toucaan—A Mutative CSS Framework.</h1>
 
 <div align="center">
   <a href="http://toucaan.com">
@@ -6,7 +6,7 @@
   </a>
   <br>
   <h6>
-    <a href="https://bubblin.io/cover/the-toucaan-framework-by-marvin-danig">Read the Superbook on iPad.</a>
+    <a href="https://bubblin.io/cover/the-toucaan-framework-by-marvin-danig">Read the First Edition Superbook!</a>
   </h6>
 </div>
 
@@ -22,9 +22,7 @@ what you'll be writing for your app.
 
 2. By intrinsic, we mean that even the baseline is modernized to a one that "belongs to the device" the user is on. Unlike the other CSS frameworks, Toucaan doesn't use a heavy reset file or even `normalize` under the hood because [this](https://bubblin.io/blog/baseline-css).
 
-Toucaan uses ultramodern css patterns and logical defaults that are mathematically grounded. For example, it doesn't make a choice between css grids or the flexbox. Use whatever you like! It also introduces block-scoped typography and deterministic layouts if you need any of those on your newest app. 
-
-Go 'app like' with Toucaan! 
+Toucaan uses ultramodern css patterns and new defaults that are mathematically grounded. For example, it doesn't make a choice between css grids or the flexbox. Use whatever you like! It however introduces both block-scoped typography and deterministic layouts should you need to design your apps with precision and 'app-like' behavior. 
 
 Keep your style semantic, searchable and mathematically sound. At all times!
 
