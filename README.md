@@ -1,32 +1,31 @@
-<h1 align="center">Toucaan—A Mutative Design Framework</h1>
+<h1 align="center">Toucaan—An Mutative Intrinsic CSS Framework</h1>
 
 <div align="center">
   <a href="http://toucaan.com">
     <img src="./assets/toucaan.png" alt="Toucaan-A Tropical CSS Framework" width="400">
   </a>
   <br>
-  <h3>
+  <h6>
     <a href="https://bubblin.io/cover/the-toucaan-framework-by-marvin-danig">Read the Superbook on iPad.</a>
-  </h3>
+  </h6>
 </div>
 
 
 ## Introduction
 
-Toucaan is a _mutative_ design framework for the
-[new landscape](https://bubblin.io/blog/the-new-landscape-of-the-web)
-of the web.
-Mutative here means that you can add/edit 'app styles' directly into
-the [baseline normalize](https://bubblin.io/blog/baseline-css)
-provided by the framework.
+Toucaan is a _mutative_ & _intrinsic_ css framework for modern web
+applications according to the [new landscape](https://bubblin.io/blog/the-new-landscape-of-the-web) of the web.
 
-Toucaan is powered with modern-day css patterns (circa 2020, if you
-missed the reference of time). It uses css grids, flexbox
-and block-scoped typography under the hood.
+By mutative, we mean that you can add/edit your own style rules directly into
+the framework. There is no secondary reset file or additional css to import than
+what you'll be writing for your app. 
 
-Create kickass performant UIs with deterministic layouts and
-geometric scaled typography. Keep your styles semantic, searchable
-and mathematically grounded.
+By intrinsic, we mean that even the [baseline style](https://bubblin.io/blog/baseline-css)
+is modernized and "belongs to the device it is on." Unlike any other CSS framework, Toucaan doesn't use a heavy reset or `normalize` because [this](https://bubblin.io/blog/baseline-css).
+
+Toucaan uses modern-day css patterns and doesn't make a choice between css grids or flexbox. It also introduces block-scoped typography and deterministic layouts if you need those.
+
+Go 'app like' with Toucaan and keep your style semantic, searchable and mathematically grounded. At all times.
 
 ## Getting Started
 
