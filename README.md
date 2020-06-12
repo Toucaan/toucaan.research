@@ -36,9 +36,9 @@ with loose frameworks.
 Toucaan is also careful about avoiding tribalistic-religious positions such as _not_
 picking between CSS-grids or the flexbox. Use all you got, and whenever you like!
 
-    I have written a book on the [thoughts and reasoning](https://bubblin.io/cover/the-toucaan-framework-by-marvin-danig) behind Toucaan.
+> I have written a book on the [thoughts and reasoning](https://bubblin.io/cover/the-toucaan-framework-by-marvin-danig) behind Toucaan.
 
-Keep your style semantic, searchable and mathematically sound. At all times!
+Buying the book helps me support the Toucaan CSS framework directly.
 
 ## Getting Started
 
@@ -53,7 +53,7 @@ Head over [here](https://www.toucaan.com/docs/getting-started).
 5. Powerful and yet simple reusable classes. Like writing style in plain English.
 6. Easy to customize and theme-ify.
 
-## Why call it Toucaan?
+## Why call it Toucaan
 
 Quite simply because I owned the pretty domain name.
 
