@@ -1,49 +1,4 @@
-/* Notice the use of `in` (inches) on the media-query below.
-We don't use pixels because the physical size of the watch is
-too small for pixels to scale the layout correctly. Hardcoding
-pixel values on a @media-query breakpoint is somewhat an
-antipattern for the Apple Watch and must be avoided. */
-
-/* Read more at https://bubblin.io/blog/toucaan-introduction */
-
-/*  All the style for smart watches or really
-    tiny mobile screens goes in here. */
-@media only screen and (max-width: 2.5in) {
-  body {
-    --scalar: 2;
-  }
-}
-
-/* Smartphones and phablets in landscape mode.*/
-@media only screen and (min-width: 2.500000000001in) and (max-width: 6.6in) {
-  body {
-    --scalar: 1.5;
-  }
-}
-
-/* Tablets and desktop are usually in landscape mode. An 11" length usually points to a 13" tablet.   */
-@media only screen and (min-width: 6.600000000001in) and (max-width: 14in) {
-  body {
-    --scalar: 0.75;
-  }
-}
-
-/* Laptops and desktops in landscape orientation until 27" iMac.   */
-@media only screen and (min-width: 14.000000000001in) and (max-width: 23in) {
-  body {
-    --scalar: 0.6;
-  }
-}
-
-/* Dealing with webOS TVs, projectors and other gigantic screens with greater viewing distances */
-@media only screen and (min-width: 23.000000000001in) {
-  body {
-    --scalar: 0.5;
-  }
-}
-
 /* Set up a baseline environment. */
-
 @import './app/typeset/typography';
 
 @import './app/typeset/typeset';
