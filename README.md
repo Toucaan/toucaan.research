@@ -1,4 +1,4 @@
-<h1 align="center">Toucaan—A Mutative CSS Framework.</h1>
+<h1 align="center">Toucaan—The Tropical CSS Framework.</h1>
 
 <div align="center">
   <a href="http://toucaan.com">
@@ -13,16 +13,34 @@
 
 ## Introduction
 
-Toucaan is a _mutative_ & _intrinsic_ css framework for modern web
-applications according to the [new landscape](https://bubblin.io/blog/the-new-landscape-of-the-web) of the web.
+Unlike any other CSS framework, Toucaan is _mutative_ & _intrinsic_ by nature.
+It is meant to design "app-like" web applications according to the [new landscape](https://bubblin.io/blog/the-new-landscape-of-the-web) of the web.
 
 1. By mutative, we mean that you can add/edit your own style rules directly into
-the framework. There is no secondary reset file or additional css to import than
-what you'll be writing for your app. 
+the framework. There is no primary `reset.css` or secondary layout utility or
+additional resources required for cross-browser compatibility.
 
-2. By intrinsic, we mean that even the baseline is modernized to a one that "belongs to the device" the user is on. Unlike the other CSS frameworks, Toucaan doesn't use a heavy reset file or even `normalize` under the hood because [this](https://bubblin.io/blog/baseline-css).
+2. By intrinsic, we mean that the designs "belongs to" the device the user is on.
+Now this can mean a lot of things but unlike responsive, for example, Toucaan
+doesn't use hardcoded pixel values on media-query to switch the interface between
+mobile and the desktop. In fact, it doesn't even serve the styles needed on the
+desktop media if the user is on mobile.
 
-Toucaan uses ultramodern css patterns and new defaults that are mathematically grounded. For example, it doesn't make a choice between css grids or the flexbox. Use whatever you like! It however introduces both block-scoped typography and deterministic layouts should you need to design your apps with precision and 'app-like' behavior. 
+[this](https://bubblin.io/blog/baseline-css).
+
+Toucaan uses several ultramodern CSS patterns and new defaults that are
+mathematically grounded. It introduces…
+
+1. Block-scoped typography, and,
+2. Deterministic layouts,
+
+…should you need to design your web-app with 'app-like' precision that isn't possible
+with lose frameworks.
+
+Toucaan is also careful about picking tribalistic-religious positions such as not
+making a choice between CSS-grids or the flexbox. Use all you got, and whatever you like!
+
+
 
 Keep your style semantic, searchable and mathematically sound. At all times!
 
@@ -33,7 +51,7 @@ Head over [here](https://www.toucaan.com/docs/getting-started).
 ## Key features
 
 1. Semantic layouts with CSS Grids.
-2. Block-scoped typography 
+2. Block-scoped typography
 3. Deterministic layouts with inch:pixel mappings.
 3. Support starts at Apple Watch 5 and goes all the way up to projectors and LCD TVs.
 4. Powerful and yet simple reusable classes. Like writing style in plain English.
