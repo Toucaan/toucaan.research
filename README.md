@@ -5,16 +5,12 @@
     <img src="./assets/toucaan.png" alt="Toucaan-A Tropical CSS Framework" width="400">
   </a>
   <br>
-  <h6>
-    <a href="https://bubblin.io/cover/the-toucaan-framework-by-marvin-danig">Read the First Edition Superbook!</a>
-  </h6>
 </div>
 
-
-## Introduction
+# Introduction
 
 Unlike any other CSS framework, Toucaan is _mutative_ & _intrinsic_ by nature.
-It is meant to design "app-like" web applications according to the [new landscape](https://bubblin.io/blog/the-new-landscape-of-the-web) of the web.
+It is meant to design "app-like" interfaces according to the [new landscape](https://bubblin.io/blog/the-new-landscape-of-the-web) of the web.
 
 1. By mutative, we mean that you can add/edit your own style rules directly into
 the framework. There is no primary `reset.css` or secondary layout utility or
@@ -26,7 +22,7 @@ doesn't use hardcoded pixel values on media-query to switch the interface betwee
 mobile and the desktop. In fact, it doesn't even serve the styles needed on the
 desktop media if the user is on mobile.
 
-[this](https://bubblin.io/blog/baseline-css).
+Read more about [this](https://bubblin.io/blog/baseline-css).
 
 Toucaan uses several ultramodern CSS patterns and new defaults that are
 mathematically grounded. It introduces…
@@ -35,12 +31,12 @@ mathematically grounded. It introduces…
 2. Deterministic layouts,
 
 …should you need to design your web-app with 'app-like' precision that isn't possible
-with lose frameworks.
+with loose frameworks.
 
-Toucaan is also careful about picking tribalistic-religious positions such as not
-making a choice between CSS-grids or the flexbox. Use all you got, and whatever you like!
+Toucaan is also careful about avoiding tribalistic-religious positions such as _not_
+picking between CSS-grids or the flexbox. Use all you got, and whenever you like!
 
-
+    I have written a book on the [thoughts and reasoning](https://bubblin.io/cover/the-toucaan-framework-by-marvin-danig) behind Toucaan.
 
 Keep your style semantic, searchable and mathematically sound. At all times!
 
