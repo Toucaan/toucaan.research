@@ -9,8 +9,8 @@
 
 # Introduction
 
-Unlike any other CSS framework, Toucaan is _mutative_ & _intrinsic_ by nature.
-It is meant to design "app-like" interfaces according to the [new landscape](https://bubblin.io/blog/the-new-landscape-of-the-web) of the web.
+Unlike the commonly available CSS frameworks, Toucaan is an _intrinsic_ CSS framework with _mutative_ CSS properties from the start.
+It is meant for "app-like" web interfaces according to the [new landscape of the web](https://bubblin.io/blog/the-new-landscape-of-the-web).
 
 1. By mutative, we mean that you can add/edit your own style rules directly into
 the framework. There is no primary `reset.css` or secondary layout utility or
