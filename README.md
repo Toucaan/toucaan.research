@@ -9,12 +9,13 @@
 
 # Introduction
 
-Unlike the commonly available CSS frameworks, Toucaan is an _intrinsic_ CSS framework with _mutative_ CSS properties from the start.
-It is meant for "app-like" web interfaces according to the [new landscape of the web](https://bubblin.io/blog/the-new-landscape-of-the-web).
+Toucaan is an _intrinsic_ and _mutative_ CSS framework.
+It is meant for "app-like" web interfaces designed for the [new landscape of the web](https://bubblin.io/blog/the-new-landscape-of-the-web).
 
 1. By mutative, we mean that you can add/edit your own style rules directly into
-the framework. There is no primary `reset.css` or secondary layout utility or
-additional resources required for cross-browser compatibility.
+the framework. This concept borders on the idea of a framework-less and class-less approach to style,
+in that there is no primary `reset.css` or secondary resource or utilities required to be imported for
+cross-browser compatibility.
 
 2. By intrinsic, we mean that the designs "belongs to" the device the user is on.
 Now this can mean a lot of things but unlike responsive, for example, Toucaan
@@ -44,7 +45,7 @@ Buying the book helps me support the Toucaan CSS framework directly.
 
 Head over [here](https://www.toucaan.com/docs/getting-started).
 
-## Key features
+### Key features
 
 1. Semantic layouts with CSS Grids.
 2. Block-scoped typography
@@ -53,7 +54,12 @@ Head over [here](https://www.toucaan.com/docs/getting-started).
 5. Powerful and yet simple reusable classes. Like writing style in plain English.
 6. Easy to customize and theme-ify.
 
-## Why call it Toucaan
+### Browser Support
+
+Preferably modern browsers that are inside of 2017 and now. Check-out [CSS Remedy](https://github.com/jensimmons/cssremedy)
+to see how much debt you're willing to undertake for backwards-compatibility.
+
+### Why call it Toucaan
 
 Quite simply because I owned the pretty domain name.
 
