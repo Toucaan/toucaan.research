@@ -32,14 +32,16 @@ mathematically grounded. It introduces…
 2. Deterministic layouts using the absolute [--inch](https://github.com/bookiza/--inch) (optional).
 
 …should you need to design your web-app with 'app-like' precision that isn't possible
-with loose frameworks.
+with traditional CSS frameworks.
 
-Toucaan is also careful about avoiding tribalistic-religious positions such as _not_
-picking between CSS-grids or the flexbox. Use all you got, and whenever you like!
+Toucaan is also careful about avoiding tribalistic positions such as _not_
+choosing between grids, floats or the flexbox. Use whatever you want, whenever you like!
+
+## Donate
 
 > I have written a book on the [thoughts and reasoning](https://bubblin.io/cover/the-toucaan-framework-by-marvin-danig) behind Toucaan.
 
-Buying the book helps me support the Toucaan CSS framework directly.
+Buying the book helps me support the Toucaan CSS framework directly, no donation is required.
 
 ## Getting Started
 
