@@ -10,18 +10,18 @@
 # Introduction
 
 Toucaan is an _intrinsic_ and _mutative_ CSS framework.
-It is meant for "app-like" web interfaces designed for the [new landscape of the web](https://bubblin.io/blog/the-new-landscape-of-the-web).
+It is meant for "app-like" web interfaces meant for the [new landscape of the web](https://bubblin.io/blog/the-new-landscape-of-the-web).
 
 1. By mutative, we mean that you can add/edit your own style rules directly into
-the framework. This concept borders on the idea of a framework-less and class-less approach to style,
-in that there is no primary `reset.css` or secondary resource or utilities required to be imported for
-cross-browser compatibility.
+the framework. The concept borders near the idea of a framework-less and classless approach to CSS,
+in that there is no heavy `reset` or `normalize.css` or a secondary utility or resource required to be imported for
+cross-browser consistency.
 
 2. By intrinsic, we mean that the designs "belongs to" the device the user is on.
-Now this can mean a lot of things but unlike responsive, for example, Toucaan
+Now, this can mean a lot of things but unlike responsive, for example, Toucaan
 doesn't use hardcoded pixel values on media-query to switch the interface between
-mobile and the desktop. In fact, it doesn't even serve the styles needed on the
-desktop media if the user is on mobile.
+mobile and the desktop. In fact, it doesn't even serve the desktop CSS if the
+user is on mobile so there is no query switching to happen.
 
 Read more about [this](https://bubblin.io/blog/baseline-css).
 
@@ -29,7 +29,7 @@ Toucaan uses several ultramodern CSS patterns and new defaults that are
 mathematically grounded. It introduces…
 
 1. Block-scoped typography, and,
-2. Deterministic layouts,
+2. Deterministic layouts using the absolute [--inch](https://github.com/bookiza/--inch) (optional).
 
 …should you need to design your web-app with 'app-like' precision that isn't possible
 with loose frameworks.

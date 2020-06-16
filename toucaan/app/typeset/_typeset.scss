@@ -8,7 +8,6 @@ h5,
 h6 {
 	margin: 0;
 	padding: 0;
-	color: var(--hc);
 	width: 100%;
 	line-height: calc(2 * 4 * var(--bu));
 	font-family: var(--system);
@@ -56,7 +55,6 @@ p {
 }
 
 .strike {
-	color:#777;
 	text-decoration:line-through;
 }
 
