@@ -1,3 +1,7 @@
+# MIT License
+
+and…
+
 # The Parity Public License 7.0.0
 
 Maintainers: [Marvin Danig](https://bubblin.io/marvin) and [Sonica Arora](https://bubblin.io/sonica).

@@ -1,10 +1,10 @@
 {
   "name": "toucaan",
-  "version": "semverized",
-  "description": "",
+  "version": "1.0.0-semver",
+  "description": "Intrinsic web design framework for app-like interfaces.",
   "main": "index.js",
   "author": "Marvin Danig <marvin@bubbl.in> (https://bubblin.io/marvin)",
-  "license": "Parity-7.0.0",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/bookiza/toucaan/issues"
   },
@@ -25,7 +25,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bookiza/toucaan.git"
+    "url": "git+https://github.com/toucaan/toucaan.git"
   },
   "scripts": {
     "start": "browser-sync start --server --files '**/*.css, **/*.html, **/*.js, !node_modules/**/*' --directory --port 7777 --blacklist 'dist/*' ",
@@ -33,7 +33,7 @@
   },
   "devDependencies": {
     "browser-sync": "2.26.7",
-    "css-loader": "3.5.3",
+    "css-loader": "3.6.0",
     "cssnano": "4.1.10",
     "mini-css-extract-plugin": "0.9.0",
     "node-sass": "4.14.1",
@@ -41,11 +41,11 @@
     "postcss-import": "12.0.1",
     "postcss-loader": "3.0.0",
     "postcss-preset-env": "6.7.0",
-    "sass": "1.26.8",
-    "sass-loader": "8.0.2",
+    "sass": "1.26.10",
+    "sass-loader": "9.0.2",
     "webpack": "4.43.0",
-    "webpack-cli": "3.3.11",
-    "webpack-fix-style-only-entries": "0.5.0"
+    "webpack-cli": "3.3.12",
+    "webpack-fix-style-only-entries": "0.5.1"
   },
   "dependencies": {},
   "plugins": [
