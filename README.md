@@ -9,15 +9,13 @@
 
 # Introduction
 
-Toucaan is an _intrinsic_ and _mutative_ CSS framework.
-It is meant for "app-like" web interfaces meant for the [new landscape of the web](https://bubblin.io/blog/the-new-landscape-of-the-web).
+Toucaan is a _mutative_, _intrinsic_ and _deterministic_ CSS framework.
+It is meant for "app-like" web interfaces according to the [new landscape of the web](https://bubblin.io/blog/the-new-landscape-of-the-web).
 
-1. By mutative, we mean that you can add/edit your own style rules directly into
-the framework. The concept borders near the idea of a framework-less and classless approach to CSS,
-in that there is no heavy `reset` or `normalize.css` or a secondary utility or resource required to be imported for
-cross-browser consistency.
+1. Mutative means that you can add or edit baseline rules (think custom `normalize`) yourself, directly into the framework. This concept borders close to the idea of a class-less & framework-less approach to design. 
+There is no single heavy `reset` or `normalize` or outside utility required to be enforce cross-browser consistency.
 
-2. By intrinsic, we mean that the designs "belongs to" the device the user is on.
+2. Intrinsic means that the design "belongs to" the device. 
 Now, this can mean a lot of things but unlike responsive, for example, Toucaan
 doesn't use hardcoded pixel values on media-query to switch the interface between
 mobile and the desktop. In fact, it doesn't even serve the desktop CSS if the
@@ -77,12 +75,3 @@ using our “mean” oversized and colorful bill. 😉
 So… say hello to Toucaan—the tropical new CSS framework for the web. And repeat
 after me: **_if Toucaan, then you can too!_** 😉
 
-### Table of Contents
-
-1. [Rethinking CSS Frameworks](https://bubblin.io/blog/toucaan-introduction)
-2. [A New Baseline.CSS with Intrinsic Typography](https://bubblin.io/blog/baseline-css)
-3. [Web Designing for the Apple Watch](https://bubblin.io/blog/web-design-recommendations-for-the-apple-watch)
-4. [The New Landscape of The Web](https://bubblin.io/blog/the-new-landscape-of-the-web)
-5. [Mapping pixels to inches correctly](https://bubblin.io/blog/inch)
-6. _Switch Media Query Explained_
-7. _Intinsic Web Design_
