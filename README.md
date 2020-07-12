@@ -20,27 +20,37 @@ Now, intrinsic can mean a lot of things but unlike responsive think, for example
 
 3. Deterministic implies evaluation of the container before the content is laid out on a webpage. Only then can a layout "belong" to the device it is being viewed on. It can also mean other things like not serving desktop css on mobile and vice-versa (no media-query matching), or blockscoped typography or pinning for physical size to keep web design accessible. 
 
-Read more about [this](https://bubblin.io/blog/baseline-css).
+Toucaan uses several ultramodern CSS patterns and some new defaults that are mathematically grounded. It also introduces some new concepts like:
 
-Toucaan uses several ultramodern CSS patterns and new defaults that are
-mathematically grounded. It introduces…
+1. Blockscoped typography, and,
+2. Absolute [--inch](https://github.com/bookiza/--inch) unit (optional).
 
-1. Block-scoped typography, and,
-2. Deterministic layouts using the absolute [--inch](https://github.com/bookiza/--inch) (optional).
+Toucaan is also careful about avoiding tribalistic this vs. that positions such as _not_ choosing between grids, floats or the flexbox. Use whatever you like, whenever you want!
 
-…should you need to design your web-app with 'app-like' precision that isn't possible
-with traditional CSS frameworks.
+### Table of Contents
 
-Toucaan is also careful about avoiding tribalistic positions such as _not_
-choosing between grids, floats or the flexbox. Use whatever you want, whenever you like!
+1. [Rethinking css frameworks](https://bubblin.io/blog/toucaan-introduction)
+2. [A new baseline.css with blockscoped typography](https://bubblin.io/blog/baseline-css)
+3. [Web designing for the Apple Watch](https://bubblin.io/blog/web-design-recommendations-for-the-apple-watch)
+4. [The new landscape of the web](https://bubblin.io/blog/the-new-landscape-of-the-web)
+5. [Mapping pixels to inches. Because, why not!](https://bubblin.io/blog/inch)
+6. _Switch Media Query Explained_
+7. _Intinsic Web Design_
 
-## Donate
 
-> I have written a book on the [thoughts and reasoning](https://bubblin.io/cover/the-toucaan-framework-by-marvin-danig) behind Toucaan.
+### Financial support
 
-Buying the book helps me support the Toucaan CSS framework directly, no donation is required.
+If you like my work and would love to support:
 
-## Getting Started
+#### One night stand
+
+> You can also buy the book on the [Fundamentals of Toucaan](https://bubblin.io/cover/the-toucaan-framework-by-marvin-danig) that explains the thoughts and reasoning behind the choices made by Toucaan and how you could override them.
+
+#### Github Sponsorship
+
+
+
+### Documentation
 
 Head over [here](https://www.toucaan.com/docs/getting-started).
 
@@ -49,7 +59,7 @@ Head over [here](https://www.toucaan.com/docs/getting-started).
 1. Semantic layouts with CSS Grids.
 2. Block-scoped typography
 3. Deterministic layouts with `inch:pixel` mappings (Optional).
-4. Support starts at Apple Watch 5 and goes all the way up to projectors and LCD TVs.
+4. Supported Apple Watch 5 all the way up to large projectors & OLED TVs with a modern browser.
 5. Powerful and yet simple reusable classes. Like writing style in plain English.
 6. Easy to customize and theme-ify.
 
@@ -62,15 +72,14 @@ to see how much debt you're willing to undertake for backwards-compatibility.
 
 Quite simply because I owned the pretty domain name.
 
-Besides that Toucan is a beautiful bird. This aggressive little arboreal
+Besides, Toucan is a beautiful bird. This aggressive little arboreal
 _ramphastidus_ symbolizes both beauty and strength. We are not only going to found
 our CSS framework on the metaphor of this highly social and resilient bird but also
 implement a design language that covers support for all devices on the web including
-but not limited to just mobile or the desktop.
+but not limited to mobile or the desktop.
 
 Occasionally, though only rarely, we may even spar with other CSS frameworks
-using our “mean” oversized and colorful bill. 😉
+using our “mean” oversized and colorful bill. 😉 So… say hello to Toucaan—the tropical new CSS framework for web apps. 
 
-So… say hello to Toucaan—the tropical new CSS framework for the web. And repeat
-after me: **_if Toucaan, then you can too!_** 😉
+And repeat after me: **_if Toucaan, then you can too!_** 😉
 

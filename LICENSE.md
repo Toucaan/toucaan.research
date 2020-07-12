@@ -2,9 +2,9 @@
 
 Maintainers: [Marvin Danig](https://bubblin.io/marvin) and [Sonica Arora](https://bubblin.io/sonica).
 
-Contributors: [Marvin Danig](https://bubblin.io/marvin), [Sonica Arora](https://bubblin.io/sonica) and [others](https://github.com/bookiza/toucaan/blob/master/CONTRIBUTORS.md).
+Contributors: [Marvin Danig](https://bubblin.io/marvin), [Sonica Arora](https://bubblin.io/sonica) and [others](https://github.com/toucaan/toucaan/blob/master/CONTRIBUTORS.md).
 
-Source code: [https://github.com/bookiza/toucaan](https://github.com/bookiza/toucaan)
+Source code: [https://github.com/toucaan/toucaan](https://github.com/toucaan/toucaan)
 
 ---
 # The Parity Public License 7.0.0
