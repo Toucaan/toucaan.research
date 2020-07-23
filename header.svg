@@ -132,17 +132,21 @@
                 h2 {
                     font-size: 30px;
                 }
-                p {
+                div.button {
                     font-size: 20px;
-                    text-shadow: 0 1px 0 #efefef;
                     animation: 5s ease 0s normal forwards 1 fadeIn;
+                    background: rgba(0, 0, 0, 0.4);
+                    padding: 2vmin 3vmin;
+                    width: fit-content;
+                    margin: 0 auto;
+                    border-radius: 1vmin;
                 }
             </style>
             <div class="container">
                 <div class="textuary">
                     <h1><span>Tou</span><span>CAAN</span></h1>
                     <h2>An Intrinsic CSS Framework.</h2>
-                    <p>Click to see the source</p>
+                    <div class="button">Read documentation</div>
 
                 </div>
             </div>

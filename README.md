@@ -1,6 +1,6 @@
 <div align="center">
 	<br>
-	<a href="https://github.com/Toucaan/toucaan/tree/master/toucaan">
+	<a href="https://toucaan.com">
 		<img src="header.svg" width="800" height="800">
 	</a>
 	<br>
