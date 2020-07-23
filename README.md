@@ -1,5 +1,3 @@
-<h1 align="center"></h1>
-
 <div align="center">
 	<br>
 	<a href="https://github.com/Toucaan/toucaan/tree/master/toucaan">
@@ -8,18 +6,11 @@
 	<br>
 </div>
 
-<!-- <div align="center">
-  <a href="http://toucaan.com">
-    <img src="./assets/toucaan.png" alt="Toucaan-A Tropical CSS Framework" width="400">
-  </a>
-  <br>
-</div> -->
-
 # Introduction
 
-Toucaan is a _deterministic_, _mutative_, and an _intrinsic_ CSS framework.
+Toucaan is a _deterministic_, _mutative_, and _intrinsic_ CSS framework.
 
-It is meant for designing "app-like" web interfaces according to the [new landscape of the web](https://bubblin.io/blog/the-new-landscape-of-the-web). Read the story about how it came to be over [here](https://bubblin.io/blog/toucaan-introduction).
+It is meant for designing "app-like" web interfaces according to the [new landscape of the web](https://bubblin.io/blog/the-new-landscape-of-the-web). Read the story about how Toucaan came to be over [here](https://bubblin.io/blog/toucaan-introduction).
 
 1. Mutative means that you can add or edit baseline rules (think custom `normalize`) yourself, directly into the framework. This concept borders close to the idea of a class-less & framework-less approach to design. 
 There is no single heavy `reset` or `normalize` or outside utility required to be enforce cross-browser consistency.
