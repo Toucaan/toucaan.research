@@ -2,7 +2,7 @@
 
 <div align="center">
 	<br>
-	<a href="https://github.com/Toucaan/toucaan/blob/master/header.svg">
+	<a href="https://github.com/Toucaan/toucaan/tree/master/toucaan">
 		<img src="header.svg" width="800" height="800">
 	</a>
 	<br>
