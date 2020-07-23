@@ -1,4 +1,12 @@
-<h1 align="center">Toucaan—The Tropical CSS Framework.</h1>
+<h1 align="center"></h1>
+
+<div align="center">
+	<br>
+	<a href="https://github.com/sindresorhus/css-in-readme-like-wat/blame/master/header.svg">
+		<img src="header.svg" width="800" height="400">
+	</a>
+	<br>
+</div>
 
 <div align="center">
   <a href="http://toucaan.com">
