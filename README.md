@@ -12,13 +12,13 @@ Toucaan is a _deterministic_, _mutative_, and _intrinsic_ CSS framework.
 
 It is meant for designing "app-like" web interfaces according to the [new landscape of the web](https://bubblin.io/blog/the-new-landscape-of-the-web). Read the story about how Toucaan came to be over [here](https://bubblin.io/blog/toucaan-introduction).
 
-1. Mutative means that you can add or edit baseline rules (think custom `normalize`) yourself, directly into the framework. This concept borders close to the idea of a class-less & framework-less approach to design. 
+1. **Mutative** means that you can add or edit baseline rules (think custom `normalize`) yourself, directly into the framework. This concept borders close to the idea of a class-less & framework-less approach to design. 
 There is no single heavy `reset` or `normalize` or outside utility required to be enforce cross-browser consistency.
 
-2. Intrinsic means that the design "belongs to" the device. The term `intrinsic` was [coined](https://www.zeldman.com/2018/05/02/transcript-intrinsic-web-design-with-jen-simmons-the-big-web-show/) by Jen Simmons of Mozilla in 2017.
+2. **Intrinsic** implies that the design "belongs to" the device. The term `intrinsic` was [coined](https://www.zeldman.com/2018/05/02/transcript-intrinsic-web-design-with-jen-simmons-the-big-web-show/) by Jen Simmons of Mozilla in 2017.
 Now, intrinsic can mean a lot of things but unlike responsive think, for example, not using hardcoded pixel values on media-queries to switch layout, blockscoped typography, clear interface between the container and the contained etc. In fact, even responsive web design is a subset of intrinsic web design.
 
-3. Deterministic implies evaluation of the container before the content is laid out on a webpage. Only then can a layout "belong" to the device it is being viewed on. It can also mean other things like not serving desktop css on mobile and vice-versa (no media-query matching), or blockscoped typography or pinning for physical size to keep web design accessible. 
+3. **Deterministic** means carrying out evaluation of the container before the content is laid out into the viewport. Quite simply, a layout can "belong" to the device only when the layout _knows_ the container it is being viewed on. Now this can mean a few other things like not serving desktop css on mobile and vice-versa, like no hardcoded media-query matching, or using blockscoped typography or pinning for the physical size using absolute units just to keep the design accessible. 
 
 Toucaan uses several ultramodern CSS patterns and some new defaults that are mathematically grounded. It also introduces some new concepts like:
 
