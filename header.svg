@@ -131,22 +131,28 @@
 
                 h2 {
                     font-size: 30px;
+                    padding-bottom: 2vmin;
                 }
-                div.button {
+                a.button {
                     font-size: 20px;
                     animation: 5s ease 0s normal forwards 1 fadeIn;
-                    background: rgba(0, 0, 0, 0.4);
+                    background: rgba(80, 94, 248, 0.8);
                     padding: 2vmin 3vmin;
                     width: fit-content;
-                    margin: 0 auto;
+                    margin: 1vmin auto;
                     border-radius: 1vmin;
+                    text-decoration: none;
+                    color: white;
+                }
+                a.button:hover {
+                    background: rgba(80, 94, 248, 1);
                 }
             </style>
             <div class="container">
                 <div class="textuary">
                     <h1><span>Tou</span><span>CAAN</span></h1>
                     <h2>An Intrinsic CSS Framework.</h2>
-                    <div class="button">Read documentation</div>
+                    <a href="" class="button">Read documentation</a>
 
                 </div>
             </div>

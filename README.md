@@ -1,9 +1,7 @@
 <div align="center">
-	<br>
-	<a href="https://toucaan.com">
 		<img src="header.svg" width="800" height="800">
-	</a>
-	<br>
+	<!-- <a href="https://toucaan.com">
+	</a> -->
 </div>
 
 # Introduction
@@ -25,7 +23,7 @@ Toucaan uses several ultramodern CSS patterns and some new defaults that are mat
 1. Blockscoped typography, and,
 2. Absolute [--inch](https://github.com/bookiza/--inch) unit (optional).
 
-Toucaan is also careful about avoiding tribalistic this vs. that positions such as _not_ choosing between grids, floats or the flexbox. Use whatever you like, whenever you want!
+Toucaan is also careful about avoiding tribalistic positions, this vs. that arguments such as _not_ choosing between grids, flexbox or floats. Use whatever you like, whenever you want, where ever you may deem it fit.
 
 ### Table of Contents
 
