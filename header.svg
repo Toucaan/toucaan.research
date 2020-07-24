@@ -101,7 +101,7 @@
                     margin-top: 250px;
                 }
                 h1 {
-                    font-size: 10vmin;
+                    font-size: 100px;
                     line-height: 1.3;
                     letter-spacing: 5px;
                     text-transform: uppercase;
@@ -130,7 +130,7 @@
                 }
 
                 h2 {
-                    font-size: 6vmin;
+                    font-size: 30px;
                     padding-bottom: 2vmin;
                 }
                 a.button {
