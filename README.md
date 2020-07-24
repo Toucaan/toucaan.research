@@ -1,6 +1,6 @@
 <div align="center">
 	<a href="https://toucaan.com" rel="follow">
-		<img src="header.svg" width="800" height="800">
+		<img src="header.svg" width="800">
 	</a>
 </div>
 
