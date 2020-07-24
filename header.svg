@@ -25,23 +25,6 @@
                         opacity: 1;
                     }
                 }
-                
-                @keyframes rotate {
-					0% {
-						transform: rotate(3deg);
-					}
-					100% {
-						transform: rotate(-3deg);
-					}
-				}
-                @keyframes bop {
-                    0% {
-                                transform: scale(0.9);
-                    }
-                    100% {
-                                transform: scale(1);
-                    }
-                }
                 .container {
                     font-family:
                         system-ui,
@@ -85,7 +68,6 @@
                         0 12px 5px rgba(0, 0, 0, 0.1);
                     margin: 0;
                     padding: 0;
-                    animation: 1s ease 0s normal forwards 1 rotate;
                 }
                 h2 {
                     font-size: 30px;
@@ -108,7 +90,7 @@
             </style>
             <div class="container">
                 <div class="textuary">
-                    <h1><span>Tou</span><span>CAAN</span></h1>
+                    <h1>Toucaan</h1>
                     <h2>An Intrinsic CSS Framework.</h2>
                     <a href="" class="button">Read documentation</a>
 
