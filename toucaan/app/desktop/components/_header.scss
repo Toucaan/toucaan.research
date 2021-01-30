@@ -15,15 +15,15 @@
 
 .accent {
   background: var(--rg);
-  height: calc(0.5 * var(--bu));
+  height: calc(0.5 * var(--vmin));
   border-bottom: 1px solid rgba(128, 102, 255, 0.5);
 }
 
 .bar {
   margin: 0 auto;
-  width: 100%; /* calc(100 * var(--bu)); */ /* 100 vmin or 100% */
+  width: 100%; /* calc(100 * var(--vmin)); */ /* 100 vmin or 100% */
   display: grid;
-  grid-template-columns: calc(25 * var(--bu)) auto calc(75 * var(--bu));
+  grid-template-columns: calc(25 * var(--vmin)) auto calc(75 * var(--vmin));
 }
 
 .logo {
@@ -31,12 +31,12 @@
   background-position: center;
   position: relative;
   display: inline-block;
-  width: calc(25 * var(--bu));
-  height: calc(var(--scalar) * 16 * var(--bu));
+  width: calc(25 * var(--vmin));
+  height: calc(var(--scalar) * 16 * var(--vmin));
 }
 
 menu.menu {
-  width: calc(75 * var(--bu));
+  width: calc(75 * var(--vmin));
   display: grid;
   grid-template-columns: auto auto auto auto;
 }
@@ -64,9 +64,9 @@ menu.menu li a {
 }
 
 menu.menu li a svg {
-  height: calc(4 * var(--bu));
-  width: calc(3.5 * var(--bu)); /* Eight unit blocks */
-  margin: calc(var(--bu));
+  height: calc(4 * var(--vmin));
+  width: calc(3.5 * var(--vmin)); /* Eight unit blocks */
+  margin: calc(var(--vmin));
   transition: all 0.2s;
   fill: currentColor;
 }

@@ -1,0 +1,12 @@
+.footer {
+  min-height: calc(25 * var(--vmin));
+}
+
+.footer ul {
+  width: calc(100 * var(--vmin));
+  display: grid;
+  grid-template-columns: calc(100 / 3 * var(--vmin)) auto calc(100 / 3 * var(--vmin));
+}
+
+.footer ul li {
+}

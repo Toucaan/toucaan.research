@@ -9,33 +9,33 @@ h6 {
 	margin: 0;
 	padding: 0;
 	width: 100%;
-	line-height: calc(2 * 4 * var(--bu));
+	line-height: calc(2 * 4 * var(--vmin));
 	font-family: var(--system);
   font-weight: 800;
 }
 
 h1 {
-	font-size: calc( 2 * 4 * var(--bu)); 	/* 200% of fs */
+	font-size: calc( 2 * 4 * var(--vmin)); 	/* 200% of fs */
 }
 
 h2 {
- 	font-size: calc( 1.8 * 4 * var(--bu)); 	/* 180% of fs */
+ 	font-size: calc( 1.8 * 4 * var(--vmin)); 	/* 180% of fs */
 }
 
 h3 {
-	font-size: calc( 1.6 * 4 * var(--bu)); 	/* 160% of fs */
+	font-size: calc( 1.6 * 4 * var(--vmin)); 	/* 160% of fs */
 }
 
 h4 {
-	font-size: calc( 1.4 * 4 * var(--bu)); 	/* 140% of fs */
+	font-size: calc( 1.4 * 4 * var(--vmin)); 	/* 140% of fs */
 }
 
 h5 {
-	font-size: calc( 1.2 * 4 * var(--bu)); /* 120% of fs */
+	font-size: calc( 1.2 * 4 * var(--vmin)); /* 120% of fs */
 }
 
 h6 {
-	font-size: calc( 1 * 4 * var(--bu)); /* 100% of fs */
+	font-size: calc( 1 * 4 * var(--vmin)); /* 100% of fs */
 }
 
 b, strong {

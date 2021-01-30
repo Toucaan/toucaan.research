@@ -21,9 +21,9 @@ input:-webkit-autofill {
 
 ::-webkit-input-placeholder, :-moz-placeholder, ::-moz-placeholder, :-ms-input-placeholder, ::placeholder {
     font: inherit;
-    font-size: calc(4 * var(--bu));
+    font-size: calc(4 * var(--vmin));
     color: var(--fc);
-    line-height: calc(1 * 4 * var(--bu));
-    height: calc(1 * 4 * var(--bu));
+    line-height: calc(1 * 4 * var(--vmin));
+    height: calc(1 * 4 * var(--vmin));
     opacity: 1;
 }

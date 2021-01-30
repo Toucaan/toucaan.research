@@ -30,8 +30,10 @@ Toucaan is also careful about avoiding tribalistic positions, this vs. that argu
 1. [Rethinking css frameworks](https://bubblin.io/blog/toucaan-introduction)
 2. [A new baseline.css with blockscoped typography](https://bubblin.io/blog/baseline-css)
 3. [Web designing for the Apple Watch](https://bubblin.io/blog/web-design-recommendations-for-the-apple-watch)
-4. [The new landscape of the web](https://bubblin.io/blog/the-new-landscape-of-the-web)
-5. [Mapping pixels to inches. Because, why not!](https://bubblin.io/blog/inch)
+4. [The New landscape of the web](https://bubblin.io/blog/the-new-landscape-of-the-web)
+5. [Mapping pixels to physical inches!](https://bubblin.io/blog/inch)
+6. [Intrinsic CSS Router](https://bubblin.io/blog/a-css-router)
+7. _Blockscoped Typography and Aspect Ratios in CSS_
 6. _Switch Media Query Explained_
 7. _Intinsic Web Design_
 

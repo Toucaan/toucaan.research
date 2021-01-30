@@ -3,23 +3,23 @@
 
 @import url('/dist/landscape.css') only screen and (orientation: landscape);
 
-/* --bu stands for base unit of blockscoped typography. */
+/* --vmin stands for base unit of blockscoped typography. */
 @media only screen and (orientation: portrait) {
   :root {
-    --bu:calc(100vw/100);
+    --vmin:calc(100vw/100);
   }
 }
 
 @media only screen and (orientation: landscape) {
   :root {
-    --bu:calc(100vh/100);
+    --vmin:calc(100vh/100);
   }
 }
 
 /* Global variables below */
 
 :root {
-	--bu:1vmin;
+	--vmin:1vmin;
 
   /*Font familia */
   --sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";

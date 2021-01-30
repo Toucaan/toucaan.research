@@ -1,0 +1,33 @@
+.pitch {
+  width: calc(1 * 100 * var(--vmin));
+  min-height: calc((100 - 16.25) * var(--vmin));
+  margin: 0 auto;
+}
+
+.beam {
+  display: grid;
+  width: 100%; /*calc(1 * 100 * var(--vmin));*/
+  grid-template-columns: auto auto auto;
+  margin: 0 auto;
+}
+
+.element {
+  height: calc(20 * var(--vmin));
+}
+
+.element svg {
+  height: calc(10 * var(--vmin));
+  width: calc(10 * var(--vmin));
+  transition: all 0.2s;
+  fill: currentColor;
+}
+
+.subhead {
+  width: calc(1 * 100 * var(--vmin));
+  margin: 0 auto;
+}
+
+.underscore {
+  height: calc(1 * var(--vmin));
+  width: calc(25 * var(--vmin));
+}

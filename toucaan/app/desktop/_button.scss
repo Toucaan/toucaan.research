@@ -96,8 +96,8 @@ $colors: (
   transition: 0.25s;
   background: transparent;
 	border: 1pt solid var(--white);
-	border-radius: calc(10 * var(--bu));
-	padding: calc(3*var(--bu)) calc(6*var(--bu));
+	border-radius: calc(10 * var(--vmin));
+	padding: calc(3*var(--vmin)) calc(6*var(--vmin));
 	display: block;
 
   &:hover,

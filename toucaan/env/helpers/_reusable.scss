@@ -47,36 +47,36 @@
 
 /* -- Push aside, out & away ---*/
 .side-gap {
-	margin-right: calc(1 * var(--bu)); /* 20% of one line-height on either side */
-	margin-left: calc(1 * var(--bu));
+	margin-right: calc(1 * var(--vmin)); /* 20% of one line-height on either side */
+	margin-left: calc(1 * var(--vmin));
 }
 
 .top-gap {
-	margin-top: calc(4 * var(--bu)); /* One line-height */
+	margin-top: calc(4 * var(--vmin)); /* One line-height */
 }
 
 .double-top-gap {
-	margin-top: calc(2 * 4 * var(--bu)); /* Two line-heights */
+	margin-top: calc(2 * 4 * var(--vmin)); /* Two line-heights */
 }
 
 .bottom-gap {
-	margin-bottom: calc(4 * var(--bu)); /* One line-height */
+	margin-bottom: calc(4 * var(--vmin)); /* One line-height */
 }
 
 .double-bottom-gap {
-	margin-bottom: calc(2 * 4 * var(--bu)); /* Two line-heights */
+	margin-bottom: calc(2 * 4 * var(--vmin)); /* Two line-heights */
 }
 
 .pad {
-	padding: calc(5 * var(--bu));
+	padding: calc(5 * var(--vmin));
 }
 
 .pad-vertically {
-	padding: calc(5 * var(--bu)) 0;
+	padding: calc(5 * var(--vmin)) 0;
 }
 
 .pad-horizontally {
-	padding: 0 calc(5 * var(--bu));
+	padding: 0 calc(5 * var(--vmin));
 }
 
 .rotate {
@@ -97,6 +97,6 @@
 }
 
 .blur {
-	backdrop-filter: blur(calc(1 * var(--bu)));
+	backdrop-filter: blur(calc(1 * var(--vmin)));
 }
 

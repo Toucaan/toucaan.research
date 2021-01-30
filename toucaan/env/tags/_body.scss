@@ -1,5 +1,5 @@
 body {
-	font-size: calc(4 * var(--bu));
+	font-size: calc(4 * var(--vmin));
 	font-family: var(--system);
 	font-smooth: always;
 	font-weight: 300;
@@ -15,7 +15,7 @@ body {
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 	-webkit-backface-visibility: hidden;
 
-	line-height: calc(1.5 * 4 * var(--bu));  /* Or 1.5 */
+	line-height: calc(1.5 * 4 * var(--vmin));  /* Or 1.5 */
 
 	/* Set your colors + contrast over here. */
 	color: rgba(104, 119, 141, 1);

@@ -17,19 +17,19 @@ form.domain button:active {
 }
 
 form.domain {
-  margin: calc(3 * var(--bu)) auto;
+  margin: calc(3 * var(--vmin)) auto;
 }
 
 form.domain > input {
   border: 0;
-  padding: calc(5 * var(--bu)) calc(1 * var(--bu)) calc(5 * var(--bu)) calc(7 * var(--bu));
-  border-radius: calc(10 * var(--bu)) 0 0 calc(10 * var(--bu));
+  padding: calc(5 * var(--vmin)) calc(1 * var(--vmin)) calc(5 * var(--vmin)) calc(7 * var(--vmin));
+  border-radius: calc(10 * var(--vmin)) 0 0 calc(10 * var(--vmin));
   background-color: transparent;
   color: #111111;
   outline: 0;
   font-size: 1.2em;
   transition: box-shadow 0.2s;
-  width: calc(60 * var(--bu));
+  width: calc(60 * var(--vmin));
   border: 1pt solid var(--rg);
 }
 
@@ -42,9 +42,9 @@ form.domain input:focus {
 }
 
 form.domain > button {
-  width: calc(30 * var(--bu));
-  border-radius: 0 calc(10 * var(--bu)) calc(10 * var(--bu)) 0;
-  padding: calc(5 * var(--bu)) calc(3 * var(--bu));
+  width: calc(30 * var(--vmin));
+  border-radius: 0 calc(10 * var(--vmin)) calc(10 * var(--vmin)) 0;
+  padding: calc(5 * var(--vmin)) calc(3 * var(--vmin));
   border: 1pt solid var(--rg);
   color: var(--white);
 }
@@ -56,7 +56,7 @@ form.domain > button:hover {
 form.domain label.url {
   width: 100%;
   text-align: left;
-  margin-left: calc(7 * var(--bu));
+  margin-left: calc(7 * var(--vmin));
 }
 
 
@@ -81,19 +81,19 @@ form.convert button:active {
 }
 
 form.convert {
-  margin: calc(3 * var(--bu)) auto;
+  margin: calc(3 * var(--vmin)) auto;
 }
 
 form.convert > input {
   border: 0;
-  padding: calc(2.5 * var(--bu)) calc(5 * var(--bu));
-  border-radius: calc(10 * var(--bu));
+  padding: calc(2.5 * var(--vmin)) calc(5 * var(--vmin));
+  border-radius: calc(10 * var(--vmin));
   background-color: transparent;
   color: #111111;
   outline: 0;
   font-size: 1em;
   transition: box-shadow 0.2s;
-  width: calc(60 * var(--bu));
+  width: calc(60 * var(--vmin));
   border: 1px solid var(--rg);
 }
 
@@ -106,9 +106,9 @@ form.convert input:focus {
 }
 
 form.convert > button {
-  width: calc(60 * var(--bu));
-  border-radius: calc(10 * var(--bu));
-  padding: calc(3 * var(--bu)) calc(1 * var(--bu));
+  width: calc(60 * var(--vmin));
+  border-radius: calc(10 * var(--vmin));
+  padding: calc(3 * var(--vmin)) calc(1 * var(--vmin));
   border: 1pt solid var(--rg);
   color: var(--white);
 }
@@ -120,7 +120,7 @@ form.convert label.url,
 form.convert label.email,
 form.convert label.app {
   width: 100%;
-  margin-left: calc(20 * var(--bu));
+  margin-left: calc(20 * var(--vmin));
 }
 
 
@@ -145,45 +145,45 @@ form.order button:active {
 }
 
 form.order {
-  margin: calc(3 * var(--bu)) auto;
+  margin: calc(3 * var(--vmin)) auto;
 }
 
 form.order > input.card {
   border: 0;
-  padding: calc(2.5 * var(--bu)) calc(5 * var(--bu));
-  border-radius: calc(10 * var(--bu)) 0 0 calc(10 * var(--bu));
+  padding: calc(2.5 * var(--vmin)) calc(5 * var(--vmin));
+  border-radius: calc(10 * var(--vmin)) 0 0 calc(10 * var(--vmin));
   background-color: transparent;
   color: #111111;
   outline: 0;
   font-size: 1em;
   transition: box-shadow 0.2s;
-  width: calc(55 * var(--bu));
+  width: calc(55 * var(--vmin));
   border: 1px solid var(--rg);
 }
 
 form.order > input.expiration {
   border: 0;
-  padding: calc(2.5 * var(--bu)) calc(1 * var(--bu));
+  padding: calc(2.5 * var(--vmin)) calc(1 * var(--vmin));
   border-radius: 0;
   background-color: transparent;
   color: #111111;
   outline: 0;
   font-size: 1em;
   transition: box-shadow 0.2s;
-  width: calc(20 * var(--bu));
+  width: calc(20 * var(--vmin));
   border: 1px solid var(--rg);
 }
 
 form.order > input.cvv {
   border: 0;
-  padding: calc(2.5 * var(--bu)) calc(1 * var(--bu));
-  border-radius: 0 calc(10 * var(--bu)) calc(10 * var(--bu)) 0;
+  padding: calc(2.5 * var(--vmin)) calc(1 * var(--vmin));
+  border-radius: 0 calc(10 * var(--vmin)) calc(10 * var(--vmin)) 0;
   background-color: transparent;
   color: #111111;
   outline: 0;
   font-size: 1em;
   transition: box-shadow 0.2s;
-  width: calc(15 * var(--bu));
+  width: calc(15 * var(--vmin));
   border: 1px solid var(--rg);
 }
 
@@ -197,9 +197,9 @@ form.order input:focus {
 }
 
 form.order > button {
-  width: calc(60 * var(--bu));
-  border-radius: calc(10 * var(--bu));
-  padding: calc(3 * var(--bu)) calc(1 * var(--bu));
+  width: calc(60 * var(--vmin));
+  border-radius: calc(10 * var(--vmin));
+  padding: calc(3 * var(--vmin)) calc(1 * var(--vmin));
   border: 1pt solid var(--rg);
   color: var(--white);
 }
@@ -208,13 +208,13 @@ form.order > button:hover {
 }
 
 form.order label.card {
-  width: calc(55 * var(--bu));
+  width: calc(55 * var(--vmin));
 }
 
 form.order label.expiration {
-  width: calc(20 * var(--bu));
+  width: calc(20 * var(--vmin));
 }
 
 form.order label.cvv {
-  width: calc(15 * var(--bu));
+  width: calc(15 * var(--vmin));
 }
