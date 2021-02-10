@@ -18,11 +18,11 @@ Read more about why and how Toucaan came about to be over [here](https://bubblin
 
 ## Definitions
 
-	1. **Intrinsic** implies that your app design "belongs" to the device in question naturally. The term `intrinsic` was [coined](https://www.zeldman.com/2018/05/02/transcript-intrinsic-web-design-with-jen-simmons-the-big-web-show/) by Jen Simmons of Mozilla back in 2017. While intrinsic could mean different things to different people, it really points to "app-like" interfaces that belong to the user device.
+1. **Intrinsic** implies that your app design "belongs" to the device in question naturally. The term `intrinsic` was [coined](https://www.zeldman.com/2018/05/02/transcript-intrinsic-web-design-with-jen-simmons-the-big-web-show/) by Jen Simmons of Mozilla back in 2017. While intrinsic could mean different things to different people, it really points to "app-like" interfaces that belong to the user device.
 
 2. **Mutative** implies that you can edit and add to baseline rules (think customized `normalize.css`) yourself. Directly into the framework. This concept borders close to the idea of a classless & framework-less approach to web design. There is no single heavy `reset` or `normalize` or an external utility included in the DOM to enforce browser consistency.
 
-3. **Deterministic** means carrying out evaluation of the container before the content is laid out into the viewport. Quite simply, a layout can "belong" to the device only when the layout _knows_ the container it is being viewed on. Now this can mean a few other things like not serving desktop css on mobile and vice-versa, like no hardcoded media-query matching, or using blockscoped typography or pinning for the physical size using absolute units just to keep the design accessible. 
+3. **Deterministic** means without any guesswork or approximations of the container or the viewport. Put simply, a layout can "belong" to a device only when the layout _knows_ what device it is being viewed on. Learn more about the CSS Router that Toucaan utilizes to serve category-specific stylesheets (watch => mobile => tablet => desktop => television) instead of hardcoded media-queries that match to a device-width.
 
 Toucaan uses several ultramodern CSS patterns and some new defaults that are mathematically grounded. It also introduces some new concepts like:
 
