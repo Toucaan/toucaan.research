@@ -24,17 +24,22 @@ Read more about why and how Toucaan came about to be over [here](https://bubblin
 
 3. **Deterministic** means without any guesswork or approximations of the container or the viewport. Put simply, a layout can "belong" to a device only when the layout _knows_ what device it is being viewed on. Learn more about the CSS Router that Toucaan utilizes to serve category-specific stylesheets (watch => mobile => tablet => desktop => television) instead of hardcoded media-queries that match to a device-width.
 
-Toucaan uses several ultramodern CSS patterns and some new defaults that are mathematically grounded. It also introduces some new concepts like:
+Toucaan uses several ultramodern CSS patterns that are grounded in mathematics. It also introduces some new concepts like:
 
-1. Blockscoped typography, and,
-2. Absolute [--inch](https://github.com/bookiza/--inch) unit (optional).
+1. Using `vmin` for block-scoped typography and intrinsic aspect-ratios,
+2. Optionally use absolute [--inch](https://github.com/bookiza/--inch) unit or any other physical SI unit like centimeters or millimeters to define your UI.
+3. And much, much more…
 
-Toucaan is also careful about avoiding tribalistic positions, this vs. that arguments such as _not_ choosing between grids, flexbox or floats. Use whatever you like, whenever you want, where ever you may deem it fit.
+### What Toucaan doesn't say
+
+Toucaan is careful about avoiding tribalistic positions that developers often take. It doesn't subscribe to a view that says 'use this, but not that', like _not_ choosing between CSS grids, flexbox, or floats. 
+
+Use whatever you like, wherever you want; however, you may deem it fit.
 
 ### Table of Contents
 
 1. [Rethinking css frameworks](https://bubblin.io/blog/toucaan-introduction)
-2. [A new baseline.css with blockscoped typography](https://bubblin.io/blog/baseline-css)
+2. [A new baseline.css](https://bubblin.io/blog/baseline-css)
 3. [Web designing for the Apple Watch](https://bubblin.io/blog/web-design-recommendations-for-the-apple-watch)
 4. [The New landscape of the web](https://bubblin.io/blog/the-new-landscape-of-the-web)
 5. [Mapping pixels to physical inches!](https://bubblin.io/blog/inch)
