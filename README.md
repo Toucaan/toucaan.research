@@ -1,20 +1,26 @@
 <div align="center">
-	<a href="https://toucaan.com" rel="follow">
-		<img src="header.svg" width="800">
-	</a>
+    <a href="https://toucaan.com" rel="follow">
+        <img src="header.svg" width="800">
+    </a>
 </div>
 
 # Introduction
 
-Toucaan is a _deterministic_, _mutative_, and _intrinsic_ CSS framework.
+Toucaan is an _intrinsic_, _mutative_, and _deterministic_ CSS framework for the web _and_ mobile apps using the `webView.`
 
-It is meant for designing "app-like" web interfaces according to the [new landscape of the web](https://bubblin.io/blog/the-new-landscape-of-the-web). Read the story about how Toucaan came to be over [here](https://bubblin.io/blog/toucaan-introduction).
+Design "app-like" interfaces. 
 
-1. **Mutative** means that you can add or edit baseline rules (think custom `normalize`) yourself, directly into the framework. This concept borders close to the idea of a class-less & framework-less approach to design. 
-There is no single heavy `reset` or `normalize` or outside utility required to be enforce cross-browser consistency.
+Optimize UX/UI according to device capabilities and physical size.
+Separate stylesheets according to the [new landscape of the web](https://bubblin.io/blog/the-new-landscape-of-the-web). 
+Put Accessibility ahead of everything else.
+Use block-scoped typography with `vmin` instead of `px`, `em`, `rem` or `vw/vh` which are hard to scale.
+Read more about why and how Toucaan came about to be over [here](https://bubblin.io/blog/toucaan-introduction).
 
-2. **Intrinsic** implies that the design "belongs to" the device. The term `intrinsic` was [coined](https://www.zeldman.com/2018/05/02/transcript-intrinsic-web-design-with-jen-simmons-the-big-web-show/) by Jen Simmons of Mozilla in 2017.
-Now, intrinsic can mean a lot of things but unlike responsive think, for example, not using hardcoded pixel values on media-queries to switch layout, blockscoped typography, clear interface between the container and the contained etc. In fact, even responsive web design is a subset of intrinsic web design.
+## Definitions
+
+	1. **Intrinsic** implies that your app design "belongs" to the device in question naturally. The term `intrinsic` was [coined](https://www.zeldman.com/2018/05/02/transcript-intrinsic-web-design-with-jen-simmons-the-big-web-show/) by Jen Simmons of Mozilla back in 2017. While intrinsic could mean different things to different people, it really points to "app-like" interfaces that belong to the user device.
+
+2. **Mutative** implies that you can edit and add to baseline rules (think customized `normalize.css`) yourself. Directly into the framework. This concept borders close to the idea of a classless & framework-less approach to web design. There is no single heavy `reset` or `normalize` or an external utility included in the DOM to enforce browser consistency.
 
 3. **Deterministic** means carrying out evaluation of the container before the content is laid out into the viewport. Quite simply, a layout can "belong" to the device only when the layout _knows_ the container it is being viewed on. Now this can mean a few other things like not serving desktop css on mobile and vice-versa, like no hardcoded media-query matching, or using blockscoped typography or pinning for the physical size using absolute units just to keep the design accessible. 
 
@@ -79,7 +85,10 @@ implement a design language that covers support for all devices on the web inclu
 but not limited to mobile or the desktop.
 
 Occasionally, though only rarely, we may even spar with other CSS frameworks
-using our “mean” oversized and colorful bill. 😉 So… say hello to Toucaan—the tropical new CSS framework for web apps. 
+using our "mean" oversized and colorful bill. 😉 So… say hello to Toucaan—the tropical new CSS framework for web apps. 
 
 And repeat after me: **_if Toucaan, then you can too!_** 😉
 
+### Sponsored by
+
+[Red Goose](https://goose.red)–world's number one website to mobile app converter.
