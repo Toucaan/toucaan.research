@@ -80,11 +80,9 @@ If you like my [work](https://github.com/sponsors/marvindanig) and please consid
 
 ### Sponsors
 
-[Red Goose](https://goose.red)–world's number one website to mobile app converter.
-
-<div align="right">
+<div align="center">
   <a href="https://goose.red" rel="follow">
-    <img src="sponsors/red-goose.png" width="100"> 
+    <img src="sponsors/red-goose.png" width="50"> 
   </a>
 </div>
 
