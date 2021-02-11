@@ -48,13 +48,27 @@ Toucaan uses several ultramodern CSS patterns that are grounded in mathematics. 
 
 ### What Toucaan isn't about
 
-Toucaan is careful about avoiding tribalistic positions that developers often take. It doesn't subscribe to a view that says 'use this, but not that', like _not_ choosing between CSS grids, flexbox, or floats. 
+Toucaan is careful about avoiding tribalistic positions that developers often take. It doesn't subscribe to a view that says 'use this, but not that,' like _not_ choosing between CSS grids, flexbox, or floats. 
 
 Use whatever you like, wherever you want; however, you may deem it fit.
 
-## Documentation
+### Primary concepts
 
-Head over [here](https://www.toucaan.com/docs/getting-started) to get started.
+1. [Rethinking CSS frameworks](https://bubblin.io/blog/toucaan-introduction)
+2. [A new baseline](https://bubblin.io/blog/baseline-css)
+3. [Web designing for the Apple Watch](https://bubblin.io/blog/web-design-recommendations-for-the-apple-watch)
+4. [The new landscape of the web](https://bubblin.io/blog/the-new-landscape-of-the-web)
+5. [Mapping pixels to physical inches.](https://bubblin.io/blog/inch)
+6. [Intrinsic CSS Router](https://bubblin.io/blog/a-css-router)
+7. _Blockscoped Typography and Intrinsic Aspect Ratios_
+6. _Switch Media Query Explained_
+7. _Understanding Intrinsic Web Design_
+
+## Getting started
+
+Head over [here](https://www.toucaan.com/docs/getting-started) to get started on Toucaan with early documentation. 
+
+Contributions are invited for both the framework and documentation.  
 
 ### Financial support
 
@@ -68,32 +82,25 @@ If you like my [work](https://github.com/sponsors/marvindanig) and please consid
 
 [Red Goose](https://goose.red)–world's number one website to mobile app converter.
 
-### Table of Contents
+<div align="right">
+  <a href="https://goose.red" rel="follow">
+    <img src="sponsors/red-goose.png" width="100"> 
+  </a>
+</div>
 
-1. [Rethinking css frameworks](https://bubblin.io/blog/toucaan-introduction)
-2. [A new baseline.css](https://bubblin.io/blog/baseline-css)
-3. [Web designing for the Apple Watch](https://bubblin.io/blog/web-design-recommendations-for-the-apple-watch)
-4. [The New landscape of the web](https://bubblin.io/blog/the-new-landscape-of-the-web)
-5. [Mapping pixels to physical inches!](https://bubblin.io/blog/inch)
-6. [Intrinsic CSS Router](https://bubblin.io/blog/a-css-router)
-7. _Blockscoped Typography and Aspect Ratios in CSS_
-6. _Switch Media Query Explained_
-7. _Intinsic Web Design_
 
 ### Vendor Support
 
 Modern browsers that are inside of 2017 and now. The support can go further back, but check-out [CSS Remedy](https://github.com/jensimmons/cssremedy)
 to see how much debt you're willing to shoulder for backward-compatibility.
 
-### Why call it Toucaan
+#### Why call it Toucaan?
 
-Entirely only because I owned the pretty domain name.
+Only because I owned the pretty domain name.
 
 Besides, Toucan is a beautiful bird. This aggressive little arboreal
-_ramphastidus_ symbolizes both beauty and strength. We are not only going to found our CSS framework on the metaphor of this highly social and resilient bird, but also implement a design language that covers support for all devices on the web, including but not limited to mobile or the desktop.
+_ramphastidus_ symbolizes both beauty and strength. We will ground our framework on the metaphor of a Toucaan and implement a design language that covers support for all devices on the web. And not just mobile and desktop.
 
-Occasionally, though only rarely, we may even spar with other CSS frameworks
-using our "mean" oversized and colorful bill. 😉 So… say hello to Toucaan—the tropical new CSS framework for web apps. 
+Occasionally, though only rarely, we may even spar with other CSS frameworks using our "mean" oversized and colorful bill. 😉 So… say hello to Toucaan—the tropical new CSS framework for modern web apps. 
 
 And repeat after me: **_if Toucaan, then you can too!_** 😉
-
