@@ -16,12 +16,6 @@ Toucaan is an _intrinsic_, _mutative_, and _deterministic_ CSS framework for the
 
 3. **Deterministic** means without any guesswork or approximations of the container the UI will live in. Put simply, a layout can "belong" to a device only when the layout _knows_ what device it is being viewed on. Learn more about the [CSS Router](https://bubblin.io/blog/a-css-router) that Toucaan utilizes to serve category-specific stylesheets (watch => mobile => tablet => desktop => television) instead of using hardcoded media-queries to match to mobile using device-width.
 
-Toucaan uses several ultramodern CSS patterns that are grounded in mathematics. It also introduces some new concepts like:
-
-1. Using `vmin` for block-scoped typography and intrinsic aspect-ratios,
-2. Optionally use absolute [--inch](https://github.com/bookiza/--inch) unit or any other physical SI unit like centimeters or millimeters to define your UI.
-And much, much more…
-
 
 ### About
 
@@ -35,9 +29,14 @@ Toucaan is about:
 - Putting accessibility above everything else.
 - Routing stylesheets according to the [new landscape of the web](https://bubblin.io/blog/the-new-landscape-of-the-web). 
 
-Toucaan introduces intrinsic block-scoped typography with `vmin` instead of the more commonly used units like `px` 'em` `rem` or `vw/vh`. 
+Toucaan uses several ultramodern CSS patterns that are grounded in mathematics. It also introduces some new concepts like:
 
-Read more about why and how Toucaan came about to be over [here](https://bubblin.io/blog/toucaan-introduction).
+1. Using `vmin` for block-scoped typography and intrinsic aspect-ratios,
+2. Optionally use absolute [--inch](https://github.com/bookiza/--inch) unit or any other SI unit of physical measurement like centimeters or millimeters to define your UIs.
+
+And much, much more…
+
+> Read more about how Toucaan came about to be over [here](https://bubblin.io/blog/toucaan-introduction).
 
 ### Key features
 
