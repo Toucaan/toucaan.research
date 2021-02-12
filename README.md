@@ -8,20 +8,19 @@
 
 Toucaan is an _intrinsic_, _mutative_, and _deterministic_ CSS framework for the web _and_ mobile apps using the `webView.`
 
-## Definitions
+### Definitions
 
 1. **Intrinsic** implies that your app design "belongs" to the device in question naturally. The term `intrinsic` was [coined](https://www.zeldman.com/2018/05/02/transcript-intrinsic-web-design-with-jen-simmons-the-big-web-show/) by Jen Simmons of Mozilla back in 2017. While intrinsic could mean different things to different people, it really points to "app-like" interfaces that belong to the user device.
 
 2. **Mutative** implies that you can edit and add to baseline rules (think customized `normalize.css`) yourself. Directly into the framework. This concept borders close to the idea of a classless & framework-less approach to web design. There is no single heavy `reset` or `normalize` or an external utility included in the DOM to enforce browser consistency.
 
-3. **Deterministic** means without any guesswork or approximations of the container the UI will live in. Put simply, a layout can "belong" to a device only when the layout _knows_ what device it is being viewed on. Learn more about the [CSS Router](https://bubblin.io/blog/a-css-router) that Toucaan utilizes to serve category-specific stylesheets (watch => mobile => tablet => desktop => television) instead of using hardcoded media-queries to match to mobile using device-width.
+3. **Deterministic** means without any guesswork or approximations of the UI container. Put simply, a layout can "belong" to a device only when the layout _knows_ what device it is being viewed on. 
 
+Learn more about how Toucaan uses a [CSS Router](https://bubblin.io/blog/a-css-router) to serve category-specific stylesheets (watch → mobile → tablet → desktop → television…) instead of hardcoded media-queries.
 
 ### About
 
-Design "app-like" interfaces. 
-
-Toucaan is meant for building web-apps and mobile-apps using the building blocks of the web, i.e., HTML, CSS, JavaScript, and WebAssembly. 🏅
+Design "app-like" interfaces. Toucaan is meant for building web-apps and mobile-apps using the building blocks of the web, i.e., HTML, CSS, JavaScript, and WebAssembly. 🏅
 
 Toucaan is about:
 
@@ -32,7 +31,7 @@ Toucaan is about:
 Toucaan uses several ultramodern CSS patterns that are grounded in mathematics. It also introduces some new concepts like:
 
 1. Using `vmin` for block-scoped typography and intrinsic aspect-ratios,
-2. Optionally use absolute [--inch](https://github.com/bookiza/--inch) unit or any other SI unit of physical measurement like centimeters or millimeters to define your UIs.
+2. Optionally use absolute [--inch](https://github.com/bookiza/--inch) unit or any other SI unit of physical measurement like centimeters or millimeters to define your UI.
 
 And much, much more…
 
@@ -51,12 +50,7 @@ And much, much more…
 9. Zero resetting or bulldozing vendor consistency. 
 10. Follows native UI patterns for mobile-app interfaces.
 
-
-### What Toucaan isn't about
-
-Toucaan is careful about avoiding tribalistic positions that the developer community is often susceptible to. For example, it doesn't promote one strategy over another, like using CSS grids explicitly but not flexbox. Use whatever you like, wherever you want; however, you may deem it fit. 
-
-#### Primary concepts
+#### Basic concepts
 
 1. [Rethinking CSS frameworks](https://bubblin.io/blog/toucaan-introduction)
 2. [A new baseline](https://bubblin.io/blog/baseline-css)
@@ -72,50 +66,43 @@ Toucaan is careful about avoiding tribalistic positions that the developer commu
 
 The first step of setting up Toucaan on your project is removing the line `<link rel="stylesheet" href="path/to/app.css" />` from the head tag of your document. 
 
-Toucaan doesn't use a `link.rel` directive to import the app styles. It uses a singular css `@import` call from the `<style> </style>` tag instead,
- like so:
+Toucaan doesn't use a `link.rel` directive to import the styles. It uses a singular css `@import` call from a `<style> </style>` tag instead, like so:
 
 ```html
 <!doctype html>
 <html>
 <head>
-  /* Remove all link references to css from your document. */
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css"> 
-**/
-
+  <!--Regular head stuff-->
+  <style> 
+    @import url('/route/to/app.css') only screen and ( /* Some conditions here. */ );
+  </style> 
 </head>
-
 <body>
-
   <!-- Add your site or application content here -->
   <div id="app">Hello world! This is HTML5 Boilerplate.</div>
-  <script src="js/app.js"></script>
+  <script src="route/to/app.js"></script>
 </body>
 </html>
-
 ```
 
-Head over [here](https://www.toucaan.com/docs/getting-started) to get started on Toucaan. Documentation is currently being written for the tool. 
-
-Contributions are invited for both the framework and documentation.  
+Head over [here](https://www.toucaan.com/docs/getting-started) to get started. We are looking for help on documentation and contributors for the framework. Feel free to submit a PR or write to me if you want to join the project as a core member.
 
 ### Financial support
 
-If you like my [work](https://github.com/sponsors/marvindanig) and please consider supporting it financially.
+If you like my [work](https://github.com/sponsors/marvindanig) please consider supporting it financially.
 
 #### The Superbook
 
 > I'm writing a book on the [Fundamentals of Toucaan CSS](https://bubblin.io/cover/the-toucaan-framework-by-marvin-danig) that will explain the thoughts and the reasoning behind the choices made by Toucaan and how you could override them.
 
 ### Sponsors
+Current sponsors of Toucaan: 
 
 <div align="center">
   <a href="https://goose.red" rel="follow">
     <img src="sponsors/red-goose.png" width="50"> 
   </a>
 </div>
-
 
 ### Vendor Support
 
@@ -124,8 +111,10 @@ to see how much debt you're willing to shoulder for backward-compatibility.
 
 #### Why call it Toucaan?
 
-Only because I owned the pretty domain name. Besides, Toucan is a beautiful bird. This aggressive little arboreal _ramphastidus_ symbolizes both beauty and aggression. What better animal to ground our framework's principle metaphor on? 
+Only because I owned the pretty domain name. 
 
-Occasionally, though only rarely, we may even spar with other CSS frameworks using our "mean" oversized and colorful bill. 😉 So… say hello to Toucaan—the tropical new CSS framework for modern web apps. 
+Besides, Toucan is a beautiful bird. This aggressive little arboreal _ramphastidus_ symbolizes both beauty and aggression. What better animal to ground our framework's central metaphor on? 
 
-And repeat after me: **_if Toucaan, then you can too!_** 😉
+You see **_if Toucaan, then you can too!_** 😉
+
+## License

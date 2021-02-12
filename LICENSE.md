@@ -1,6 +1,6 @@
 # MIT License
 
-and…
+and
 
 # The Parity Public License 7.0.0
 
