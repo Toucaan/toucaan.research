@@ -28,9 +28,9 @@ Toucaan is about:
 - Putting accessibility above everything else.
 - Routing stylesheets according to the [new landscape of the web](https://bubblin.io/blog/the-new-landscape-of-the-web). 
 
-Toucaan uses several ultramodern CSS patterns that are grounded in mathematics. It also introduces some new concepts like:
+Toucaan uses several ultramodern CSS patterns that are grounded in mathematics. It introduces some new concepts like:
 
-1. Using `vmin` for block-scoped typography and intrinsic aspect-ratios,
+1. Using `vmin` for block-scoped typography and intrinsic aspect-ratios instead of the regular units like `px` `em` or `rem`,
 2. Optionally use absolute [--inch](https://github.com/bookiza/--inch) unit or any other SI unit of physical measurement like centimeters or millimeters to define your UI.
 
 And much, much more…
