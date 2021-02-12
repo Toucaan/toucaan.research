@@ -87,6 +87,12 @@ Toucaan doesn't use a `link.rel` directive to import the styles. It uses a singu
 
 Head over [here](https://www.toucaan.com/docs/getting-started) to get started. We are looking for help on documentation and contributors for the framework. Feel free to submit a PR or write to me if you want to join the project as a core member.
 
+### Vendor Support
+
+Modern browsers that are inside of 2017 and now. The support can go further back, but check-out [CSS Remedy](https://github.com/jensimmons/cssremedy)
+to see how much debt you're willing to shoulder for backward-compatibility.
+
+
 ### Financial support
 
 If you like my [work](https://github.com/sponsors/marvindanig) please consider supporting it financially.
@@ -95,19 +101,15 @@ If you like my [work](https://github.com/sponsors/marvindanig) please consider s
 
 > I'm writing a book on the [Fundamentals of Toucaan CSS](https://bubblin.io/cover/the-toucaan-framework-by-marvin-danig) that will explain the thoughts and the reasoning behind the choices made by Toucaan and how you could override them.
 
-### Sponsors
+#### Sponsors
 Current sponsors of Toucaan: 
 
-<div align="center">
+<div align="left">
   <a href="https://goose.red" rel="follow">
-    <img src="sponsors/red-goose.png" width="50"> 
+    <img src="sponsors/red-goose.png" width="100"> 
   </a>
 </div>
 
-### Vendor Support
-
-Modern browsers that are inside of 2017 and now. The support can go further back, but check-out [CSS Remedy](https://github.com/jensimmons/cssremedy)
-to see how much debt you're willing to shoulder for backward-compatibility.
 
 #### Why call it Toucaan?
 
