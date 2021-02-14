@@ -64,9 +64,13 @@ And much, much more…
 
 ## Getting started
 
-The first step of setting up Toucaan on your project is removing the line `<link rel="stylesheet" href="path/to/app.css" />` from the head tag of your document. 
+The first step of setting up Toucaan on your project is to remove _all_ instances of the line below from the head tag of your document:
 
-Toucaan doesn't use a `link.rel` directive to import the styles. It uses a singular css `@import` call from a `<style> </style>` tag instead, like so:
+```css
+  <link rel="stylesheet" href="path/to/app.css" />
+``` 
+
+Toucaan does not use a `link.rel` directive to import the stylesheets. Instead it uses a singular css `@import` call from within a `<style> </style>` tag, like so:
 
 ```html
 <!doctype html>
@@ -85,7 +89,9 @@ Toucaan doesn't use a `link.rel` directive to import the styles. It uses a singu
 </html>
 ```
 
-Head over [here](https://www.toucaan.com/docs/getting-started) to get started. We are looking for help on documentation and contributors for the framework. Feel free to submit a PR or write to me if you want to join the project as a core member.
+Head over [here](https://www.toucaan.com/docs/getting-started) to get started. We are looking for help on documentation and contributors for this project. 
+
+Feel free to submit a PR or write to me if you want to join the core team.
 
 ### Vendor Support
 
@@ -120,3 +126,5 @@ Besides, Toucan is a beautiful bird. This aggressive little arboreal _ramphastid
 You see **_if Toucaan, then you can too!_** 😉
 
 ## License
+
+MIT or PPL. 
