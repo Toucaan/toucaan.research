@@ -21,21 +21,21 @@ Learn more about how Toucaan uses a [CSS Router](https://bubblin.io/blog/a-css-r
 ---
 
 <div align="left">
-  <h6>
+  <h3>
     Brought to you by 
     <span>
       <a href="https://goose.red" rel="follow">
-        <img src="assets/goose.red.svg" width="18"> 
+        <img src="assets/goose.red.svg" width="25"> 
       </a>
     </span>
       <a href='https://goose.red'> Red Goose.
       </a>
-  </h6>
+  </h3>
 </div>
 
-The world's fastest website → app conversion engine.
+The world's fastest website → app conversion engine. Create mobile apps written in Swift or Kotlin and help small dev teams get on the app stores quickly.
 
-Create mobile apps written in Swift or Kotlin and help small dev teams get on the app stores quickly.
+Coincidentally, the Red Goose web-app is also a demo implementation of the Toucaan CSS Framework.
 
 ---
 
