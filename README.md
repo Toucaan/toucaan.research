@@ -136,7 +136,7 @@ Current sponsors of Toucaan:
 </div>
 
 
-#### Why call it Toucaan?
+### Why call it Toucaan?
 
 Only because I owned the pretty domain name. 
 
@@ -146,4 +146,6 @@ You see **_if Toucaan, then you can too!_** 😉
 
 ## License
 
-MIT or PPL. 
+For Boomers – MIT 
+
+For the next generation of developers – The Parity Public License 7.0.0. 
