@@ -20,16 +20,21 @@ Learn more about how Toucaan uses a [CSS Router](https://bubblin.io/blog/a-css-r
 
 ---
 
-
-Brought to you by [Red Goose](https://goose.red)–the world's fastest website → app conversion engine. We create mobile apps written in Swift or Kotlin and help small dev teams get on the app stores quickly.
-
-<div align="right">
-  <a href="https://goose.red" rel="follow">
-    <img src="assets/goose.red.svg" width="200"> 
-  </a>
+<div align="left">
+  <p>
+    <span>
+      <a href="https://goose.red" rel="follow">
+        <img src="assets/goose.red.svg" width="25"> 
+      </a>
+    </span>
+    Brought to you by [Red Goose](https://goose.red)–the world's fastest website → app conversion engine.
+  </p>
 </div>
 
+ 
+We create mobile apps written in Swift or Kotlin and help small dev teams get on the app stores quickly.
 
+---
 
 ### About
 
