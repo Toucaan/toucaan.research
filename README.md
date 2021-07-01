@@ -24,9 +24,7 @@ Learn more about how Toucaan uses a [CSS Router](https://bubblin.io/blog/a-css-r
   <h3>
     Brought to you by 
     <span>
-      <a href="https://goose.red" rel="follow">
-        <img src="assets/goose.red.svg" width="25"> 
-      </a>
+      <img src="assets/goose.red.svg" width="25"> 
     </span>
       <a href='https://goose.red'> Red Goose.
       </a>
