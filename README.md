@@ -24,10 +24,12 @@ Learn more about how Toucaan uses a [CSS Router](https://bubblin.io/blog/a-css-r
   <p>
     <span>
       <a href="https://goose.red" rel="follow">
-        <img src="assets/goose.red.svg" width="25"> 
+        <img src="assets/goose.red.svg" width="18"> 
       </a>
     </span>
-    Brought to you by [Red Goose](https://goose.red)–the world's fastest website → app conversion engine.
+    Brought to you by 
+      <a href='https://goose.red'> Red Goose
+      </a>–the world's fastest website → app conversion engine.
   </p>
 </div>
 
