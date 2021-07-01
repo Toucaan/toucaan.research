@@ -22,7 +22,7 @@ Learn more about how Toucaan uses a [CSS Router](https://bubblin.io/blog/a-css-r
 
 <div align="left">
   <h3>
-    Brought to you by 
+    Brought to you by developers @
     <span>
       <img src="assets/goose.red.svg" width="25"> 
     </span>
