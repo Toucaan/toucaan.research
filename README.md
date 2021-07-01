@@ -14,9 +14,22 @@ Toucaan is an _intrinsic_, _mutative_, and _deterministic_ CSS framework for the
 
 2. **Mutative** implies that you can edit and add to baseline rules (think customized `normalize.css`) yourself. Directly into the framework. This concept borders close to the idea of a classless & framework-less approach to web design. There is no single heavy `reset` or `normalize` or an external utility included in the DOM to enforce browser consistency.
 
-3. **Deterministic** means applying style without approximations or any sort of guesswork about the UI container. Put simply, a layout can "belong" to a device only when the layout _knows_ what device it is on. 
+3. **Deterministic** means applying style without approximations or any sort of guesswork about the UI container. Put simply, a layout can "belong" to a device only when the layout _knows_ the kind of device it is on.
 
 Learn more about how Toucaan uses a [CSS Router](https://bubblin.io/blog/a-css-router) to serve category-specific stylesheets (watch → mobile → tablet → desktop → television…) instead of hardcoded media-queries.
+
+---
+
+
+Brought to you by [Red Goose](https://goose.red)–the world's fastest website → app conversion engine. We create mobile apps written in Swift or Kotlin and help small dev teams get on the app stores quickly.
+
+<div align="right">
+  <a href="https://goose.red" rel="follow">
+    <img src="sponsors/red-goose.png" width="200"> 
+  </a>
+</div>
+
+
 
 ### About
 
