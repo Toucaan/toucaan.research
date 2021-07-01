@@ -25,7 +25,7 @@ Brought to you by [Red Goose](https://goose.red)â€“the world's fastest website â
 
 <div align="right">
   <a href="https://goose.red" rel="follow">
-    <img src="sponsors/red-goose.png" width="200"> 
+    <img src="assets/goose.red.svg" width="200"> 
   </a>
 </div>
 
