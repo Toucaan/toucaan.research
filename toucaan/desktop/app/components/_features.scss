@@ -1,0 +1,25 @@
+.features {
+  scroll-snap-align: start;
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-gap: var(--fs);
+  grid-template-columns: calc(1/3 * ( var(--safe) - 6 * var(--fs))) calc(1/3 * ( var(--safe) - 6 * var(--fs))) calc(1/3 * ( var(--safe) - 6 * var(--fs)));
+}
+
+.item {
+  width: calc(1/3 * (var(--safe) - 6 * var(--fs)));
+  height: calc(5/9 * 1/3 * var(--safe));
+  background-color: var(--lightest-grey);
+  color: var(--hc);
+  font-size: calc(1/3 * var(--safe) * 1/20);
+  border-radius: calc(2 * var(--fs));
+  box-shadow: 4px 4px 10px white inset, 1px 1px 5px rgba(0, 0, 0, 0.1);
+  border: 0.01vmin solid white;
+}
+
+.item:hover { 
+  box-shadow: 0px 2px 20px var(--violet);
+  background-color: var(--white);
+}

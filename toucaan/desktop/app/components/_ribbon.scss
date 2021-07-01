@@ -1,0 +1,61 @@
+@media (min-aspect-ratio: 2 / 1) {
+  :root {
+    --side: 90vmin;
+  }
+}
+
+@media (max-aspect-ratio: 2 / 1) {
+  :root {
+    --side: 45vw;
+  }
+}
+
+/* common */
+.ribbon {
+  width: calc(var(--side) / 3);
+  height: calc(var(--side) / 3);
+  overflow: hidden;
+  position: absolute;
+}
+
+.ribbon span {
+  position: absolute;
+  display: block;
+  width: calc(var(--side) / 2);
+  padding: calc(var(--side) / 45) 0;
+  background-color: var(--green);
+  box-shadow: 0 5px 10px rgba(0,0,0,.1);
+  color: #fff;
+  font-size: calc(var(--side) / 40);
+  font-weight: 400;
+  text-shadow: 0 1px 1px rgba(0,0,0,.2);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.ribbon-top-right span {
+  left: calc(-1 * var(--side) / 45);
+  top: calc(+1 * var(--side) / 20);
+  transform: rotate(45deg);
+}
+
+
+
+/* top right*/
+.ribbon-top-right {
+  top: calc(-1 * var(--side)/100);
+  right: calc(-1 * var(--side) / 45);
+}
+.ribbon-top-right::before,
+.ribbon-top-right::after {
+  border-top-color: transparent;
+  border-right-color: transparent;
+}
+.ribbon-top-right::before {
+  top: 0;
+  left: 0;
+}
+.ribbon-top-right::after {
+  bottom: 0;
+  right: 0;
+}

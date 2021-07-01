@@ -1,0 +1,85 @@
+@keyframes shake {
+  0% {
+    transform: translateX(calc(-2 * var(--fs)));
+  }
+  50% {
+    transform: translateX(calc(2 * var(--fs)));
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.status-messages {
+  z-index: 2147483647; /* 32bit max value of z-index. */
+  pointer-events: none;
+}
+
+.status {
+  background: var(--white);
+  width: calc(92 * var(--fs));
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+  margin: calc(4 * var(--fs)) 0 0 calc(50vw - (92 * var(--fs) / 2));
+  padding: calc(4 * var(--fs));
+  position: relative;
+  z-index: 1;
+  pointer-events: auto;
+  border-radius: calc(2 * var(--fs));
+  display: flex;
+  line-height: 1;
+  animation: shake forwards 200ms ease-in-out 2;
+  animation-timing-function: cubic-bezier(0.01, 1.68, 0.58, 1);
+  & + .status {
+    animation-delay: 0.55s;
+    & + .status {
+      animation-delay: 0.6s;
+    }
+  }
+  &__text {
+    flex: 1;
+    margin: 0;
+    font-size: 2vw; 
+    text-align: center; 
+  }
+  &__remove {
+    background: none;
+    border: 0;
+    position: absolute;
+    padding: calc(1.2 * var(--fs)) calc(2 * var(--fs));
+    font-size: 100%;
+    right: calc(0.5 * var(--fs));
+    top: calc(0.5 * var(--fs));
+    &:hover {
+      color: var(--red);
+    }
+  }
+  &:after {
+    content: "";
+    display: block;
+    background: white;
+    position: absolute;
+    width: calc(100% - 2 * var(--fs));
+    height: calc(100% - 2 * var(--fs));
+    top: var(--fs);
+    left: var(--fs);
+    z-index: -1;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.1);
+    border-radius: calc(2 * var(--fs));
+  }
+  &--success {
+    background: linear-gradient(135deg, rgba(210, 255, 82, 1) 0%, rgba(145, 232, 66, 1) 100%);
+    color: var(--green);
+  }
+  &--error {
+    background: linear-gradient(20deg, rgba(255, 0, 0, 1) 0%, rgba(200, 0, 0, 1) 100%);
+    color: var(--red);
+  }
+  &--info {
+    background: linear-gradient(35deg, rgb(103, 170, 241) 0%, rgba(254, 182, 69, 1) 100%);
+    color: var(--hc);
+  }
+  &--warning {
+    background: linear-gradient(35deg, rgb(241, 163, 103) 0%, rgb(254, 202, 69) 100%);
+    color: var(--orange);
+  }
+}

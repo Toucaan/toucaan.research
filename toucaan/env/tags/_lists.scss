@@ -29,14 +29,11 @@ ol li {
 ol li:before {
   margin-right: var(--vmin);
   content: counter(item);
-  border-radius: 100%;
-  width: calc(6 * var(--vmin));
-  height: calc(6 * var(--vmin));
+  width: calc(4 * var(--vmin));
+  height: calc(4 * var(--vmin));
   text-align: center;
   display: inline-block;
-  font-size: 50%;
-  color: var(--bc);
-  border: solid 1px var(--bc);
+  color: var(--fc);
 }
 
 .check-list {
@@ -61,7 +58,7 @@ ol li:before {
   height: calc(3 * var(--vmin));
   border-width: 0 3px 3px 0;
   border-style: solid;
-  border-color: var(--bc);
+  border-color: var(--fc);
   transform-origin: bottom left;
   transform: rotate(45deg);
 }

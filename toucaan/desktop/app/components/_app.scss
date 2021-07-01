@@ -1,0 +1,54 @@
+.beam {
+  display: grid;
+  width: var(--lean);
+  grid-template-columns: auto auto auto;
+  margin: 0 auto;
+}
+
+.element {
+  height: calc(20 * var(--vmin));
+}
+
+.element svg {
+  height: calc(10 * var(--vmin));
+  width: calc(10 * var(--vmin));
+  transition: all 0.2s;
+  fill: currentColor;
+}
+
+.subhead {
+  width: calc(1 * 100 * var(--vmin));
+  margin: 0 auto;
+}
+
+.underscore {
+  height: /* calc(0.5 * var(--vmin)) */ 2px;
+  width: calc(25 * var(--vmin));
+  background-color: var(--hc);
+}
+
+.startup {
+  margin: 0 2vmin;
+  width: 15vmin;
+  filter: grayscale(1);
+  opacity: 0.5;
+  // pointer-events: none;
+  &:hover {
+    filter: none;
+    opacity: 1;
+  }
+}
+
+.tech {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  height: calc(5 * var(--vmin));
+  margin: 0 2vmin;
+  filter: grayscale(1);
+  opacity: 0.5;
+  &:hover {
+    filter: none;
+    opacity: 1;
+  }
+}

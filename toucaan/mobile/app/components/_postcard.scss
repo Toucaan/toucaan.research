@@ -1,0 +1,49 @@
+.collection {
+  width: var(--safe);
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.postcard {
+  border-radius: 2px;
+  position: relative;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  border: 1px solid var(--white);
+  font-size: calc(1 / 16 * 1 / 3 * var(--safe));
+  line-height: 1.5;
+  height: calc(1 * 1 / 3 * var(--safe));
+  width: calc(1 / 3 * var(--safe));
+  cursor: pointer;
+  background-color: var(--white);
+}
+
+a.postcard {
+  color: var(--text);
+  text-decoration: none;
+}
+
+a.postcard:hover {
+  text-decoration: none;
+}
+
+.postcard > img {
+  height: calc(3 / 10 * 1 / 3 * var(--safe));
+  width: calc(1 / 2 * 1 / 3 * var(--safe));
+}
+
+.postcard > .text {
+  height: calc(7 / 10 * 1 / 3 * var(--safe));
+  width: calc(1 / 3 * var(--safe) - 4vmin);
+  padding: 0 2vmin;
+}
+
+.postcard h6 {
+  font-size: calc(0.022 * var(--safe));
+  line-height: 2;
+}
+
+.postcard:hover {
+  box-shadow: 0 calc(2 * var(--vmin)) calc(4 * var(--vmin)) rgba(65, 5, 250, 0.25), 0 10px 10px rgba(65, 5, 250, 0.2);
+  border: 1px solid var(--violet);
+}

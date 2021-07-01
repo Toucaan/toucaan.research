@@ -1,34 +1,41 @@
 body {
-	font-size: calc(4 * var(--vmin));
-	font-family: var(--system);
-	font-smooth: always;
-	font-weight: 300;
-	font-style: normal;
-	font-synthesis: none;
-	font-stretch: ultra-condensed;
-	font-variant: no-common-ligatures proportional-nums slashed-zero;
-	font-kerning: normal;
-	text-rendering: geometricPrecision; /* Why not: text-rendering: optimizeSpeed;?… in light of PWA. */
-	font-display: swap;
-	font-display: optional;
+  font-size: calc(4 * var(--fs)); /* This is wrong. */
+  font-family: var(--system);
+  font-smooth: always;
+  font-weight: 300;
+  font-style: normal;
+  font-synthesis: none;
+  font-stretch: ultra-condensed;
+  font-variant: no-common-ligatures proportional-nums slashed-zero;
+  font-kerning: normal;
+  text-rendering: geometricPrecision; /* Why not: text-rendering: optimizeSpeed;?… in light of PWA. */
+  font-display: swap;
+  font-display: optional;
 
-	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-	-webkit-backface-visibility: hidden;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
 
-	line-height: calc(1.5 * 4 * var(--vmin));  /* Or 1.5 */
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-osx-font-smoothing: antialiased;
 
-	/* Set your colors + contrast over here. */
-	color: rgba(104, 119, 141, 1);
-	background-color: white;
+  line-height: 1.5; /* calc(1.5 * 4 * var(--fs)) === Or 1.5 */
 
-	/* Dimensions */
-	border: none;
-	min-height: 100vh;
+  /* Colors + contrast */
+  color: var(--black);
+  text-shadow: 1px 1px 1px var(--white);
+  background-color: var(--light-grey);
 
+  /* Dimensions */
+  border: none;
+  min-height: 100vh;
 
-	/* Behavior */
-	overflow: auto;
-	-webkit-overflow-scrolling: touch;
-	scroll-behavior: smooth;
-	touch-action: auto;
+  /* Behavior */
+  overflow-y: hidden;
+  overflow-x: hidden;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;  /* Mozilla */  
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  touch-action: auto;
 }

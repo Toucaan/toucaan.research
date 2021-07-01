@@ -1,0 +1,85 @@
+/* Gradients: Background images */
+
+.gradient-pinkred {
+	background-image: var(--gradient); }
+
+.gradient-splitred {
+	background-image: var(--split-gradient); }
+
+.radial-red {
+  text-shadow: 1px 1px 1px var(--red);
+  background-image: radial-gradient(rgba(206, 67, 67, 1), var(--red)); }
+  
+
+/* Background colors. */
+
+
+.white-bg {
+	background-color: var(--white);
+}
+
+.light-grey-bg {
+	background-color: var(--light-grey);
+}
+
+.black-bg {
+	background-color: var(--black);
+}
+
+.faded-bg {
+	background-color: var(--fc);
+}
+
+.red-bg {
+	background-color: var(--red);
+}
+
+.orange-bg {
+	background-color: var(--orange);
+}
+
+.sunlight-bg {
+	background-color: var(--sunlight);
+}
+
+.violet-bg {
+	background-color: var(--violet);
+}
+
+.notify-bg {
+	background-color: var(--darkorange);
+}
+
+/* Text or forecolors. */
+.red-text {
+	color: var(--red);
+}
+
+.faded-text {
+	color: var(--fc);
+  text-shadow: none;
+}
+
+.white-text {
+	color: var(--white);
+  text-shadow: none;
+}
+
+.orange-text {
+	color: var(--orange);
+  text-shadow: none;
+}
+
+.dark-text {
+	color: var(--hc);
+}
+
+.violet-text {
+	color: var(--violet);
+  text-shadow: none;
+}
+
+.green-text {
+	color: var(--green);
+  text-shadow: none;
+}

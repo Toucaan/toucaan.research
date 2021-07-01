@@ -1,0 +1,8 @@
+sup {
+  vertical-align: baseline;
+  position: relative;
+  top: calc(-2 * var(--fs));
+  left: calc(var(--fs) * -0.25);
+  font-size: 50%;
+  background-color: transparent;
+}

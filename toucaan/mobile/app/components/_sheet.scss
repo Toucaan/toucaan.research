@@ -1,0 +1,60 @@
+.sheet {
+  position: relative;
+  z-index: 0;
+  background: #fff;
+  scroll-behavior: smooth;
+  text-shadow: none;
+
+  &::before {
+    // box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    content: "";
+    background: #fff;
+    -webkit-transform: rotate(1.1deg);
+    -ms-transform: rotate(1.1deg);
+    transform: rotate(1.1deg);
+    display: block;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.9;
+
+  }
+
+  &::after {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    pointer-events: none;
+
+  }
+}
+
+@media only screen and (orientation: portrait) {
+  .sheet {
+    width: calc(90 * var(--vmin));
+  }
+}
+
+@media only screen and (orientation: landscape) {
+  .sheet {
+    width: calc(120 * var(--vmin));
+  }
+}
+
+.mission{
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  display: inline-block;
+  width: calc(10 * var(--vmin));
+  height: calc(10 * var(--vmin));
+}

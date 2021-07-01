@@ -1,0 +1,20 @@
+a.spot {
+  height: 60px;
+  width: 60px;
+  border-radius: 10px;
+  margin: 0 15px 15px 0;
+  font-size: 20px;
+  line-height: 1;
+  transition: 0.5s;
+  &:hover {
+    background-color: var(--white);
+    color: var(--blue);
+  }
+}
+
+@media (max-device-width: 640px) {
+  a.spot {
+    height: 50px;
+    width: 50px;
+  }
+}

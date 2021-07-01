@@ -1,0 +1,114 @@
+/* Domain form */
+
+form.github {
+  width: 40vw;
+
+  .form-group {
+    transition: all 0.3s;
+    line-height: 1;
+  }
+
+  .form-label {
+    color: #aaa;
+    display: block;
+    opacity: 1;
+
+    // transform: translateY(calc(-1 * 6 * var(--vmin))) translateX(2.5vmin);
+    transform: translateY(calc(-1 * 3.4 * 1vw)) translateX(1.5vw);
+    transform-origin: 0 0;
+    transition: all 0.3s;
+    pointer-events: none;
+    width: 22vw;
+    font-size: calc(40vw / 20);
+    padding: 0 1vw;
+  }
+
+  .form-control {
+    box-shadow: none;
+    background-color: var(--white);
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+    transition: all 0.5s;
+
+    // padding: calc(2 * var(--vmin)) calc(3 * var(--vmin));
+    padding: 1vw 2vw;
+    font-size: calc(40vw / 20);
+
+    &::placeholder {
+      color: transparent;
+      font-size: calc(40vw / 20);   
+    }
+
+    &:focus {
+      box-shadow: inset 1px 1px 6px var(--blue);
+      outline: none;
+
+      + .form-label {
+        // transform: translateY(calc(-2 * 5 * var(--vmin))) translateX(1.5vmin) scale(0.5);
+        transform: translateY(calc(-1 * 6 * 1vw)) translateX(1vw) scale(0.6);
+        color: black;
+      }
+    }
+
+    &:not(:placeholder-shown) + .form-label {
+      // transform: translateY(calc(-2 * 5 * var(--vmin))) translateX(1.5vmin) scale(0.5);
+      transform: translateY(calc(-1 * 6 * 1vw)) translateX(1vw) scale(0.6);
+      color: black;
+    }
+  }
+
+  .form-group:focus-within {
+    transform: scale(1.02, 1.02);
+  }
+
+  > button {
+    background-color: var(--black);
+    font-size: calc(1vmin + 1vw);
+    font-weight: 400;
+    line-height: 1.5;
+    transition: box-shadow 0.2s;
+    border: 0;
+    outline: 0;
+    cursor: var(--feet);
+    transition: 300ms;
+    max-width: 100%;
+    width: 10vw;
+    border-radius: var(--vmin);
+    padding: calc(1 * var(--vmin)) calc(2 * var(--vmin));
+    color: var(--white);
+    text-shadow: none;
+    filter: drop-shadow(calc(0.15 * var(--vmin)) calc(0.15 * var(--vmin)) 3.4px rgb(183, 177, 181));
+    box-shadow: inset calc(0.15 * var(--vmin)) calc(0.15 * var(--vmin)) calc(0.075 * var(--vmin)) #fff;
+
+    &:hover {
+      filter: drop-shadow(calc(0.25 * var(--vmin)) calc(0.25 * var(--vmin)) 3.4px var(--white));
+      box-shadow: inset calc(0.25 * var(--vmin)) calc(0.25 * var(--vmin)) calc(0.15 * var(--vmin)) #fff;
+      color: var(--orange);
+    }
+
+    &:active {
+      filter: drop-shadow(0px 0px 0px rgb(183, 177, 181));
+      box-shadow: inset 4.3px 4.3px 7px rgb(183, 177, 181);
+    }
+
+    &:focus {
+      text-shadow: 1px 1px 1px var(--blue);
+      filter: drop-shadow(calc(0.15 * var(--vmin)) calc(0.15 * var(--vmin)) 3.4px rgb(183, 177, 181));
+      box-shadow: inset calc(0.15 * var(--vmin)) calc(0.15 * var(--vmin)) calc(0.15 * var(--vmin)) #fff;
+    }
+
+    &[disabled=disabled], &:disabled {
+      color: var(--white);
+      background-color: var(--black);
+    }
+  }
+
+  .error {
+    display: inline-block;
+    width: 100%;
+    text-align: right;
+    transform: translateY(calc(3.3vw));
+    pointer-events: none;
+  }
+}

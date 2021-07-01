@@ -1,0 +1,63 @@
+form.loginForm {
+  margin: 2em 0;
+
+  .field {
+    display: flex;
+    flex-flow: column-reverse;
+    margin-bottom: 1em;
+  }
+
+  label {
+    transition: all 0.2s;
+    touch-action: manipulation;
+  }
+
+  input {
+    transition: all 0.2s;
+    touch-action: manipulation;
+    font-size: 1.5em;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    font-family: inherit;
+    -webkit-appearance: none;
+    border-radius: 0;
+    padding: 0;
+    cursor: text;
+
+    &:focus {
+      outline: 0;
+      border-bottom: 1px solid #666;
+    }
+  }
+
+  label {
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  input:placeholder-shown + label {
+    cursor: text;
+    max-width: 66.66%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transform-origin: left bottom;
+    transform: translate(0, 8vmin) scale(1.5);
+  }
+
+  ::-webkit-input-placeholder {
+    opacity: 0;
+    transition: inherit;
+  }
+
+  input {
+    &:focus::-webkit-input-placeholder {
+      opacity: 1;
+    }
+
+    &:not(:placeholder-shown) + label, &:focus + label {
+      transform: translate(0, 0) scale(1);
+      cursor: pointer;
+    }
+  }
+}

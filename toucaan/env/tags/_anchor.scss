@@ -1,12 +1,13 @@
 a {
-    color: var(--bc);
+    color: var(--blue);
     text-decoration: none;
     text-rendering: optimizelegibility;
     outline: 0;
-    &:focus,
+    &:visited,
+    &:hover,
     &:active,
-    &:hover {
-        outline: violet;
+    &:focus {
+      color: var(--violet);
     }
 }
 

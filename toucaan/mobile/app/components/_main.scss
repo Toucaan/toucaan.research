@@ -1,0 +1,12 @@
+.content {
+  margin-left: var(--header);
+  min-height: calc(100vh);
+  width: var(--main);
+}
+
+// @media (max-device-width: 640px) {
+//   main {
+//     min-height: calc(100vh - (15.5 * var(--vmin)));
+//     margin: calc(15.5 * var(--vmin)) auto 0;
+//   }
+// }

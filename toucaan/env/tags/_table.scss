@@ -3,7 +3,8 @@ table {
   border-spacing: 0;
 }
 
-td, th {
+td,
+th {
   padding: calc(var(--vmin));
   vertical-align: top;
 }

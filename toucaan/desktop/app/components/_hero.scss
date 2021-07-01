@@ -1,0 +1,98 @@
+.hero h1 {
+  font-size: calc(80 * var(--fs) / 10);
+  font-weight: 500; }
+
+.hero p {
+  font-size: calc(80vw / 50);
+}
+
+.hero, .antihero {
+  width: var(--half); 
+  min-height: 100vh; }
+
+
+.hero {
+  display: grid;
+  grid-template-columns: 10vw auto 10vw;
+  grid-template-rows: 8vh auto 8vh;
+  gap: 0;
+  grid-template-areas: 
+    "top-left . top-right"
+    "brand brand brand"
+    "bottom-left . bottom-right";
+}
+
+.hero a.top-left {
+  color: var(--white);  
+  grid-area: top-left; 
+  align-self: center;
+  justify-self: left; 
+  padding: 0 1vw;
+  font-size: calc(10vw / 10); 
+  &:hover {
+    color: var(--orange);
+  }
+}
+
+
+.hero  a.top-right {
+  color: var(--white);  
+  grid-area: top-right; 
+  align-self: center;
+  justify-self: right; 
+  padding: 0 1vw 0 0;
+  font-size: calc(10vw / 10);   
+  &:hover {
+    color: var(--orange);
+  }
+}
+
+.hero  a.bottom-right {
+  color: var(--white);
+  grid-area: bottom-right; 
+  align-self: center;
+  justify-self: center; 
+  font-size: calc(10vw / 10); 
+  &:hover {
+    color: var(--orange);
+  }
+}
+
+.hero  a.bottom-left {
+  color: var(--white);
+  grid-area: bottom-left; 
+  align-self: center;
+  justify-self: left; 
+  padding: 0 0 0 1vw;
+  font-size: calc(10vw / 10); 
+  &:hover {
+    color: var(--orange);
+  }
+}
+
+.hero .brand {
+  grid-area: brand; 
+  align-self: center;
+  justify-self: center; }
+
+  /* Reverse the hero. No grid. :-P */
+
+.antihero .counter {
+  font-size: calc(80vw / 60);
+  color: var(--fc);
+  text-shadow: none;
+  border-radius: var(--vmin);
+  padding: calc(0.25 * var(--vmin)) calc(2 * var(--vmin));
+}
+
+.cta {
+  width: 40vw;
+  font-size: calc(40vw / 20);
+  line-height: 1.25;
+}
+
+.cta h2 { 
+  font-size: calc(40vw / 16);
+  font-weight: 200;
+  line-height: 1.25;
+}

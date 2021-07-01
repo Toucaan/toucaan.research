@@ -1,0 +1,28 @@
+/* Loader */
+
+.loader {
+  position: absolute;
+  display: initial;
+  margin: 0;
+  left: calc(50% - 12* var(--fs));
+  visibility: hidden;
+}
+
+.stroke {
+  width: calc(24 * var(--fs));
+  height: calc(24 * var(--fs));
+  border-radius: 50%;
+  box-shadow: 0 .1vmin 0 var(--limegreen) inset;
+  animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+    filter: hue-rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+    filter: hue-rotate(360deg);
+  }
+}

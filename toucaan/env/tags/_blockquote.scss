@@ -1,0 +1,26 @@
+blockquote {
+  quotes: "\201C""\201D""\201C""\201D";
+  position: relative;
+  font-family: var(--serif);
+  font-size: calc(2 / 5 * var(--safe) * 1 / 15);
+  line-height: 1.5;
+  width: fit-content;
+  margin: calc(3 / 3 * var(--safe) * 1 / 20) auto;
+}
+
+blockquote:before {
+  position: absolute;
+  color: var(--translucent-black);
+  content: open-quote;
+  font-size: calc(6 / 3 * var(--safe) * 1 / 20);
+  margin-top: calc(-1 * var(--safe) * 1 / 20);
+  margin-left: calc(-2 / 3 * var(--safe) * 1 / 20);
+  top: -2vmin;
+  left: 0;
+}
+
+blockquote p {
+  font-size: calc(4 / 10 * var(--safe) * 1 / 15);
+  text-indent: 3vmin;
+  color: var(--black);
+}

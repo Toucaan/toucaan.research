@@ -1,0 +1,15 @@
+.shadow {
+	box-shadow: 1px 1px 2px var(--light-grey), -1px -1px 2px white;
+}
+
+.shadow-1x {
+	box-shadow: 1px 2px 3px #cbced1, -1px -2px 6px #fff;
+}
+
+.inset-shadow {
+	box-shadow: 1px -3px 6px rgba(120, 120, 120, 0.5) inset;
+}
+
+.text-shadow {
+	text-shadow: hsla(40, 100%, 55%, 0.8) 1px 2px 1px;
+}

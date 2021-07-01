@@ -3,10 +3,12 @@
   which may not be suitable for your content.  */
 
 html {
-	background-color: white;
+	background-color: var(--orange);
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
 	overflow-x: hidden;
 	overflow-y: scroll;
 	text-size-adjust: 100%;
+	scroll-snap-type: y mandatory;
+	scroll-behavior: smooth;
 }

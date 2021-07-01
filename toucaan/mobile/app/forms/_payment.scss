@@ -1,0 +1,36 @@
+/* Coupon form*/
+
+form.payment {
+  .couponCode {
+    border: 0;
+    padding: 0 calc(1 * var(--side) / 50);
+    border-radius: calc(1/2 * var(--side) / 50) 0 0 calc(1/2 * var(--side) / 50);
+    background-color: var(--white);
+    color: #111111;
+    outline: 0;
+    transition: all 0.3s;
+    height: calc(3 * var(--side) / 50);
+    width: calc(9 * var(--side) / 50);
+    background: var(--white);
+    margin-left: calc(1/2 * var(--side) / 50);
+    border: 1px dashed var(--fc)
+  }
+
+  div.flex-center > button {
+    width: auto;
+    border: 0;
+    outline: 0;
+    border-radius: 0 calc(1/2 * var(--side) / 50) calc(1/2 * var(--side) / 50) 0;
+    height: calc(3 * var(--side) / 50);
+    width: calc(8 * var(--side) / 50);
+    cursor: var(--feet);
+    background-color: var(--blue);
+    color: var(--white);
+  }
+
+  div.flex-center > button:hover {
+    color: var(--limegreen);
+  }
+
+  font-size: calc(var(--side) / 50);
+}

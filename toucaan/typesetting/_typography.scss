@@ -1,0 +1,23 @@
+.monospace {
+  font-family: var(--monospace);
+  font-size: 90%;
+  box-shadow: 1px 1px 1px var(--blue);
+  margin: 0 2px;
+  padding: 0 2px;
+  background-color: var(--white);
+  border-radius: calc(0.5 * var(--vmin));
+  font-weight: 700;
+  font-variant: unicase;
+  text-rendering: auto; /* Why not: text-rendering: optimizeSpeed;?… in light of PWA. */  
+}
+
+.serif {
+  font-family: var(--serif);
+}
+
+.sans-serif {
+  font-family: var(--sans-serif);
+}
+
+.pacifico {
+  font-family: 'Pacifico', cursive; }

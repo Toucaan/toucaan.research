@@ -1,0 +1,51 @@
+@media (min-aspect-ratio: 2 / 1) {
+  :root {
+    --side: 90vmin;
+  }
+}
+
+@media (max-aspect-ratio: 2 / 1) {
+  :root {
+    --side: 45vw;
+  }
+}
+
+.showcase {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.mobile {
+  width: calc(1.5 * var(--side) / 5);
+  height: calc(2.25 * (var(--side) / 5));
+  background-size: 100% 100%;
+  background-repeat: round;
+}
+
+// .android-frame {
+//   background-image: url('./../../images/icons/android-bezel.svg'); }
+
+// .iphone-frame {
+//   background-image: url('./../../images/icons/iphone-bezel.svg'); }
+
+.client {
+  width: calc(3/4 * var(--side) * 1/2 - 5vmin);
+  height: calc(2/4 * 1/2 * var(--side) * 1/4);
+}
+
+.badges {
+  width: calc(1/4 * var(--side) * 1/2 - 5vmin);
+}
+
+.badge {
+  width: calc(1/3 * var(--side) * 1/4);
+  height: calc(1/4 * 1/2 * var(--side) * 1/4);
+  background-size: 100% 100%;
+  background-repeat: round;
+}
+
+// .appstore {
+//   background-image: url('./../../images/icons/appstore.svg'); }
+
+// .playstore {
+//   background-image: url('./../../images/icons/playstore.svg'); }

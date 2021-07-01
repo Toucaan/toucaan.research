@@ -1,29 +1,43 @@
 ::-moz-selection {
-    background: #a7d7ff;
-    color: #000;
-    text-shadow: none;
+  background: var(--rust);
+  color: #fff;
+  text-shadow: none !important;
 }
 
 ::selection {
-    background: #a7d7ff;
+  background: var(--rust);
+  color: #fff;
+  text-shadow: none !important;
+  &:window-inactive {
+    background: #eaeaea;
     color: #000;
-    text-shadow: none;
-    &:window-inactive {
-        background: #eaeaea;
-        color: #000;
-    }
+  }
 }
 
-input:-webkit-autofill {
-	box-shadow: 0 0 1000px #FBFBFB inset;
-  -webkit-box-shadow: 0 0 1000px #FBFBFB inset;
+::-webkit-input-placeholder,
+:-moz-placeholder,
+::-moz-placeholder,
+:-ms-input-placeholder,
+::placeholder,
+input::placeholder {
+  font: var(--monospace);
+  font-size: inherit; /* Best to inherit the values from the containing parent. */
+  line-height: calc(1.5 * 4 * var(--fs));
+  height: calc(1.5 * 3.5 * var(--fs));
+  opacity: 1;
 }
 
-::-webkit-input-placeholder, :-moz-placeholder, ::-moz-placeholder, :-ms-input-placeholder, ::placeholder {
-    font: inherit;
-    font-size: calc(4 * var(--vmin));
-    color: var(--fc);
-    line-height: calc(1 * 4 * var(--vmin));
-    height: calc(1 * 4 * var(--vmin));
-    opacity: 1;
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  // -webkit-text-fill-color: var(--green);
+  box-shadow: 0 0 1000px var(--limegreen) inset;
+  -webkit-box-shadow: 0 0 1000px var(--limegreen) inset;
+  transition: background-color 5000s ease-in-out 0s;
 }

@@ -1,0 +1,178 @@
+/* Element Positioning */
+.left {
+	float: left;
+	left: 0;
+}
+
+.right {
+	float: right;
+	right: 0;
+}
+
+.fixed {
+	position: fixed;
+}
+
+.absolute {
+	position: absolute;
+}
+
+.relative {
+	position: fixed;
+}
+
+.top {
+	top: 0;
+}
+
+.bottom {
+	bottom: 0;
+}
+
+.center {
+	margin: 0 auto;
+}
+
+.absolute-center {
+	margin: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+
+.flex-center {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.flex-up {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: top;
+	justify-content: center;
+}
+
+.flex-down {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: bottom;
+	justify-content: center;
+}
+
+.flex-left {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: left;
+}
+
+.flex-right {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: right;
+}
+
+.side-gap {
+	margin-right: calc(1 * var(--fs)); /* 20% of one line-height on either side */
+	margin-left: calc(1 * var(--fs));
+}
+
+.top-gap {
+	margin-top: calc(4 * var(--fs)); /* One line-height */
+}
+
+.double-top-gap {
+	margin-top: calc(2 * 4 * var(--fs)); /* Two line-heights */
+}
+
+.bottom-gap {
+	margin-bottom: calc(4 * var(--fs)); /* One line-height */
+}
+
+.double-bottom-gap {
+	margin-bottom: calc(2 * 4 * var(--fs)); /* Two line-heights */
+}
+
+.pad {
+	padding: calc(2.5 * var(--fs));
+}
+
+.pad-vertically {
+	padding: calc(5 * var(--fs)) 0;
+}
+
+.pad-horizontally {
+	padding: 0 calc(2.5 * var(--fs));
+}
+
+.rotate {
+	transform: rotate(180deg);
+}
+
+.will-change {
+	will-change: transform;
+	transform: translate3d(0, 0, 0);
+}
+
+.unpointable {
+	pointer-events: none;
+}
+
+.pointable {
+	pointer-events: auto;
+}
+
+.blur {
+	backdrop-filter: blur(calc(1 * var(--fs)));
+}
+
+.lean {
+	width: var(--lean);
+}
+
+.safe {
+	width: var(--safe);
+}
+
+
+.fold {
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Mozilla */
+	content-visibility: auto;
+}
+
+.full {
+	width: var(--full);
+}
+
+.one-half {
+	width: var(--half);
+}
+
+.one-third {
+	width: var(--one-third);
+}
+
+.two-third {
+	width: var(--two-third);
+}
+
+.maxzee {
+	z-index: 2147483647 !important; /* 32bit max value of z-index. */
+}
+
+.hidden {
+	display: none;
+}
+
+.invisible {
+	visibility: hidden;
+}

@@ -1,0 +1,20 @@
+.process {
+	width: 100%;
+	height: calc(2 / 5  * var(--safe));
+	margin: 0 auto;
+}
+
+.step {
+	width: calc(1 / 3 * 9 / 10 * var(--safe));
+	font-size: calc(2 * 1 / 3 * var(--safe) / 30);
+	line-height: calc(1.5 * 2 * 1 / 3 * var(--safe) / 30);
+}
+
+.feet {
+	width: calc(1 / 20 * var(--safe));
+}
+
+.step .icon {
+	width: calc(1  * 30 / 100 * 1 / 3 * var(--safe));
+	height: calc(1 * 30 / 100 * 1 / 3 * var(--safe));
+}

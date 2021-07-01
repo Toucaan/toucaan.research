@@ -1,0 +1,67 @@
+.header {
+  width: var(--header);
+  height: 100vh;
+  margin: 0 auto;
+  position: fixed;
+  border-right: 1px solid hsla(0, 0%, 100%, 0.1);
+}
+
+.bar {
+  margin: 0 auto;
+  width: inherit;
+}
+
+.logo {
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  display: inline-block;
+}
+
+.logo .goose { 
+  width: calc(12 * var(--fs));
+  height: calc(12 * var(--fs));
+}
+
+.logo .text {
+  color: var(--white);
+  width: calc(30 * var(--fs));
+  height: calc(6 * var(--fs));
+  font-size: calc(30 / 8 * var(--fs));
+  line-height: 1;
+  font-weight: 500;
+}
+
+.logo .monogram {
+  width: calc(24 * var(--fs));
+  height: calc(24 * var(--fs));
+}
+
+
+ul.menu {
+  width: 100%;
+  margin-top: calc(3 * var(--fs));
+}
+
+ul.menu li {
+  width: 100%;
+  height: calc((100vh - 30 * var(--fs)) / 15);
+}
+
+ul.menu li a {
+  width: 75%;
+  // height: calc((100vh - 30 * var(--fs)) / 10);
+  color: var(--white);
+  border-left: 3px solid transparent;
+  transition: transform 0.2s;
+  font-weight: 600;
+  font-size: calc(3/4 * 30 * var(--fs) / 10);
+  text-decoration: none;
+  text-shadow: none;
+  padding: 0 5px;
+  &:hover,
+  &.active {
+    border-left: 3px solid var(--split-gradient);
+    color: var(--orange);
+  }
+}

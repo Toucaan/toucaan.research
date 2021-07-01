@@ -1,0 +1,141 @@
+/* Margin & padding over type is an anti-pattern. */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  line-height: calc(2 * 4 * var(--fs));
+  font-family: var(--system);
+  font-weight: 800;
+  display: flow-root;
+}
+
+h1 {
+  font-size: calc(2 * 4 * var(--fs)); /* 200% of fs */
+}
+
+h2 {
+  font-size: calc(1.75 * 4 * var(--fs)); /* 180% of fs */
+}
+
+h3 {
+  font-size: calc(1.5 * 4 * var(--fs)); /* 160% of fs */
+}
+
+h4 {
+  font-size: calc(1.25 * 4 * var(--fs)); /* 140% of fs */
+}
+
+h5 {
+  font-size: calc(1 * 4 * var(--fs)); /* 120% of fs */
+}
+
+h6 {
+  font-size: calc(0.8 * 4 * var(--fs)); /* 100% of fs */
+}
+
+/*
+h3,
+h4,
+h5,
+h6 {
+  color: var(--red);
+}
+*/
+
+b,
+strong,
+.bold,
+.strong {
+  font-weight: bold;
+}
+
+p {
+  text-indent: 0;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.italics {
+  font-style: italic;
+}
+
+.strike {
+  color: var(--fc);
+  text-decoration: line-through;
+}
+
+.justify {
+  text-align: justify;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.left-align {
+  text-align: left;
+}
+
+.right-align {
+  text-align: right;
+}
+
+.center-align {
+  text-align: center;
+}
+
+.xxxl {
+  font-size: 200%;
+  line-height: calc(2 * 1.5 * 4 * var(--fs));
+}
+
+.xxl {
+  font-size: 150%;
+  line-height: calc(1.5 * 1.5 * 4 * var(--fs));
+}
+
+.xl {
+  font-size: 125%;
+  line-height: calc(1.25 * 1.5 * 4 * var(--fs));
+}
+
+.l {
+  font-size: 100%;
+  line-height: calc(1 * 1.5 * 4 * var(--fs));
+}
+
+.m {
+  font-size: 90%;
+  line-height: calc(0.9 * 1.5 * 4 * var(--fs));
+}
+
+.s {
+  font-size: 80%;
+  line-height: calc(0.7 * 1.5 * 4 * var(--fs));
+}
+
+.xs {
+  font-size: 70%;
+  line-height: calc(0.7 * 1.5 * 4 * var(--fs));
+}
+
+.xxs {
+  font-size: 60%;
+  line-height: calc(0.6 * 1.5 * 4 * var(--fs));
+}

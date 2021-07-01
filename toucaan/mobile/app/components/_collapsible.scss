@@ -1,0 +1,48 @@
+button.accordian {
+  background-color: #f0faff;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: calc(var(--safe) / 70);
+  font-weight: 600;
+  border: 1px solid var(--white);
+  transition: 300ms;
+
+  &.active {
+    border-radius: 1vmin 1vmin 0 0;
+  }
+
+  &.active, &:hover {
+    background-color: var(--white);
+  }
+
+  &:after {
+    content: '\002B';
+    color: var(--blue);
+    float: right;
+    margin-left: 5px;
+  }
+
+  &.active:after {
+    content: '\2212';
+    color: var(--blue);
+  }
+}
+
+div.panel {
+  background-color: var(--white);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.1s ease-out;
+  font-size: calc(var(--safe) / 60);
+  line-height: 1.4;
+  border-radius: 0 0 1vmin 1vmin;
+  transition: 300ms;
+}
+
+div.answer {
+  padding: 1vmin 5vmin 4vmin;
+}

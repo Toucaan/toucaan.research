@@ -1,7 +1,6 @@
 /* Portrait ⇋ landscape switch. */
-@import url('/dist/portrait.css') only screen and (orientation: portrait);
-
-@import url('/dist/landscape.css') only screen and (orientation: landscape);
+@import url('/toucaan/router/portrait.css') only screen and (orientation: portrait);
+@import url('/toucaan/router/landscape.css') only screen and (orientation: landscape);
 
 /* --vmin stands for base unit of blockscoped typography. */
 @media only screen and (orientation: portrait) {
@@ -21,24 +20,24 @@
 :root {
 	--vmin:1vmin;
 
-  /*Font familia */
+  /* Systema familia */
   --sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --serif: "Apple Garamond", "Baskerville", "Times New Roman", "Droid Serif", "Times", "Source Serif Pro", serif;
-  --system: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Droid Sans, Helvetica Neue, Fira Sans, sans-serif !important;
-	--monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --system: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Droid Sans, Helvetica Neue, Fira Sans, sans-serif!important;
+  --monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --serif: -apple-system-ui-serif, ui-serif, "Apple Garamond", "Baskerville", "Times New Roman", "Droid Serif", "Times", "Source Serif Pro", serif;
 
-	/* Put your application color palette over here */
+	/* Put your full Color Palette over here */
 
 }
 
-/* Handle the notched phones with a botched MQ from Apple. */
+/* Handle the notched phones with botched css standards from Apple. */
 /* Read more: https://bubblin.io/blog/notch */
-@supports (padding: max(0px)) {
+@supports(padding:max(0px)) {
   body, header, footer {
     padding-left: min(0vmin, env(safe-area-inset-left));
     padding-right: min(0vmin, env(safe-area-inset-right));
   }
   body {
-    min-height: -webkit-fill-available;
+    min-height: fill-available;
   }
 }
