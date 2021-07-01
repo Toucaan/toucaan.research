@@ -97,7 +97,9 @@ Toucaan does not use a `link.rel` directive to import the stylesheets. Instead i
 <head>
   <!--Regular head stuff-->
   <style> 
-    @import url('/route/to/app.css') only screen and ( /* Some conditions here. */ );
+    /* Toucaan Router Code here: */
+    @import url('/route/to/landscape.css') only screen and ( /* Some conditions here. */ );
+    @import url('/route/to/portrait.css') only screen and ( /* Some other conditions here. */ );
   </style> 
 </head>
 <body>
@@ -131,7 +133,7 @@ Current sponsors of Toucaan:
 
 <div align="left">
   <a href="https://goose.red" rel="follow">
-    <img src="sponsors/red-goose.png" width="100"> 
+    <img src="sponsors/red-goose.png" width="50"> 
   </a>
 </div>
 
