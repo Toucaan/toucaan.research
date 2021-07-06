@@ -6,13 +6,19 @@
 
 # Introduction
 
-Toucaan is an _intrinsic_, _mutative_, and _deterministic_ CSS framework for the web _and_ mobile apps using the `webView.`
+Toucaan is a CSS framework for Intrinsic Web Design. 
 
-### Definitions
+It is not only intrinsic but also _mutative_ and _deterministic_ by design.
 
-1. **Intrinsic** implies that your app design must "belong" to the device in question. A natural UX/UI that exploits physical and technical capabilities of the surface. The term `intrinsic design` was [coined](https://youtu.be/AMPKmh98XLY) by Jen Simmons of Mozilla back in 2017. Here is a [podcast and transcript](https://www.zeldman.com/2018/05/02/transcript-intrinsic-web-design-with-jen-simmons-the-big-web-show/) of the discussion if you like. 
+### Definition:
 
-While intrinsic web design could mean different things to different people, it usually means "native app-like" interfaces that fit the user's device situation closely.
+1. **Intrinsic** implies that your web designs must "belong" to the device in question. Implement a natural UX/UI that exploits the physical and technical characteristics of the surface at hand. 
+
+The term `intrinsic design` was [coined by Jen Simmons](https://youtu.be/AMPKmh98XLY) of Mozilla (now Apple) back in 2017. Here is a [podcast and transcript](https://www.zeldman.com/2018/05/02/transcript-intrinsic-web-design-with-jen-simmons-the-big-web-show/) of the original discussion if you like. 
+
+While intrinsic web design could mean different things to different people, it usually means arriving at a native "app-like" interface that fits the usecase and user's device situation closely. 
+
+Read more about Intrinsic Web Design [here](https://medium.com/@mattkrick/intrinsic-web-design-b5e9f9c8d8d6).
 
 2. **Mutative** implies that you can edit and add to baseline rules (think customized `normalize.css`) yourself. Directly into the framework. This concept borders close to the idea of a classless & framework-less approach to web design. There is no single heavy `reset` or `normalize` or an external utility included in the DOM to enforce browser consistency.
 
@@ -142,7 +148,7 @@ Current sponsors of Toucaan:
 
 ### Why call it Toucaan?
 
-Only because I owned the pretty domain name. 
+Mainly because I owned the pretty domain name. 
 
 Besides, Toucan is a beautiful bird. This aggressive little arboreal _ramphastidus_ symbolizes both beauty and aggression. What better animal to ground our framework's central metaphor on? 
 
@@ -152,4 +158,4 @@ You see **_if Toucaan, then you can too!_** 😉
 
 For Boomers – MIT 
 
-For the next generation of developers – The Parity Public License 7.0.0. 
+For the next generation of developers and designers – The Parity Public License 7.0.0. 
