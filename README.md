@@ -1,4 +1,5 @@
 <div align="center">
+    <h1>Intrinsic Web Design.</h1>
     <a href="https://toucaan.com" rel="follow">
         <img src="header.svg" width="800">
     </a>
@@ -6,9 +7,7 @@
 
 # Introduction
 
-Toucaan is a CSS framework for Intrinsic Web Design. 
-
-It is not only intrinsic but also _mutative_ and _deterministic_ by design.
+Toucaan is a CSS framework for Intrinsic Web Design. It is not only _intrinsic_ in implementation but also _mutative_ and _deterministic_ by design.
 
 ### Definition:
 
@@ -16,7 +15,7 @@ It is not only intrinsic but also _mutative_ and _deterministic_ by design.
 
 The term `intrinsic design` was [coined by Jen Simmons](https://youtu.be/AMPKmh98XLY) of Mozilla (now Apple) back in 2017. Here is a [podcast and transcript](https://www.zeldman.com/2018/05/02/transcript-intrinsic-web-design-with-jen-simmons-the-big-web-show/) of the original discussion if you like. 
 
-While intrinsic web design could mean different things to different people, it usually means arriving at a native "app-like" interface that fits the usecase and user's device situation closely. 
+While intrinsic web design could mean different things to different people, it usually means arriving at a native "app-like" interface that closely fits the use-case and user's device situation—accessibility.
 
 Read more about Intrinsic Web Design [here](https://medium.com/@mattkrick/intrinsic-web-design-b5e9f9c8d8d6).
 
@@ -39,36 +38,42 @@ Learn more about how Toucaan uses a [CSS Router](https://bubblin.io/blog/a-css-r
   </h3>
 </div>
 
-The world's fastest website → app conversion engine. Create mobile apps written in Swift or Kotlin and get on the app stores quickly.
-
-Coincidentally, the [Red Goose](https://goose.red) web application is also a demo implementation of the Toucaan CSS Framework.
+The world's fastest website → app conversion engine. Create mobile apps written in Swift or Kotlin in minutes.
 
 ---
 
+### Production demo
+
+Coincidentally, the [Red Goose](https://goose.red) website is a solid demo implementation of the Toucaan CSS Framework. 
+
 ### About
 
-Design "app-like" interfaces. Toucaan is meant for building web-apps and mobile-apps using the building blocks of the web, i.e., HTML, CSS, JavaScript, and WebAssembly. 🏅
+Design "app-like" interfaces. 
 
-Toucaan is about:
+Toucaan is meant for building web apps and mobile apps using the building blocks of the web, i.e., HTML, CSS, JavaScript, and WebAssembly. 🏅
 
-- Optimizing UX/UI according to a device, its underlying capabilities (e.g.: `pointer: coarse /fine`), physical size, and other situational constraints.
+It is about:
+
+- Optimizing UX/UI according to a device, its underlying capabilities (e.g.: `pointer: coarse /fine`), physical size, and other situational qualities.
 - Putting accessibility above everything else.
 - Routing stylesheets according to the [new landscape of the web](https://bubblin.io/blog/the-new-landscape-of-the-web). 
 
-Toucaan uses several ultramodern CSS patterns that are grounded in mathematics. It introduces some new concepts like:
+Toucaan uses several ultramodern CSS patterns that are grounded in mathematics and fundamentals of Intrinsic Web Design. 
 
-1. Using `vmin` for block-scoped typography and intrinsic aspect-ratios instead of the regular units like `px` `em` or `rem`,
-2. Optionally use absolute [--inch](https://github.com/bookiza/--inch) unit or any other SI unit of physical measurement like centimeters or millimeters to define your UI.
+It introduces some new concepts like:
 
-And much, much more…
+1. Using `vmin` for block-scoped typography and intrinsic aspect-ratios instead of the regular units like `px` `em` or `rem,`
+2. Optional use of absolute [--inch](https://github.com/bookiza/--inch) units or other SI units of physical measurement like centimeters or millimeters to define your UI. (Work in progress)
+
+And a lot more.
 
 > Read more about how Toucaan came about to be over [here](https://bubblin.io/blog/toucaan-introduction).
 
 ### Key features
 
-1. Intrinsic in principle and design.
+1. Intrinsic architecture.
 2. Block-scoped typography using `vmin`.
-3. Deterministic UX/UI `vmin` or `inch: pixel` mappings (Optional).
+3. Deterministic UX/UI using physical attributes like `inch: pixel` mappings (Optional).
 4. Supports Apple Watch 5 and upwards, up to projectors & OLED TVs.
 5. Simple yet classy utilities. It's like writing style in plain English.
 6. Accessibile by default.
@@ -77,7 +82,7 @@ And much, much more…
 9. Zero resetting or bulldozing vendor consistency. 
 10. Follows native UI patterns for mobile-app interfaces.
 
-#### Basic concepts
+#### Toucaan Fundamentals 
 
 1. [Rethinking CSS frameworks](https://bubblin.io/blog/toucaan-introduction)
 2. [A new baseline](https://bubblin.io/blog/baseline-css)
