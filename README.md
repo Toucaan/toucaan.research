@@ -10,7 +10,9 @@ Toucaan is an _intrinsic_, _mutative_, and _deterministic_ CSS framework for the
 
 ### Definitions
 
-1. **Intrinsic** implies that your app design "belongs" to the device in question naturally. The term `intrinsic` was [coined](https://www.zeldman.com/2018/05/02/transcript-intrinsic-web-design-with-jen-simmons-the-big-web-show/) by Jen Simmons of Mozilla back in 2017. While intrinsic could mean different things to different people, it really points to "app-like" interfaces that belong to the user device.
+1. **Intrinsic** implies that your app design must "belong" to the device in question. A natural UX/UI that exploits physical and technical capabilities of the surface. The term `intrinsic design` was [coined](https://youtu.be/AMPKmh98XLY) by Jen Simmons of Mozilla back in 2017. Here is a [podcast and transcript](https://www.zeldman.com/2018/05/02/transcript-intrinsic-web-design-with-jen-simmons-the-big-web-show/) of the discussion if you like. 
+
+While intrinsic web design could mean different things to different people, it usually means "native app-like" interfaces that fit the user's device situation closely.
 
 2. **Mutative** implies that you can edit and add to baseline rules (think customized `normalize.css`) yourself. Directly into the framework. This concept borders close to the idea of a classless & framework-less approach to web design. There is no single heavy `reset` or `normalize` or an external utility included in the DOM to enforce browser consistency.
 
@@ -31,9 +33,9 @@ Learn more about how Toucaan uses a [CSS Router](https://bubblin.io/blog/a-css-r
   </h3>
 </div>
 
-The world's fastest website → app conversion engine. Create mobile apps written in Swift or Kotlin and help small dev teams get on the app stores quickly.
+The world's fastest website → app conversion engine. Create mobile apps written in Swift or Kotlin and get on the app stores quickly.
 
-Coincidentally, the Red Goose web-app is also a demo implementation of the Toucaan CSS Framework.
+Coincidentally, the [Red Goose](https://goose.red) web application is also a demo implementation of the Toucaan CSS Framework.
 
 ---
 
