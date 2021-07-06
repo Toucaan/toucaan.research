@@ -42,9 +42,9 @@ The world's fastest website → app conversion engine. Create mobile apps writte
 
 ---
 
-### Production demo
+### Demo
 
-Coincidentally, the [Red Goose](https://goose.red) website is a solid demo implementation of the Toucaan CSS Framework. 
+Coincidentally, the [Red Goose](https://goose.red) website is a solid real life demo implementation of the Toucaan CSS Framework. 
 
 ### About
 
