@@ -7,29 +7,29 @@
 
 # Introduction
 
-Toucaan is a CSS framework for Intrinsic Web Design. It is not only _intrinsic_ in implementation but also _mutative_ and _deterministic_ by design.
+Toucaan is an _intrinsic_, _mutative_, and a _deterministic_ CSS framework. 
 
 ### Definition:
 
-1. **Intrinsic** implies that your web designs must "belong" to the device in question. Implement a natural UX/UI that exploits the physical and technical characteristics of the surface at hand. 
+1. **Intrinsic** implies that your web designs must "belong" to the device in question. Implement the most natural and accessible UX/UI that utilizes a user's device's physical and technical characteristics.
 
 The term `intrinsic design` was [coined by Jen Simmons](https://youtu.be/AMPKmh98XLY) of Mozilla (now Apple) back in 2017. Here is a [podcast and transcript](https://www.zeldman.com/2018/05/02/transcript-intrinsic-web-design-with-jen-simmons-the-big-web-show/) of the original discussion if you like. 
 
-While intrinsic web design could mean different things to different people, it usually means arriving at a native "app-like" interface that closely fits the use-case and user's device situation—accessibility.
+While intrinsic web design could mean different things to different people, it usually means arriving at a "native app-like" interface that closely fits the use-case and user's device/situation. 
 
 Read more about Intrinsic Web Design [here](https://medium.com/@mattkrick/intrinsic-web-design-b5e9f9c8d8d6).
 
-2. **Mutative** implies that you can edit and add to baseline rules (think customized `normalize.css`) yourself. Directly into the framework. This concept borders close to the idea of a classless & framework-less approach to web design. There is no single heavy `reset` or `normalize` or an external utility included in the DOM to enforce browser consistency.
+2. **Mutative** means that the user written styles are added directly into the framework. This concept borders close to the idea of a low-class or classless implementation for a given design. There is also no single heavy `reset` or `reboot` file to import except for the utilities that are explicitly included by the user.
 
-3. **Deterministic** means applying style without approximations or any sort of guesswork about the UI container. Put simply, a layout can "belong" to a device only when the layout _knows_ the kind of device it is on.
+3. **Deterministic** means applying style without approximations or any sort of guesswork about the UI container. Put simply, a layout can "belong" to a device only when the layout knows the kind of device it is on.
 
-Learn more about how Toucaan uses a [CSS Router](https://bubblin.io/blog/a-css-router) to serve category-specific stylesheets (watch → mobile → tablet → desktop → television…) instead of hardcoded media-queries.
+Learn more about how Toucaan uses a [CSS Router](https://bubblin.io/blog/a-css-router) to serve category-specific stylesheets (watch → mobile → tablet → desktop → television…) instead of hardcoded width based media-queries.
 
 ---
 
 <div align="left">
   <h3>
-    Brought to you by developers @
+    Brought to you by
     <span>
       <img src="assets/goose.red.svg" width="25"> 
     </span>
@@ -44,7 +44,7 @@ The world's fastest website → app conversion engine. Create mobile apps writte
 
 ### Demo
 
-Coincidentally, the [Red Goose](https://goose.red) website is a solid real life demo implementation of the Toucaan CSS Framework. 
+The [Red Goose](https://goose.red) website is a solid real-life demo implementation of the Toucaan CSS Framework. (Currently only mobile and desktop support). 
 
 ### About
 
