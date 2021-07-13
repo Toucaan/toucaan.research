@@ -15,7 +15,7 @@ Toucaan is an _intrinsic_, _mutative_, and a _deterministic_ CSS framework.
 
 The term `intrinsic design` was [coined by Jen Simmons](https://youtu.be/AMPKmh98XLY) of Mozilla (now Apple) back in 2017. Here is a [podcast and transcript](https://www.zeldman.com/2018/05/02/transcript-intrinsic-web-design-with-jen-simmons-the-big-web-show/) of the original discussion if you like. 
 
-While intrinsic web design could mean different things to different people, it usually means arriving at a "native app-like" interface that closely fits the use-case and user's device/situation. 
+While intrinsic web design could mean different things to different people, it usually means arriving at a native "app-like" interface that closely fits the use-case and user's device/situation. 
 
 Read more about Intrinsic Web Design [here](https://medium.com/@mattkrick/intrinsic-web-design-b5e9f9c8d8d6).
 

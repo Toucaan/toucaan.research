@@ -1,1 +1,123 @@
-@import url('../../dist/mobile.css');
+/*** Portrait or y-axis.  ***/
+/* The portrait-axis router. */
+/* The file at --> ./toucaan/router/portrait.css */
+
+
+/*** Route-in for @import watch.css ***/
+/*** a. Apple Watch 6 for men = 44mm. Resolution: 368 x 448 pixels ***/
+/*** b. Apple Watch 6 for women = 40mm.  324 x 394 pixels   ***/
+/*** c. Moto 360 Watch = 46mm. Resolution: 360 x 330 pixels ***/
+
+/* Wearables */
+@import url('../../dist/watch.css') 
+    (max-device-width: 368px) 
+    and (max-device-height: 448px) 
+    and (-webkit-device-pixel-ratio: 3)
+    and (hover: none) 
+    and (pointer: coarse)
+    and (min-width: 200px);
+
+/*** Route-in or @import mobile.css next. ***/
+/*** 1. iPhone 4 to iPhone Pro Max 12. Resolution:  ***/
+/*** 2. Android phones including Galaxy Fold @280px ***/
+
+/* Smartphones */
+@import url('../../dist/mobile.css') 
+  (min-device-width: 280px) 
+  and (max-device-width: 384px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (hover: none) 
+  and (pointer: coarse), 
+  (min-device-width: 414px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (hover: none) 
+  and (pointer: coarse),
+  (min-device-width: 360px) 
+  and (-webkit-device-pixel-ratio: 4)
+  and (hover: none) 
+  and (pointer: coarse);
+
+/*** Route-in or @import tablet.css next. ***/
+
+/*** 1. iPad 1, 2, Mini, Air, 3, 4 and Pro 9.7, Pro 10.5, Pro 12.9 ***/
+/*** 2. Android tablets: Galaxy, Nexus and Huawei ***/
+/*** 3. Kindle Fire ***/
+
+/* Tablets */
+@import url('../../dist/tablet.css') 
+  (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) 
+  and (hover: none) 
+  and (pointer: coarse), 
+  (min-device-width: 768px) 
+  and (max-device-width: 1366px) 
+  and (-webkit-min-device-pixel-ratio: 2) 
+  and (hover: none) 
+  and (pointer: coarse), 
+  (min-device-width: 601px) 
+  and (max-device-height: 1536px) 
+  and (-webkit-min-device-pixel-ratio: 1.331) 
+  and (-webkit-max-device-pixel-ratio: 1.332)
+  and (hover: none) 
+  and (pointer: coarse), 
+  (min-device-width: 800px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1.5)
+  and (hover: none) 
+  and (pointer: coarse);
+
+/*** Route-in or @import vehicle.css if required. ***/
+/*** Older Tesla Model S and a few other EVs ***/
+
+/* EVs */
+/* @import url('../../dist/vehicle.css') 
+  (min-device-width: 1200px) 
+  and (max-device-width: 1920px) 
+  and (-webkit-min-device-pixel-ratio: 1) 
+  and (hover: none) 
+  and (pointer: coarse); */
+
+
+/*** Route-in or @import desktop.css next. ***/
+/*** Vertically mounted Retina & non-retina Screens ***/
+
+/* Desktops */ 
+@import url('../../dist/desktop.css') 
+  (min-device-width: 720px) 
+  and (max-device-height: 1920px) 
+  and (-webkit-min-device-pixel-ratio: 1)
+  and (hover: hover) 
+  and (pointer: fine),
+  (min-device-width: 900px) 
+  and (max-device-width: 2880px) 
+  and (-webkit-min-device-pixel-ratio: 2) 
+  and (min-resolution: 192dpi)
+  and (hover: hover) 
+  and (pointer: fine);
+
+/*** Route-in or @import television.css next. ***/
+
+/* Limited browser support. */
+/* Vertically mounted television or projector. */
+@import url('../../dist/television.css') 
+  (min-device-width: 1440px) 
+  and (max-device-width: 4320px) 
+  and (hover: none) 
+  and (any-pointer: coarse);
+
+
+/* 
+1280x720 — HD / 720p.
+1920x1080 — FHD (Full HD) / 1080p.
+2560x1440 — QHD/WQHD (Quad HD) / 1440p.
+3840x2160 — UHD (Ultra HD) / 4K 2160p.
+7680×4320 — FUHD (Full Ultra HD) / 8K 4320p.
+
+Televisions on the lower end of the market do not sport a worthwhile web browser. 
+Web browsers on TVs on the high end of the market are still catching up on standards. 
+Poor support for CSS Grids, level 4 media queries and many other CSS features.
+
+WebOS from LG is pointer-driven.
+*/

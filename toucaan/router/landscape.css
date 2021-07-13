@@ -1,1 +1,126 @@
-@import url('../../dist/desktop.css');
+/*** Landscape or y-axis.  ***/
+/* The landscape-axis router. */
+/* The file at --> ./toucaan/router/landscape.css */
+
+
+/*** Route-in or @import mobile.css next. ***/
+/*** 1. iPhone 4 to iPhone Pro Max 12. Resolution: ***/
+/*** 2. Android phones starting from    ***/
+
+/* Smartphones */
+@import url('../../dist/mobile.css') 
+  (min-device-width: 480px) 
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (hover: none) 
+  and (pointer: coarse), 
+  (min-device-width: 414px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (hover: none) 
+  and (pointer: coarse),
+  (min-device-width: 592px) 
+  and (max-device-width: 640px) 
+  and (-webkit-device-pixel-ratio: 4)
+  and (hover: none) 
+  and (pointer: coarse);
+
+/*** Route-in or @import tablet.css next. ***/
+
+/*** 1. iPad 1, 2, Mini, Air, 3, 4 and Pro 9.7, Pro 10.5, Pro 12.9 ***/
+/*** 2. Android tablets: Galaxy, Nexus and Huawei ***/
+/*** 3. Kindle Fire ***/
+
+/* Tablets */
+@import url('../../dist/tablet.css') 
+  (min-device-width: 1024px) 
+  and (max-device-width: 1280px) 
+  and (-webkit-min-device-pixel-ratio: 1) 
+  and (hover: none) 
+  and (pointer: coarse), 
+  (min-device-width: 1024px) 
+  and (max-device-width: 1366px) 
+  and (-webkit-min-device-pixel-ratio: 2) 
+  and (hover: none) 
+  and (pointer: coarse), 
+  (min-device-width: 906px) 
+  and (max-device-height: 2048px) 
+  and (-webkit-min-device-pixel-ratio: 1.331) 
+  and (-webkit-max-device-pixel-ratio: 1.332)
+  and (hover: none) 
+  and (pointer: coarse), 
+  (min-device-width: 1280px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1.5)
+  and (hover: none) 
+  and (pointer: coarse);
+
+/*** Route-in or @import vehicle.css if required. ***/
+/*** Older Tesla Model S and a few other EVs ***/
+
+/* EVs */
+/* @import url('../../dist/vehicle.css') 
+  (min-device-width: 1200px) 
+  and (max-device-width: 1920px) 
+  and (-webkit-min-device-pixel-ratio: 1) 
+  and (hover: none) 
+  and (pointer: coarse); */
+
+
+/*** Route-in or @import desktop.css next. ***/
+/*** Retina & non-retina Screens ***/
+
+/* Desktops */ 
+@import url('../../dist/desktop.css') 
+  (min-device-width: 1080px) 
+  and (max-device-width: 3840px) 
+  and (-webkit-min-device-pixel-ratio: 1)
+  and (max-aspect-ratio: 32/9)
+  and (hover: hover) 
+  and (pointer: fine),
+  (min-device-width: 1440px) 
+  and (max-device-width: 5120px) 
+  and (-webkit-min-device-pixel-ratio: 2) 
+  and (min-resolution: 192dpi)
+  and (max-aspect-ratio: 32/9)
+  and (hover: hover) 
+  and (pointer: fine);
+
+/* Aspect ratio between normal and ultrawide monitors.
+
+3.55555 = 32:9 aspect ratio: 3840×1080, 5120×1440 
+2.33333 = 21:9 aspect ratio: 2560×1080, 3440×1440, 5120×2160
+1.77777 = 16:9 aspect ratio: 1280×720, 1366×768, 1600×900, 1920×1080, 2560×1440, 3840×2160, 5120×2880, 7680×4320
+1.60000 = 16:10 aspect ratio: 1280×800, 1920×1200, 2560×1600
+1.33333 = 4:3 aspect ratio: 1400×1050, 1440×1080, 1600×1200, 1920×1440, 2048×1536
+
+When it comes to gaming, ultrawide monitors with a 21:9 aspect ratio or more 
+can be offered a separate stylesheet to compensate for the broader field of view.
+
+Simply change and (max-aspect-ratio: 32/9) to (max-aspect-ratio: 16/9) for ordinary desktops. 
+And use and (min-aspect-ratio: 16/9) for ultrawide desktops.
+
+*/
+  
+/*** Route-in or @import television.css next. ***/
+
+/* Limited browser support. */
+@import url('../../dist/television.css') 
+  (min-device-width: 2560px) 
+  and (max-device-width: 7680px) 
+  and (hover: none) 
+  and (any-pointer: coarse);
+
+/* 
+1280x720 — HD / 720p.
+1920x1080 — FHD (Full HD) / 1080p.
+2560x1440 — QHD/WQHD (Quad HD) / 1440p.
+3840x2160 — UHD (Ultra HD) / 4K 2160p.
+7680×4320 — FUHD (Full Ultra HD) / 8K 4320p.
+
+Televisions on the lower end of the market do not sport a worthwhile web browser. 
+Web browsers on TVs on the high end of the market are still catching up on standards. 
+Poor support for CSS Grids, level 4 media queries and many other CSS features.
+
+WebOS from LG is pointer-driven.
+*/
