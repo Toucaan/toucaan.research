@@ -28,15 +28,15 @@
   and (-webkit-min-device-pixel-ratio: 2)
   and (hover: none) 
   and (pointer: coarse), 
-  (min-device-width: 414px) 
-  and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (hover: none) 
-  and (pointer: coarse),
-  (min-device-width: 360px) 
-  and (-webkit-device-pixel-ratio: 4)
-  and (hover: none) 
-  and (pointer: coarse);
+    (min-device-width: 414px) 
+    and (max-device-width: 812px) 
+    and (-webkit-min-device-pixel-ratio: 3)
+    and (hover: none) 
+    and (pointer: coarse),
+      (min-device-width: 360px) 
+      and (-webkit-device-pixel-ratio: 4)
+      and (hover: none) 
+      and (pointer: coarse);
 
 /*** Route-in or @import tablet.css next. ***/
 
@@ -51,22 +51,22 @@
   and (-webkit-min-device-pixel-ratio: 1) 
   and (hover: none) 
   and (pointer: coarse), 
-  (min-device-width: 768px) 
-  and (max-device-width: 1366px) 
-  and (-webkit-min-device-pixel-ratio: 2) 
-  and (hover: none) 
-  and (pointer: coarse), 
-  (min-device-width: 601px) 
-  and (max-device-height: 1536px) 
-  and (-webkit-min-device-pixel-ratio: 1.331) 
-  and (-webkit-max-device-pixel-ratio: 1.332)
-  and (hover: none) 
-  and (pointer: coarse), 
-  (min-device-width: 800px) 
-  and (max-device-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 1.5)
-  and (hover: none) 
-  and (pointer: coarse);
+    (min-device-width: 768px) 
+    and (max-device-width: 1366px) 
+    and (-webkit-min-device-pixel-ratio: 2) 
+    and (hover: none) 
+    and (pointer: coarse), 
+      (min-device-width: 601px) 
+      and (max-device-height: 1536px) 
+      and (-webkit-min-device-pixel-ratio: 1.331) 
+      and (-webkit-max-device-pixel-ratio: 1.332)
+      and (hover: none) 
+      and (pointer: coarse), 
+        (min-device-width: 800px) 
+        and (max-device-width: 1600px) 
+        and (-webkit-min-device-pixel-ratio: 1.5)
+        and (hover: none) 
+        and (pointer: coarse);
 
 /*** Route-in or @import vehicle.css if required. ***/
 /*** Older Tesla Model S and a few other EVs ***/
@@ -90,12 +90,12 @@
   and (-webkit-min-device-pixel-ratio: 1)
   and (hover: hover) 
   and (pointer: fine),
-  (min-device-width: 900px) 
-  and (max-device-width: 2880px) 
-  and (-webkit-min-device-pixel-ratio: 2) 
-  and (min-resolution: 192dpi)
-  and (hover: hover) 
-  and (pointer: fine);
+    (min-device-width: 900px) 
+    and (max-device-width: 2880px) 
+    and (-webkit-min-device-pixel-ratio: 2) 
+    and (min-resolution: 192dpi)
+    and (hover: hover) 
+    and (pointer: fine);
 
 /*** Route-in or @import television.css next. ***/
 

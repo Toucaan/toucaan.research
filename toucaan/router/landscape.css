@@ -14,16 +14,16 @@
   and (-webkit-min-device-pixel-ratio: 2)
   and (hover: none) 
   and (pointer: coarse), 
-  (min-device-width: 414px) 
-  and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (hover: none) 
-  and (pointer: coarse),
-  (min-device-width: 592px) 
-  and (max-device-width: 640px) 
-  and (-webkit-device-pixel-ratio: 4)
-  and (hover: none) 
-  and (pointer: coarse);
+    (min-device-width: 414px) 
+    and (max-device-width: 812px) 
+    and (-webkit-min-device-pixel-ratio: 3)
+    and (hover: none) 
+    and (pointer: coarse),
+      (min-device-width: 592px) 
+      and (max-device-width: 640px) 
+      and (-webkit-device-pixel-ratio: 4)
+      and (hover: none) 
+      and (pointer: coarse);
 
 /*** Route-in or @import tablet.css next. ***/
 
@@ -38,22 +38,22 @@
   and (-webkit-min-device-pixel-ratio: 1) 
   and (hover: none) 
   and (pointer: coarse), 
-  (min-device-width: 1024px) 
-  and (max-device-width: 1366px) 
-  and (-webkit-min-device-pixel-ratio: 2) 
-  and (hover: none) 
-  and (pointer: coarse), 
-  (min-device-width: 906px) 
-  and (max-device-height: 2048px) 
-  and (-webkit-min-device-pixel-ratio: 1.331) 
-  and (-webkit-max-device-pixel-ratio: 1.332)
-  and (hover: none) 
-  and (pointer: coarse), 
-  (min-device-width: 1280px) 
-  and (max-device-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 1.5)
-  and (hover: none) 
-  and (pointer: coarse);
+    (min-device-width: 1024px) 
+    and (max-device-width: 1366px) 
+    and (-webkit-min-device-pixel-ratio: 2) 
+    and (hover: none) 
+    and (pointer: coarse), 
+      (min-device-width: 906px) 
+      and (max-device-height: 2048px) 
+      and (-webkit-min-device-pixel-ratio: 1.331) 
+      and (-webkit-max-device-pixel-ratio: 1.332)
+      and (hover: none) 
+      and (pointer: coarse), 
+        (min-device-width: 1280px) 
+        and (max-device-width: 1600px) 
+        and (-webkit-min-device-pixel-ratio: 1.5)
+        and (hover: none) 
+        and (pointer: coarse);
 
 /*** Route-in or @import vehicle.css if required. ***/
 /*** Older Tesla Model S and a few other EVs ***/
@@ -78,13 +78,13 @@
   and (max-aspect-ratio: 32/9)
   and (hover: hover) 
   and (pointer: fine),
-  (min-device-width: 1440px) 
-  and (max-device-width: 5120px) 
-  and (-webkit-min-device-pixel-ratio: 2) 
-  and (min-resolution: 192dpi)
-  and (max-aspect-ratio: 32/9)
-  and (hover: hover) 
-  and (pointer: fine);
+    (min-device-width: 1440px) 
+    and (max-device-width: 5120px) 
+    and (-webkit-min-device-pixel-ratio: 2) 
+    and (min-resolution: 192dpi)
+    and (max-aspect-ratio: 32/9)
+    and (hover: hover) 
+    and (pointer: fine);
 
 /* Aspect ratio between normal and ultrawide monitors.
 
