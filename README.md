@@ -13,15 +13,15 @@ Toucaan is an _intrinsic_, _mutative_, and a _deterministic_ CSS framework.
 
 1. **Intrinsic** implies that your web designs must "belong" to the device in question. Implement the most natural and accessible UX/UI that utilizes a user's device's physical and technical characteristics.
 
-The term `intrinsic design` was [coined by Jen Simmons](https://youtu.be/AMPKmh98XLY) of Mozilla (now Apple) back in 2017. Here is a [podcast and transcript](https://www.zeldman.com/2018/05/02/transcript-intrinsic-web-design-with-jen-simmons-the-big-web-show/) of the original discussion if you like. 
+The term `intrinsic design` was [coined by Jen Simmons](https://youtu.be/AMPKmh98XLY) of Mozilla (now of Apple) back in 2017. Here is a [podcast and transcript](https://www.zeldman.com/2018/05/02/transcript-intrinsic-web-design-with-jen-simmons-the-big-web-show/) of the original discussion if you like. 
 
-While intrinsic web design could mean different things to different people, it usually means arriving at a native "app-like" interface that closely fits the use-case and user's device/situation. 
+While intrinsic web design could mean different things to different people, it usually means arriving at a native "app-like" interface that closely fits the use-case and user's device/accessibility situation. 
 
-Read more about Intrinsic Web Design [here](https://medium.com/@mattkrick/intrinsic-web-design-b5e9f9c8d8d6).
+Read more about Intrinsic Web Design over [here](https://medium.com/@mattkrick/intrinsic-web-design-b5e9f9c8d8d6).
 
-2. **Mutative** means that the user written styles are added directly into the framework. This concept borders close to the idea of a low-class or classless implementation for a given design. There is also no single heavy `reset` or `reboot` file to import except for the utilities that are explicitly included by the user.
+2. **Mutative** means that the user-written styles are added directly into the framework. This concept borders close to the idea of a low-class or classless implementation for a given web design. Mutative also implies that there is no single heavy `reset` or `reboot` css file to import except for the utilities for the HTML tags that are explicitly included in the app by the developer.
 
-3. **Deterministic** means applying style without approximations or any sort of guesswork about the UI container. Put simply, a layout can "belong" to a device only when the layout knows the kind of device it is on.
+3. **Deterministic** means applying style without approximations or any guesswork about the UI container. Simply put, a layout can "belong" to a device only when it knows the kind of device it is on.
 
 Learn more about how Toucaan uses a [CSS Router](https://bubblin.io/blog/a-css-router) to serve category-specific stylesheets (watch → mobile → tablet → desktop → television…) instead of hardcoded width based media-queries.
 
@@ -29,22 +29,22 @@ Learn more about how Toucaan uses a [CSS Router](https://bubblin.io/blog/a-css-r
 
 <div align="left">
   <h3>
-    Brought to you by
+    Developed and sponsored by
     <span>
-      <img src="assets/goose.red.svg" width="25"> 
+      <img src="assets/goose.red.svg" width="100"> 
     </span>
-      <a href='https://goose.red'> Red Goose.
-      </a>
   </h3>
 </div>
 
-The world's fastest website → app conversion engine. Create mobile apps written in Swift or Kotlin in minutes.
+<a href='https://goose.red'> Red Goose</a>. The world's fastest website → app conversion engine. 
+
+Create mobile apps written in Swift or Kotlin with just a url.
 
 ---
 
 ### Demo
 
-The [Red Goose](https://goose.red) website is a solid real-life demo implementation of the Toucaan CSS Framework. (Currently only mobile and desktop support). 
+The [Red Goose](https://goose.red) website is a real-life demo / inspiration / implementation of the Toucaan CSS Framework. (Currently, only the landscape mode is supported). 
 
 ### About
 
@@ -96,13 +96,13 @@ And a lot more.
 
 ## Getting started
 
-The first step of setting up Toucaan on your project is to remove _all_ instances of the line below from the head tag of your document:
+The first step of setting up Toucaan on your project is to remove _all_ instances of the following line from the head tag of your web application:
 
 ```css
   <link rel="stylesheet" href="path/to/app.css" />
 ``` 
 
-Toucaan does not use a `link.rel` directive to import the stylesheets. Instead it uses a singular css `@import` call from within a `<style> </style>` tag, like so:
+Toucaan does not use a `link` tag to import the stylesheet into the document. It uses a css router with a singular priority css `@import` call from within a `<style> </style>` tag, like so:
 
 ```html
 <!doctype html>
@@ -110,7 +110,10 @@ Toucaan does not use a `link.rel` directive to import the stylesheets. Instead i
 <head>
   <!--Regular head stuff-->
   <style> 
-    /* Toucaan Router Code here: */
+    /* Toucaan Router Code goes here:                    */
+    /* This router separates the application style    */
+    /* along the two axes of Intrinsic Web Design:  */
+
     @import url('/route/to/landscape.css') only screen and ( /* Some conditions here. */ );
     @import url('/route/to/portrait.css') only screen and ( /* Some other conditions here. */ );
   </style> 
@@ -141,8 +144,9 @@ If you like my [work](https://github.com/sponsors/marvindanig) please consider s
 
 > I'm writing a book on the [Fundamentals of Toucaan CSS](https://bubblin.io/cover/the-toucaan-framework-by-marvin-danig) that will explain the thoughts and the reasoning behind the choices made by Toucaan and how you could override them.
 
-#### Sponsors
-Current sponsors of Toucaan: 
+#### Sponsorship
+
+Current sponsors of Toucaan are: 
 
 <div align="left">
   <a href="https://goose.red" rel="follow">
@@ -150,6 +154,7 @@ Current sponsors of Toucaan:
   </a>
 </div>
 
+But you can support our project by [sponsoring this repository](https://github.com/sponsors/marvin-danig) too!
 
 ### Why call it Toucaan?
 
