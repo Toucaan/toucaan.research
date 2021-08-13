@@ -25,11 +25,11 @@ const postcss = {
 
 module.exports = {
   entry: {
-    watch: path.resolve(`${__dirname}/toucaan/watch/watch.scss`),
-    mobile: path.resolve(`${__dirname}/toucaan/mobile/mobile.scss`),
-    tablet: path.resolve(`${__dirname}/toucaan/tablet/tablet.scss`),
-    desktop: path.resolve(`${__dirname}/toucaan/desktop/desktop.scss`),
-    television: path.resolve(`${__dirname}/toucaan/television/television.scss`)
+    watch: path.resolve(`${__dirname}/toucaan/app/watch/watch.scss`),
+    mobile: path.resolve(`${__dirname}/toucaan/app/mobile/mobile.scss`),
+    tablet: path.resolve(`${__dirname}/toucaan/app/tablet/tablet.scss`),
+    desktop: path.resolve(`${__dirname}/toucaan/app/desktop/desktop.scss`),
+    television: path.resolve(`${__dirname}/toucaan/app/television/television.scss`)
   },
   mode: (process.env.NODE_ENV !== 'production') ? 'development' : 'production',
   devtool: 'source-map',
