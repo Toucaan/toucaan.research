@@ -24,7 +24,7 @@
 /* Smartphones */
 @import url('../../dist/mobile.css') 
   (min-device-width: 280px) 
-  and (max-device-width: 384px)
+  and (max-device-width: 411px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (hover: none) 
   and (pointer: coarse), 
