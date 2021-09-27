@@ -50,20 +50,20 @@ The [Red Goose](https://goose.red) website is a real-life demo / inspiration / i
 
 Design "app-like" interfaces. 
 
-Toucaan is meant for building web apps and mobile apps using the building blocks of the web, i.e., HTML, CSS, JavaScript, and WebAssembly. 🏅
+Toucaan is meant for building web _and_ mobile apps using the building blocks of the web, i.e., HTML, CSS, JavaScript, and WebAssembly. 🏅
 
 It is about:
 
 - Optimizing UX/UI according to a device, its underlying capabilities (e.g.: `pointer: coarse /fine`), physical size, and other situational qualities.
 - Putting accessibility above everything else.
 - Routing stylesheets according to the [new landscape of the web](https://bubblin.io/blog/the-new-landscape-of-the-web). 
+- [Domain Driven Design](https://verraes.net/2021/09/what-is-domain-driven-design-ddd/)
 
-Toucaan uses several ultramodern CSS patterns that are grounded in mathematics and fundamentals of Intrinsic Web Design. 
+Toucaan uses several ultramodern CSS patterns that are grounded in the fundamentals of Intrinsic Web Design and maths. It introduces some new concepts like:
 
-It introduces some new concepts like:
-
-1. Using `vmin` for block-scoped typography and intrinsic aspect-ratios instead of the regular units like `px` `em` or `rem,`
-2. Optional use of absolute [--inch](https://github.com/bookiza/--inch) units or other SI units of physical measurement like centimeters or millimeters to define your UI. (Work in progress)
+1. Using a `vmin` based font-size unit for block-scoped typography and intrinsic aspect-ratios (in place of the older font units like `px` `em` `rem` or `vw`), which makes it more accessible and logical.
+2. Extend optional use of absolute [--inch](https://github.com/bookiza/--inch) units or other SI units of physical measurement like centimeters or millimeters to define your UI. (Work in progress)
+3. A CSS router with conditional media queries to ship and maintain only so much CSS as is necessary.
 
 And a lot more.
 
