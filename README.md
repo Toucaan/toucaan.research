@@ -90,7 +90,7 @@ And a lot more.
 4. [The new landscape of the web](https://bubblin.io/blog/the-new-landscape-of-the-web)
 5. [Mapping pixels to physical inches?](https://bubblin.io/blog/inch)
 6. [Writing a Router in CSS](https://bubblin.io/blog/a-css-router)
-7. [Intrinsic Typography and Aspect Ratio with VMIN units](https://bubblin.io/blog/magical-powers-of-css-vmin-unit)
+7. [Understanding Intrinsic Typography with the Magic of the VMIN units](https://bubblin.io/blog/magical-powers-of-css-vmin-unit)
 6. _Switch Media Query Explained_
 7. _Understanding Intrinsic Web Design_
 
