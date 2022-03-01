@@ -25,26 +25,10 @@ Read more about Intrinsic Web Design over [here](https://medium.com/@mattkrick/i
 
 Learn more about how Toucaan uses a [CSS Router](https://bubblin.io/blog/a-css-router) to serve category-specific stylesheets (watch → mobile → tablet → desktop → television…) instead of hardcoded width based media-queries.
 
----
-
-<div align="left">
-  <h3>
-    Developed and sponsored by
-    <span>
-      <img src="assets/goose.red.svg" width="100"> 
-    </span>
-  </h3>
-</div>
-
-<a href='https://goose.red'> Red Goose</a>. The world's fastest website → app conversion engine. 
-
-Create mobile apps written in Swift or Kotlin with just a url.
-
----
 
 ### Demo
 
-The [Red Goose](https://goose.red) website is a real-life demo / inspiration / implementation of the Toucaan CSS Framework. (Currently, only the landscape mode is supported). 
+The [Red Goose](https://goose.red) website is a real-life demo / inspiration / implementation of the Toucaan CSS Framework. It's a work in progress. 
 
 ### About
 
@@ -163,6 +147,23 @@ Mainly because I owned the pretty domain name.
 Besides, Toucan is a beautiful bird. This aggressive little arboreal _ramphastidus_ symbolizes both beauty and aggression. What better animal to ground our framework's central metaphor on? 
 
 You see **_if Toucaan, then you can too!_** 😉
+
+---
+
+<div align="left">
+  <h3>
+    Developed and sponsored by
+    <span>
+      <img src="assets/goose.red.svg" width="100"> 
+    </span>
+  </h3>
+</div>
+
+<a href='https://goose.red'> Red Goose</a>. The world's fastest website → app conversion engine. 
+
+Create mobile apps written in Swift or Kotlin with just a url.
+
+---
 
 ## License
 
