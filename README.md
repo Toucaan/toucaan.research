@@ -30,24 +30,38 @@ Learn more about how Toucaan uses a [CSS Router](https://bubblin.io/blog/a-css-r
 
 The [Red Goose](https://goose.red) website is a real-life demo / inspiration / implementation of the Toucaan CSS Framework. It's a work in progress. 
 
+#### Toucaan Fundamentals 
+
+1. [Rethinking CSS frameworks](https://bubblin.io/blog/toucaan-introduction)
+2. [A new baseline](https://bubblin.io/blog/baseline-css)
+3. [Web designing for the Apple Watch](https://bubblin.io/blog/web-design-recommendations-for-the-apple-watch)
+4. [The new landscape of the web](https://bubblin.io/blog/the-new-landscape-of-the-web)
+5. [Mapping pixels to physical inches?](https://bubblin.io/blog/inch)
+6. [Writing a Router in CSS](https://bubblin.io/blog/a-css-router)
+7. [Understanding Intrinsic Typography with the Magic of the VMIN units](https://bubblin.io/blog/magical-powers-of-css-vmin-unit)
+6. _Switch Media Query Explained_
+7. _Understanding Intrinsic Web Design_
+
+
 ### About
 
-Design "app-like" interfaces. 
-
-Toucaan is meant for building web _and_ mobile apps using the building blocks of the web, i.e., HTML, CSS, JavaScript, and WebAssembly. 🏅
+Toucaan is all about designing "app-like" interfaces on the web. It is meant for building web _and_ mobile apps using the building blocks of web alone, i.e., HTML, CSS, JavaScript, and [WebAssembly](https://webassembly.org/). 🏅
 
 It is about:
 
-- Optimizing UX/UI according to a device, its underlying capabilities (e.g.: `pointer: coarse /fine`), physical size, and other situational qualities.
+- Optimizing UX/UI according to a device, its underlying capabilities (e.g.: `pointer: coarse /fine`), physical size, and other intrinsic qualities of a web device.
 - Putting accessibility above everything else.
 - Routing stylesheets according to the [new landscape of the web](https://bubblin.io/blog/the-new-landscape-of-the-web). 
-- [Domain Driven Design](https://verraes.net/2021/09/what-is-domain-driven-design-ddd/)
+- [Domain Driven Design](https://verraes.net/2021/09/what-is-domain-driven-design-ddd/) and upwards.
 
-Toucaan uses several ultramodern CSS patterns that are grounded in the fundamentals of Intrinsic Web Design and maths. It introduces some new concepts like:
+Toucaan uses several ultramodern CSS patterns that are grounded in maths and the fundamentals of Intrinsic Web Design. It introduces some new concepts like:
 
-1. Using a `vmin` based font-size unit for block-scoped typography and intrinsic aspect-ratios (in place of the older font units like `px` `em` `rem` or `vw`), which makes it more accessible and logical.
-2. Extend optional use of absolute [--inch](https://github.com/bookiza/--inch) units or other SI units of physical measurement like centimeters or millimeters to define your UI. (Work in progress)
-3. A CSS router with conditional media queries to ship and maintain only so much CSS as is necessary.
+1. Using a `vmin` based typeface unit for block-scoped typography and intrinsic aspect-ratios for components in place of the older font units like `px` `em` `rem` or even `vw`. 
+
+Toucaan makes web design more accessible, more scalable, and logical.
+
+2. Extends optional use of absolute [--inch](https://github.com/bookiza/--inch) units or other SI units of physical measurement like centimeters or millimeters to define your UI. (this is a work in progress)
+3. A CSS router with conditional media queries to ship and maintain only so much css that is necessary for a given outlet–`mobile.css`, `watch.css`, `desktop.css`, and so on….
 
 And a lot more.
 
@@ -66,21 +80,10 @@ And a lot more.
 9. Zero resetting or bulldozing vendor consistency. 
 10. Follows native UI patterns for mobile-app interfaces.
 
-#### Toucaan Fundamentals 
-
-1. [Rethinking CSS frameworks](https://bubblin.io/blog/toucaan-introduction)
-2. [A new baseline](https://bubblin.io/blog/baseline-css)
-3. [Web designing for the Apple Watch](https://bubblin.io/blog/web-design-recommendations-for-the-apple-watch)
-4. [The new landscape of the web](https://bubblin.io/blog/the-new-landscape-of-the-web)
-5. [Mapping pixels to physical inches?](https://bubblin.io/blog/inch)
-6. [Writing a Router in CSS](https://bubblin.io/blog/a-css-router)
-7. [Understanding Intrinsic Typography with the Magic of the VMIN units](https://bubblin.io/blog/magical-powers-of-css-vmin-unit)
-6. _Switch Media Query Explained_
-7. _Understanding Intrinsic Web Design_
 
 ## Getting started
 
-The first step of setting up Toucaan on your project is to remove _all_ instances of the following line from the head tag of your web application:
+The first step of setting up Toucaan on your project is to remove _all_ instances of the following line from the head tag of your web app:
 
 ```css
   <link rel="stylesheet" href="path/to/app.css" />
@@ -110,27 +113,22 @@ Toucaan does not use a `link` tag to import the stylesheet into the document. It
 </html>
 ```
 
-Head over [here](https://www.toucaan.com/docs/getting-started) to get started. We are looking for help on documentation and contributors for this project. 
-
-Feel free to submit a PR or write to me if you want to join the core team.
+Head over [here](https://www.toucaan.com/docs/getting-started) to get started. We are looking for help on documentation and contributors for this project. Feel free to submit a PR or write to me directly if you want to join the core team and help me develop this project.
 
 ### Vendor Support
 
-Modern browsers that are inside of 2017 and now. The support can go further back, but check-out [CSS Remedy](https://github.com/jensimmons/cssremedy)
-to see how much debt you're willing to shoulder for backward-compatibility.
+Modern browsers that are inside of 2017 and now. The support can go further back, but check-out [CSS Remedy](https://github.com/jensimmons/cssremedy) to see how much debt you are willing to take for backward-compatibility.
 
 
-### Financial support
+## Financial support
 
-If you like my [work](https://github.com/sponsors/marvindanig) please consider supporting it financially.
+If you like my [work](https://github.com/sponsors/marvindanig) please do consider supporting it financially.
 
-#### The Superbook
-
-> I'm writing a book on the [Fundamentals of Toucaan CSS](https://bubblin.io/cover/the-toucaan-framework-by-marvin-danig) that will explain the thoughts and the reasoning behind the choices made by Toucaan and how you could override them.
+Or you can sponsor me on [Github](https://github.com/sponsors/marvindanig).
 
 #### Sponsorship
 
-Current sponsors of Toucaan are: 
+Current sponsors of the team Toucaan (which is mostly me right now) are: 
 
 <div align="left">
   <a href="https://goose.red" rel="follow">
@@ -138,35 +136,18 @@ Current sponsors of Toucaan are:
   </a>
 </div>
 
-But you can support our project by [sponsoring this repository](https://github.com/sponsors/marvin-danig) too!
+Feel free to join the bandwagon!
 
 ### Why call it Toucaan?
 
-Mainly because I owned the pretty domain name. 
+Mainly because I owned the pretty domain name. Besides, Toucan is a beautiful bird. This aggressive little arboreal _ramphastidus_ symbolizes both beauty and aggression. 
 
-Besides, Toucan is a beautiful bird. This aggressive little arboreal _ramphastidus_ symbolizes both beauty and aggression. What better animal to ground our framework's central metaphor on? 
+What better animal to ground our framework's central metaphor on? 
 
-You see **_if Toucaan, then you can too!_** 😉
-
----
-
-<div align="left">
-  <h3>
-    Developed and sponsored by
-    <span>
-      <img src="assets/goose.red.svg" width="100"> 
-    </span>
-  </h3>
-</div>
-
-<a href='https://goose.red'> Red Goose</a>. The world's fastest website → app conversion engine. 
-
-Create mobile apps written in Swift or Kotlin with just a url.
-
----
+You see **_if Toucaan, then you can too!_** 🥳.
 
 ## License
 
 For Boomers – MIT 
 
-For the next generation of developers and designers – The Parity Public License 7.0.0. 
+For Millenials and the next generation of developers and designers – The Parity Public License 7.0.0. 
