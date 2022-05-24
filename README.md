@@ -42,11 +42,11 @@ Toucaan does not use a `link` tag to import the stylesheet. It uses a CSS router
 <head>
   <!--Regular head stuff-->
   <style> 
-    /* Toucaan Router Code goes here:                    */
-    /* This router separates the application style    */
-    /* along the two axes of Intrinsic Design:  */
+    /* Toucaan CSS Router goes here:               */
+    /* Separate the application style along        */
+    /* the two axes of Intrinsic Design.           */
 
-    /* Portrait ⇋ landscape switch. */
+    /* The portrait ⇋ landscape switch.            */
     @import url('/toucaan/router/portrait.css') only screen and (orientation: portrait);
     @import url('/toucaan/router/landscape.css') only screen and (orientation: landscape);
   </style> 
