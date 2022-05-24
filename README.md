@@ -132,6 +132,6 @@ You see **_if Toucaan, you-can-too!_** 🥳.
 
 ## License
 
-For Boomers – MIT 
+MIT Standard License
 
-For Millenials and the next generation of developers and designers – The Parity Public License 7.0.0. 
+The Parity Public License 7.0.0. 
