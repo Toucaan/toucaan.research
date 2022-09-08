@@ -1,19 +1,23 @@
 <div align="center">
-    <h1>Intrinsic Web Design.</h1>
+    <h1>Intrinsic Design.</h1>
     <a href="https://toucaan.com" rel="follow">
         <img src="header.svg" width="800">
     </a>
 </div>
 
 # Introduction
-Toucaan is an _intrinsic_, _mutative_, and _deterministic_ CSS framework. It is a "utility-free" tool built ground-up to remove the gap between mobile web and native apps altogether and add support for web devices according to [the new landscape of the web](https://bubblin.io/blog/the-new-landscape-of-the-web).
+Toucaan is a **stack-agnostic vanilla styling framework for mobile apps and the web**.
+
+It is an _intrinsic_, _mutative_, and _deterministic_ approach to styling websites and native mobile apps built using the web-stack. Toucaan has been built ground-up to diminish and ultimately remove the gap between mobile web development and native apps altogether using the powers of modern css, webassembly, and the service-worker api.
+
+It also adds support for the new devices according to [the new landscape of the web](https://bubblin.io/blog/the-new-landscape-of-the-web).
 
 ### Definition
 
 1. **Intrinsic** implies that your web designs must "belong" to the device. Implement the most natural and accessible UX/UI that utilizes a user's device's physical and technical characteristics.
 
 #### Brief explanation
-The term `intrinsic design` was [coined by Jen Simmons](https://youtu.be/AMPKmh98XLY) of Mozilla (now of Apple) back in 2017. Here is the [podcast+transcript](https://www.zeldman.com/2018/05/02/transcript-intrinsic-web-design-with-jen-simmons-the-big-web-show/) of the original discussion to help you soak the concept.
+The term `intrinsic design` was coined by [Jen Simmons](https://youtu.be/AMPKmh98XLY) at Mozilla while working on flex and grid-based layouts. Here is the [podcast+transcript](https://www.zeldman.com/2018/05/02/transcript-intrinsic-web-design-with-jen-simmons-the-big-web-show/) of the original discussion if you're interested in a deep-dive.
 
 While the term intrinsic design could mean different things to different people, it usually leads to arriving at a native "app-like" interface that closely fits the accessibility situation of the user and the capabilities of their device. Read more about Intrinsic Web Design over [here](https://medium.com/@mattkrick/intrinsic-web-design-b5e9f9c8d8d6).
 
