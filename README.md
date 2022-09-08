@@ -14,14 +14,14 @@ It also adds support for the new devices according to [the new landscape of the 
 
 ### Definition
 
-1. **Intrinsic** implies that your web designs must "belong" to the device. Implement the most natural and accessible UX/UI that utilizes a user's device's physical and technical characteristics.
+1. **Intrinsic** implies that your web designs must "belong" to the device. Implement meaningful interfaces that utilize the intrinsic qualities of the medium.
 
 #### Brief explanation
 The term `intrinsic design` was coined by [Jen Simmons](https://youtu.be/AMPKmh98XLY) at Mozilla while working on flex and grid-based layouts. Here is the [podcast+transcript](https://www.zeldman.com/2018/05/02/transcript-intrinsic-web-design-with-jen-simmons-the-big-web-show/) of the original discussion if you're interested in a deep-dive.
 
-While the term intrinsic design could mean different things to different people, it usually leads to arriving at a native "app-like" interface that closely fits the accessibility situation of the user and the capabilities of their device. Read more about Intrinsic Web Design over [here](https://medium.com/@mattkrick/intrinsic-web-design-b5e9f9c8d8d6).
+While the term intrinsic design could mean different things to different people, it often leads to native "app-like" designs that closely fit the accessibility situation and capabilities of the medium. 
 
-2. **Mutative** means that the user-written styles are added into the framework directly. This concept borders close on the idea of a low-class or _almost_ classless architecture. Mutative also implies that there is no single heavy `reset` or `reboot` css file to be imported except for the most [current baseline](https://bubblin.io/blog/baseline-css) determined for a slew of modern browsers on the market.
+2. **Mutative** means that the user-written styles are inserted within the framework directly. This concept borders close on the idea of low-class or _almost_ classless architecture. Mutative also implies that there is no single heavy `reset` or `reboot` imported to troll the browser into obedience. Toucaan uses the most [current baseline method](https://bubblin.io/blog/baseline-css) determined for different mediums instead.
 
 3. **Deterministic** means applying style without approximations or guesswork, such as using the "media query breakpoints" to separate mobile from desktop. The deterministic approach compels the writer to establish the type of UI container beforehand. Simply put, a style layer can "belong" to a device only when the kind of device it is on is known.
 
